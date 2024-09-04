@@ -1,4 +1,4 @@
-preguntas_futbol = [
+preguntas_deporteGral = [
     "¿Cuál es el deporte más practicado a nivel mundial? A) Fútbol b) Baloncesto c) Natación d) Esgrima ",
     "¿Qué país ha ganado más Copas del Mundo de la FIFA en fútbol? a) Brasil b) Argentina c) Alemania d)EEUU",
     "¿Quién es el atleta con más medallas de oro en los Juegos Olímpicos de verano? a) Michael Phelps, b) Lebron James c) Ricardo Montaner d) Michael Jordan",
@@ -18,7 +18,12 @@ preguntas_futbol = [
     "¿Qué deporte se juega con una pelota que se lanza a una canasta a una altura de 3,05 metros? a)Baloncesto b) Golf c)Curling d) Lanzamiento de bala",
     "¿Qué atleta es conocido como “El Reloj” y es famoso por su habilidad en la esgrima? a) Mariel Zagunis b) Zhong Weiping c)Valentina Vezzali d)Stanislav Pozdnyakov",
     "¿Cuál es el nombre del campeonato mundial de automovilismo que se celebra anualmente? a) Fórmula 1 b) Turismo c)NASCAR Cup Series d)24 horas de Le Mans",
-    "¿Qué deporte combina elementos de natación, ciclismo y carrera en una sola competencia? a) Triatlón b) Ultraman c) Ironman d) Todas las acciones son correctas "
+    "¿Qué deporte combina elementos de natación, ciclismo y carrera en una sola competencia? a) Triatlón b) Ultraman c) Ironman d) Todas las acciones son correctas ",
+    "¿Cuál es el club que tiene más fanáticos en el mundo? a)Club Atlético Independiente b)Galatasaray SK c)Borussia Dortmund d) Real Madrid" , 
+    "¿Cuál es la cancha más conocida en el mundo? a)Estadio Benito Villamarín b)Estadio Nacional de Chile c)Estadio de Wembley d)Estadio de San Mamés",
+    "¿Qué deportista ha vendido más camisetas en su carrera? a)Rafael Nadal b)Cristiano Ronaldo c)Usain Bolt d)Tiger Woods",
+    "¿Qué países no han participado en un campeonato del mundo? a)Liechtenstein, b)Brasil c)Francia d)Guinea-Bisáu",
+    "¿Cuál fue la primera disciplina que se consideró deporte? a)Atletismo b)Esgrima c)Boxeo d)Lucha"
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
@@ -42,5 +47,10 @@ respuestas_correctas = [
     "a",  # Baloncesto 
     "a",  # Mariel Zagunis
     "a",  # Fórmula 1
-    "d"   # Todas las opciones son correctas
+    "d",  # Todas las opciones son correctas
+    "d",  # Real Madrid 
+    "c",  # Estadio de Wembley
+    "b",  # Cristiano Ronaldo
+    "a",  # Liechtenstein
+    "d"   # Lucha 
 ]
