@@ -20,6 +20,12 @@ preguntas_futbol = [
     "¿Qué equipo de la Serie A ha ganado más títulos de liga? a) Juventus b) AC Milan c) Inter de Milán d) AS Roma",
     "¿Cuál es el club más antiguo del mundo aún en existencia? a) Sheffield FC b) Notts County c) Preston North End d) Aston Villa",
     "¿Qué selección ganó la primera Copa del Mundo en 1930? a) Argentina b) Brasil c) Italia d) Uruguay"
+    "¿Que club tiene mas Champions? a) Barcelona b) Sarmiento de Junin c) Real Madrid d) Liverpool
+    "¿Que seleccion gano el mundial de 2022? a) Argentina b) Francia c) Italia d) Alemania
+    "¿Contra que Equipo jugo Uruguay la final del mundial de 1930? a) Brasil b) Paraguay c) Argentina d) Colombia
+    "¿Como se llamaba el balon del mundial Sudafrica 2010? a) Jabulani b) Telstar c) Oliva d) Tango
+    "¿Que seleccion de futbol fue conocida como La Naranja Mecanica? a) La Brasil del 1970 b) La Alemania de 2014 c) La Argentina de 1978  d) La Holanda del 1974
+
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
@@ -43,7 +49,13 @@ respuestas_correctas = [
     "c",  # Brasil
     "a",  # Juventus
     "a",  # Sheffield FC
-    "d"   # Uruguay
+    "d",  # Uruguay
+    "c",  # Real Madrid 
+    "a",  # Argentina
+    "c",  # Argentina
+    "a",  # Jabulani
+    "d"   # La Holanda del 1974
+
 ]
 
 # Lista con las preguntas y respuestas correctas
