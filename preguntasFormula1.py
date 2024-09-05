@@ -55,7 +55,6 @@ respuestas_correctas = [
     "a",  # 1996
     "b"   # Cenek Junek
 ]
-
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas = [
     {"pregunta": preguntas_formula[i], "respuesta_correcta": respuestas_correctas[i]} 

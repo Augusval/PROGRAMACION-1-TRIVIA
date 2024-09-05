@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-import modulo_funciones.core as f
-
-=======
-import modulo_funcione.core as f
->>>>>>> a5d19ff357ecfb4df1dc12693e5919a16bb76c94
-
-def main():
-    pass
+from modulo_funciones.core import main
 
 
 
 
-
-if __name__ == "__main__":
-    main()
+input("Presione enter para ingresar al menu... ")
+main()

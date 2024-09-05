@@ -54,3 +54,35 @@ respuestas_correctas = [
     "a",  # Liechtenstein
     "d"   # Lucha 
 ]
+
+# Lista con las preguntas y respuestas correctas
+preguntas_respuestas = [
+    {"pregunta": preguntas_deporteGral[i], "respuesta_correcta": respuestas_correctas[i]} 
+    for i in range(len(preguntas_deporteGral))
+]
+
+# Función para jugar al juego de trivia
+def jugar_trivia():
+    puntaje = 0
+    print("¡Bienvenido al juego de trivia de Formula 1!\n")
+
+    for i, item in enumerate(preguntas_respuestas):
+        print(f"Pregunta {i + 1}: {item['pregunta']}")
+        respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
+
+        if respuesta_usuario == item['respuesta_correcta']:
+            print("¡Correcto!\n")
+            puntaje += 1
+        else:
+            print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
+
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
+    if puntaje == len(preguntas_respuestas):
+        print("¡Felicidades! ¡Has acertado todas las preguntas!")
+    elif puntaje > len(preguntas_respuestas) / 2:
+        print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
+    else:
+        print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
+
+# Llamada a la función para comenzar el juego
+jugar_trivia()
