@@ -1,17 +1,18 @@
 import os
-
 def equipo():
     n = ["Valentini Augusto, Jesus Quijada, Centurion G0nzalo, Leomagno Ernesto, Oksana Bernkhart, Luis Agustin Chen"]
     print(n)
     input('Presione enter para volver al menu... ')
     
-
+def trivia_Formula():
+    from preguntasFormula1 import jugar_trivia
+    return input("Enter para volver al menu...")
 def main():
     repetir = True
     while repetir:
         os.system("cls")
         print("->1. Equipos       .<------------")
-        print("->2. Opcion 2      .<------------")
+        print("->2. Juego         .<------------")
         print("->3. Opcion 3      .<------------")
         print("->4. Opcion 4      .<------------")
         print("->5. Salir         .<------------")
@@ -22,7 +23,7 @@ def main():
                 equipo()
             elif opcion == 2:
                 print("Opcion elegido 2.")
-                input('Presione enter para continuar...')
+                trivia_Formula()
             elif opcion == 3:
                 print("Opcion elegido 3.")
                 input('Presione enter para continuar...')
