@@ -23,7 +23,8 @@ preguntas_formula = [
         "Que piloto dijo la iconica frace 'El muro se movio'? a)Niki Lauda b)Fernando Alonso c)Aryton Senna d)David Ferrare",
         "Cuantas banderas hay en Formula 1? a)6 b)9 c)3 d)5",
         "Quienes son los pilotos con mas poseedores de titulos mundiales? a)Lewis Hamilton y Niki Lauda b) Max Verstappen y Juan Manuel Fangio c) Lewis Hamilton y Michael Schaumer d)Niki Lauda y Max Verstappen",
-        "En que año entro McLaren en la competencia de Formula 1? a) 1996 b) 1955 c) 1976 d) 1992"
+        "En que año entro McLaren en la competencia de Formula 1? a) 1996 b) 1955 c) 1976 d) 1992",
+        "Que piloto fue el primero en morir en Nurburgring? a)Lorenzo Bandini b)Cenek Junek c)Ayrton Senna d)Jules Bianchi"
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
@@ -47,11 +48,12 @@ respuestas_correctas = [
     "d",  # Amarillo
     "a",  # Blanco
     "d",  # Monaco
-    "d",   # Niki Lauda
+    "d",  # Niki Lauda
     "c",  # Aryton Senna
     "b",  # 9
     "c",  # Lewis Hamilton y Michael Schumacher
-    "a"  # 1996
+    "a",  # 1996
+    "b"   # Cenek Junek
 ]
 
 # Lista con las preguntas y respuestas correctas
