@@ -88,7 +88,7 @@ def Auto():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Llamada a la función para comenzar el juego
-Auto()
+
 
 # Lista de preguntas con opciones
 preguntas_futbol = [
@@ -206,7 +206,7 @@ def Cine():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Llamada a la función para comenzar el juego
-Cine()
+
 
 preguntas_deporteGral = [
     "¿Cuál es el deporte más practicado a nivel mundial? A) Fútbol b) Baloncesto c) Natación d) Esgrima ",
@@ -295,7 +295,7 @@ def DeporteGral():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Llamada a la función para comenzar el juego
-DeporteGral()
+
 
 # Lista de preguntas con opciones
 preguntas_formula = [
@@ -384,7 +384,7 @@ def Formula():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Llamada a la función para comenzar el juego
-Formula()
+
 
 # Lista de preguntas con opciones
 preguntas_futbol = [
@@ -476,7 +476,6 @@ def Futbol():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Llamada a la función para comenzar el juego
-Futbol()
 
 # Lista de preguntas con opciones
 preguntas_futbol = [
@@ -567,4 +566,3 @@ def VideoJuegos():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Llamada a la función para comenzar el juego
-VideoJuegos()

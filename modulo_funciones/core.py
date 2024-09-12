@@ -19,6 +19,7 @@ def trivias():
     print("->      3. Trivia Futbol                         .<-")
     print("->      4. Trivia Deporte General                .<-")
     print("->      5. Trivia Video Juegos                   .<-")
+    print("->      6. Trivia Autos                          .<-")
     print("====================================================")
     print("=                    JUEGO                         =")
     print("====================================================")
@@ -28,26 +29,37 @@ def trivias():
         print("======[Bienvenido trivia del Formula 1]======")
         print()
         from preguntas import Formula
+        Formula()
     elif trivia == 2:
         print()
         print("======[Bienvenido trivia del Cine]======")
         print()
         from preguntas import Cine
+        Cine()
     elif trivia == 3:
         print()
         print("======[Bienvenido trivia del Futbol]======")
         print()
         from preguntas import Futbol
+        Futbol()
     elif trivia == 4:
         print()
         print("======[Bienvenido trivia del Deporte General]======")
         print()
         from preguntas import DeporteGral
+        DeporteGral()
     elif trivia == 5:
         print()
         print("======[Bienvenido trivia del Video Juegos]======")
         print()
         from preguntas import VideoJuegos
+        VideoJuegos()
+    elif  trivia == 6:
+        print()
+        print("======[Bienvenido trivia de Autos]======")
+        print()
+        from preguntas import Auto
+        Auto()
     else:
         return input("Enter para volver al menu...")
     
