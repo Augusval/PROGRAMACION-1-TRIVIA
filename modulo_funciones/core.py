@@ -27,27 +27,27 @@ def trivias():
         print()
         print("======[Bienvenido trivia del Formula 1]======")
         print()
-        from preguntasFormula1 import jugar_trivia
+        from preguntas import Formula
     elif trivia == 2:
         print()
         print("======[Bienvenido trivia del Cine]======")
         print()
-        from preguntasCine import jugar_trivia
+        from preguntas import Cine
     elif trivia == 3:
         print()
         print("======[Bienvenido trivia del Futbol]======")
         print()
-        from preguntasFutbol import jugar_trivia
+        from preguntas import Futbol
     elif trivia == 4:
         print()
         print("======[Bienvenido trivia del Deporte General]======")
         print()
-        from preguntasDeporteGral import jugar_trivia
+        from preguntas import DeporteGral
     elif trivia == 5:
         print()
         print("======[Bienvenido trivia del Video Juegos]======")
         print()
-        from preguntasVideojuegos import jugar_trivia
+        from preguntas import VideoJuegos
     else:
         return input("Enter para volver al menu...")
     
