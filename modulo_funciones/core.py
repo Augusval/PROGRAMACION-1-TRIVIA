@@ -78,10 +78,11 @@ def main():
         print("=                 ¡Bienvenido al menu elija alguna de las opciones!                        =")
         print("============================================================================================")
         print("------->          1.  Juego Trivia                                            .<------------")
-        print("------->          2.  Sobre nosotros                                          .<------------")
-        print("------->          3.  Posiciones                                              .<------------")
-        print("------->          4.  Equipo                                                  .<------------")
-        print("------->          5.  Salir                                                   .<------------")
+        print("------->          2.  Crear preguntas                                         .<------------")
+        print("------->          3.  Puntajes                                                .<------------")
+        print("------->          4.  Instrucciones                                           .<------------")
+        print("------->          5.  Equipo                                                  .<------------")
+        print("------->          6.  Salir                                                   .<------------")
         print("============================================================================================")
         print("=                                          MENU                                            =")
         print("============================================================================================")
@@ -89,14 +90,14 @@ def main():
             opcion = int(input("Ingrese opción: "))
             if opcion == 1:
                 trivias()
-            elif opcion == 2:
+            elif opcion == 4:
                 juegoinfo()
             elif opcion == 3:
                 print("Funcion de puntajes.")
                 input('Presione enter para continuar...')
-            elif opcion == 4:
-                equipos()
             elif opcion == 5:
+                equipos()
+            elif opcion == 6:
                 print("Cerrando...")
                 repetir = False
         except:
