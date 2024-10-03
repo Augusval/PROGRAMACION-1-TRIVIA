@@ -15,7 +15,6 @@ preguntas_autos=[
 "¿Qué auto fue popularmente conocido como Escarabajo? a) Citroën DS, b) Fiat 500, c) Volkswagen Beetle, d) Mini Cooper",
 "¿Qué marca produce el modelo Civic? a) Toyota, b) Nissan, c) Honda, d) Mazda ",
 "¿Cuál fue el primer auto deportivo producido por Lamborghini? a) Miura, b) Countach, c) Diablo, d) 350 GT",
-
 "¿Qué marca es conocida por sus autos híbridos Prius? a) Honda, b) Toyota, c) Nissan, d) Mitsubishi",
 "¿En qué año se lanzó el primer Ford Mustang?  a) 1955, b) 1964, c) 1970, d) 1980 ",
 "¿Qué marca de autos de lujo tiene un logo con un espíritu alado conocido como Espíritu del Éxtasis? a) Bentley, b) Rolls-Royce, c) Aston Martin, d) Jaguar ",
@@ -45,7 +44,6 @@ respuestas_correctas = [
     "c",  # Volkswagen Beetle
     "c",  # Honda
     "d",  # 350 GT
-    
     "b",  # Toyota
     "b",  # 1964
     "b",  # Rolls-Royce
@@ -91,7 +89,7 @@ def Auto():
 
 
 # Lista de preguntas con opciones
-preguntas_futbol = [
+preguntas_cine = [
     #1
     '¿Cuál de las siguientes películas ganó el Oscar a Mejor Película en 2023? a) Everything Everywhere All at Once b) The Fabelmans c) Top Gun: Maverick d) Avatar: The Way of Water',
     #2
@@ -143,8 +141,6 @@ preguntas_futbol = [
     #25
     '¿Cuál de las siguientes no es una serie centrada en la física? a) The Big Bang Theory b) Breaking Bad c) Cosmos d) The IT Crowd',
 
-
-
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
@@ -178,14 +174,14 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas = [
-    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas[i]} 
-    for i in range(len(preguntas_futbol))
+    {"pregunta": preguntas_cine[i], "respuesta_correcta": respuestas_correctas[i]} 
+    for i in range(len(preguntas_cine))
 ]
 
 # Función para jugar al juego de trivia
 def Cine():
     puntaje = 0
-    print("¡Bienvenido al juego de trivia de fútbol!\n")
+    print("¡Bienvenido al juego de trivia de Cine!\n")
 
     for i, item in enumerate(preguntas_respuestas):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
@@ -274,7 +270,7 @@ preguntas_respuestas = [
 # Función para jugar al juego de trivia
 def DeporteGral():
     puntaje = 0
-    print("¡Bienvenido al juego de trivia de Formula 1!\n")
+    print("¡Bienvenido al juego de trivia de Deporte General!\n")
 
     for i, item in enumerate(preguntas_respuestas):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
@@ -478,7 +474,7 @@ def Futbol():
 # Llamada a la función para comenzar el juego
 
 # Lista de preguntas con opciones
-preguntas_futbol = [
+preguntas_videojuego = [
     '¿Cuál de los siguientes personajes es el protagonista principal en la serie de videojuegos "The Legend of Zelda"? a) Ganondorf b) Link c) Zelda d) Navi',
     '¿En qué año se lanzó el videojuego "Super Mario Bros." para la consola NES? a) 1983 b) 1985 c) 1987 d) 1989',
     '¿Cuál es el nombre del mundo en el que se desarrolla la saga de "Final Fantasy VII"? a) Eorzea b) Spira c) Gaia d) Ivalice',
@@ -538,14 +534,14 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas = [
-    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas[i]} 
-    for i in range(len(preguntas_futbol))
+    {"pregunta": preguntas_videojuego[i], "respuesta_correcta": respuestas_correctas[i]} 
+    for i in range(len(preguntas_videojuego))
 ]
 
 # Función para jugar al juego de trivia
 def VideoJuegos():
     puntaje = 0
-    print("¡Bienvenido al juego de trivia de fútbol!\n")
+    print("¡Bienvenido al juego de trivia de Videojuegos\n")
 
     for i, item in enumerate(preguntas_respuestas):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
