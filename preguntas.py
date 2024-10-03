@@ -57,7 +57,7 @@ respuestas_correctas = [
 ]
 
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas = [
+preguntas_respuestas_autos = [
     {"pregunta": preguntas_autos[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_autos))
 ]
@@ -67,7 +67,7 @@ def Auto():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de autos!\n")
 
-    for i, item in enumerate(preguntas_respuestas):
+    for i, item in enumerate(preguntas_respuestas_autos):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -77,10 +77,10 @@ def Auto():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
-    if puntaje == len(preguntas_respuestas):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_autos)}")
+    if puntaje == len(preguntas_respuestas_autos):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas) / 2:
+    elif puntaje > len(preguntas_respuestas_autos) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
@@ -173,7 +173,7 @@ respuestas_correctas = [
 ]
 
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas = [
+preguntas_respuestas_cine = [
     {"pregunta": preguntas_cine[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_cine))
 ]
@@ -183,7 +183,7 @@ def Cine():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de Cine!\n")
 
-    for i, item in enumerate(preguntas_respuestas):
+    for i, item in enumerate(preguntas_respuestas_cine):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -193,10 +193,10 @@ def Cine():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
-    if puntaje == len(preguntas_respuestas):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_cine)}")
+    if puntaje == len(preguntas_respuestas_cine):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas) / 2:
+    elif puntaje > len(preguntas_respuestas_cine) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
@@ -262,7 +262,7 @@ respuestas_correctas = [
 ]
 
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas = [
+preguntas_respuestas_deporte = [
     {"pregunta": preguntas_deporteGral[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_deporteGral))
 ]
@@ -272,7 +272,7 @@ def DeporteGral():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de Deporte General!\n")
 
-    for i, item in enumerate(preguntas_respuestas):
+    for i, item in enumerate(preguntas_respuestas_deporte):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -282,10 +282,10 @@ def DeporteGral():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
-    if puntaje == len(preguntas_respuestas):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_deporte)}")
+    if puntaje == len(preguntas_respuestas_deporte):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas) / 2:
+    elif puntaje > len(preguntas_respuestas_deporte) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
@@ -351,7 +351,7 @@ respuestas_correctas = [
     "b"   # Cenek Junek
 ]
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas = [
+preguntas_respuestas_formula = [
     {"pregunta": preguntas_formula[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_formula))
 ]
@@ -361,7 +361,7 @@ def Formula():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de Formula 1!\n")
 
-    for i, item in enumerate(preguntas_respuestas):
+    for i, item in enumerate(preguntas_respuestas_formula):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -371,10 +371,10 @@ def Formula():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
-    if puntaje == len(preguntas_respuestas):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_formula)}")
+    if puntaje == len(preguntas_respuestas_formula):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas) / 2:
+    elif puntaje > len(preguntas_respuestas_formula) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
@@ -443,7 +443,7 @@ respuestas_correctas = [
 ]
 
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas = [
+preguntas_respuestas_futbol = [
     {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_futbol))
 ]
@@ -453,7 +453,7 @@ def Futbol():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de fútbol!\n")
 
-    for i, item in enumerate(preguntas_respuestas):
+    for i, item in enumerate(preguntas_respuestas_futbol):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -463,10 +463,10 @@ def Futbol():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
-    if puntaje == len(preguntas_respuestas):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_futbol)}")
+    if puntaje == len(preguntas_respuestas_futbol):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas) / 2:
+    elif puntaje > len(preguntas_respuestas_futbol) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
@@ -533,7 +533,7 @@ respuestas_correctas = [
 ]
 
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas = [
+preguntas_respuestas_juegos = [
     {"pregunta": preguntas_videojuego[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_videojuego))
 ]
@@ -543,7 +543,7 @@ def VideoJuegos():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de Videojuegos\n")
 
-    for i, item in enumerate(preguntas_respuestas):
+    for i, item in enumerate(preguntas_respuestas_juegos):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -553,10 +553,10 @@ def VideoJuegos():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
-    if puntaje == len(preguntas_respuestas):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_juegos)}")
+    if puntaje == len(preguntas_respuestas_juegos):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas) / 2:
+    elif puntaje > len(preguntas_respuestas_juegos) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
