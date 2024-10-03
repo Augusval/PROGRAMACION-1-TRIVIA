@@ -24,42 +24,49 @@ def trivias():
     print("=                    JUEGO                         =")
     print("====================================================")
     trivia = int(input("Ingrese opcion de trivia o enter para volver al menu: "))
+    
     if trivia == 1:
         print()
         print("======[Bienvenido trivia del Formula 1]======")
         print()
         from preguntas import Formula
         Formula()
+        input("Enter Para Continuar...")
     elif trivia == 2:
         print()
         print("======[Bienvenido trivia del Cine]======")
         print()
         from preguntas import Cine
         Cine()
+        input("Enter Para Continuar...")
     elif trivia == 3:
         print()
         print("======[Bienvenido trivia del Futbol]======")
         print()
         from preguntas import Futbol
         Futbol()
+        input("Enter Para Continuar...")
     elif trivia == 4:
         print()
         print("======[Bienvenido trivia del Deporte General]======")
         print()
         from preguntas import DeporteGral
         DeporteGral()
+        input("Enter Para Continuar...")
     elif trivia == 5:
         print()
         print("======[Bienvenido trivia del Video Juegos]======")
         print()
         from preguntas import VideoJuegos
         VideoJuegos()
+        input("Enter Para Continuar...")
     elif  trivia == 6:
         print()
         print("======[Bienvenido trivia de Autos]======")
         print()
         from preguntas import Auto
         Auto()
+        input("Enter Para Continuar...")
     else:
         return input("Enter para volver al menu...")
     
