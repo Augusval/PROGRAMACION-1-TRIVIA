@@ -210,7 +210,7 @@ def crear_preguntas():
     while repetir:
         os.system("cls")
         print("============================================================================================")
-        print("=                      ¡Seleccione el modo de juego!                                       =")
+        print("=                ¡Seleccione el tema para el que desea crear preguntas!                    =")
         print("============================================================================================")
         print("------->          1.  Seleccionar tema                                        .<------------")
         print("------->          2.  Volver                                                  .<------------")
@@ -233,7 +233,7 @@ def selectdificultad():
     while repetir:
         os.system("cls")
         print("============================================================================================")
-        print("=                      ¡Seleccione el modo de juego!                                       =")
+        print("=                      ¡Seleccione la dificultad!                                          =")
         print("============================================================================================")
         print("------->          1.  Facil                                                   .<------------")
         print("------->          2.  Medio                                                   .<------------")

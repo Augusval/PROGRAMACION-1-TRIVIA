@@ -1,4 +1,4 @@
-from modulo_funciones.core import main
+from modulo_funciones.core import menu
 
 def nombreASCII():
     texto = print("""
@@ -13,5 +13,5 @@ def nombreASCII():
     """)
 nombreASCII()
 input("Bienvenidos.........Presione enter para ingresar al menu... ")
-main()
+menu()
 print("Cerrado.")
