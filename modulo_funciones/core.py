@@ -11,6 +11,7 @@ def juegoinfo():
     print(" ")
     input("Enter para continuar...")
 def trivias():
+    os.system("cls")
     print("====================================================")
     print("=        ¡Bienvenido al menu de las trivias!       =")
     print("====================================================")
@@ -144,7 +145,7 @@ def trivias():
     else:
         return input("Enter para volver al menu...")
     
-def main():
+def menu():
     repetir = True
     while repetir:
         os.system("cls")
@@ -163,7 +164,9 @@ def main():
         try:
             opcion = int(input("Ingrese opción: "))
             if opcion == 1:
-                trivias()
+                modo()
+            elif opcion == 2:
+                crear_preguntas()
             elif opcion == 4:
                 juegoinfo()
             elif opcion == 3:
@@ -177,8 +180,91 @@ def main():
         except:
                 print("Formato ingresado no aceptado...")
                 input("Enter para continuar...")
-if __name__ == "__main__":
-    main()
+def modo():
+    repetir = True
+    while repetir:
+        os.system("cls")
+        print("============================================================================================")
+        print("=                      ¡Seleccione el modo de juego!                                       =")
+        print("============================================================================================")
+        print("------->          1.  Un jugador                                              .<------------")
+        print("------->          2.  Versus                                                  .<------------")
+        print("------->          3.  Volver                                                  .<------------")
+        print("============================================================================================")
+        print("=                                          MENU                                            =")
+        print("============================================================================================")
+        try:
+            opcion = int(input("Ingrese opción: "))
+            if opcion == 1:
+                selectdificultad()
+            elif opcion == 2:
+                #versus()
+                pass
+            elif opcion==3:
+                menu()    
+        except:
+            print("Formato ingresado no aceptado...")
+            input("Enter para continuar...")
+def crear_preguntas():
+    repetir = True
+    while repetir:
+        os.system("cls")
+        print("============================================================================================")
+        print("=                      ¡Seleccione el modo de juego!                                       =")
+        print("============================================================================================")
+        print("------->          1.  Seleccionar tema                                        .<------------")
+        print("------->          2.  Volver                                                  .<------------")
+        print("============================================================================================")
+        print("=                                          MENU                                            =")
+        print("============================================================================================")
+        try:
+            opcion = int(input("Ingrese opción: "))
+            if opcion == 1:
+                #crearpregunta()
+                pass
+            elif opcion == 2:
+                menu()
+        except:
+            print("Formato ingresado no aceptado...")
+            input("Enter para continuar...")
+
+def selectdificultad():
+    repetir = True
+    while repetir:
+        os.system("cls")
+        print("============================================================================================")
+        print("=                      ¡Seleccione el modo de juego!                                       =")
+        print("============================================================================================")
+        print("------->          1.  Facil                                                   .<------------")
+        print("------->          2.  Medio                                                   .<------------")
+        print("------->          3.  Dificil                                                 .<------------")
+        print("------->          4.  Volver                                                  .<------------")
+        print("============================================================================================")
+        print("=                                          MENU                                            =")
+        print("============================================================================================")
+        try:
+            opcion = int(input("Ingrese opción: "))
+            if opcion == 1:
+                #variable dificultad facil
+                trivias()
+            elif opcion == 2:
+                #variable dificultad medio
+                trivias()
+            elif opcion == 3:
+                #variable dificultad dificl
+                trivias()
+            elif opcion == 4:
+                menu()
+        except:
+            print("Formato ingresado no aceptado...")
+            input("Enter para continuar...")
+
+
+menu()
+
+
+#if __name__ == "__main__":
+#    main()
 
 
 
