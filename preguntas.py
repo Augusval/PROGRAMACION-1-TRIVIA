@@ -766,7 +766,7 @@ preguntas_respuestas_CienNat = [
 ]
 
 # Función para jugar al juego de trivia
-def CieNat():
+def ciennat():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de autos!\n")
 

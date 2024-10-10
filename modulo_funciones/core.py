@@ -159,7 +159,7 @@ def trivias():
         print()
         print("======[Bienvenido trivia de Ciencias Naturales]======")
         print()
-        from preguntas import CienNat
+        from preguntas import ciennat
         print("""
              /$$$$$$  /$$                               /$$                           /$$   /$$             /$$                                  /$$                    
             /$$__  $$|__/                              |__/                          | $$$ | $$            | $$                                 | $$                    
@@ -171,7 +171,7 @@ def trivias():
             \______/ |__/ \_______/|__/  |__/ \_______/|__/ \_______/|_______/       |__/  \__/ \_______/   \___/   \______/ |__/      \_______/|__/ \_______/|_______/                                                                                                                                       
               """)
         print()
-        CienNat()
+        ciennat()
         input("Enter para continuar...")
     elif trivia == 8:
         print()
