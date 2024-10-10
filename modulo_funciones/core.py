@@ -3,7 +3,7 @@ def equipos():
     print("==================================")
     print("=           EQUIPOS              =")
     print("==================================")
-    n = ("---> Valentini Augusto\n --->Jesus Quijada\n --->Centurion G0nzalo\n --->Leomagno Ernesto\n --->Oksana Bernkhart\n --->Luis Agustin Chen")
+    n = ("---> Valentini Augusto\n ---> Jesus Quijada\n ---> Centurion Gonzalo\n ---> Leomagno Ernesto\n ---> Oksana Bernkhart\n ---> Luis Agustin Chen")
     print("Equipos conformados por: \n" ,n)
     input("Enter para continuar...")
 def juegoinfo():
@@ -25,7 +25,6 @@ def trivias():
     print("=                    JUEGO                         =")
     print("====================================================")
     trivia = int(input("Ingrese opcion de trivia o enter para volver al menu: "))
-    
     if trivia == 1:
         print()
         print("======[Bienvenido trivia del Formula 1]======")
@@ -62,7 +61,6 @@ def trivias():
         """)
         Cine()
         input("Enter Para Continuar...")
-
     elif trivia == 3:
         print()
         print("======[Bienvenido trivia del Futbol]======")
@@ -81,7 +79,6 @@ def trivias():
         """)
         Futbol()
         input("Enter Para Continuar...")
-
     elif trivia == 4:
         print()
         print("======[Bienvenido trivia del Deporte General]======")
@@ -102,7 +99,6 @@ def trivias():
         """)
         DeporteGral()
         input("Enter Para Continuar...")
-
     elif trivia == 5:
         print()
         print("======[Bienvenido trivia del Video Juegos]======")
@@ -123,7 +119,6 @@ def trivias():
         """)
         VideoJuegos()
         input("Enter Para Continuar...")
-
     elif  trivia == 6:
         print()
         print("======[Bienvenido trivia de Autos]======")
@@ -143,11 +138,12 @@ def trivias():
         Auto()
         input("Enter Para Continuar...")
     else:
+        print("Error de ingreso...")
         return input("Enter para volver al menu...")
-    
+
 def menu():
-    repetir = True
-    while repetir:
+    salir = False
+    while not salir:
         os.system("cls")
         print("============================================================================================")
         print("=                 ¡Bienvenido al menu elija alguna de las opciones!                        =")
@@ -162,107 +158,94 @@ def menu():
         print("=                                          MENU                                            =")
         print("============================================================================================")
         try:
-            opcion = int(input("Ingrese opción: "))
-            if opcion == 1:
+            opcion_menu = int(input("Ingrese opción_menu: "))
+            if opcion_menu == 1:
                 modo()
-            elif opcion == 2:
+            elif opcion_menu == 2:
                 crear_preguntas()
-            elif opcion == 4:
+            elif opcion_menu == 4:
                 juegoinfo()
-            elif opcion == 3:
+            elif opcion_menu == 3:
                 print("Funcion de puntajes.")
                 input('Presione enter para continuar...')
-            elif opcion == 5:
+            elif opcion_menu == 5:
                 equipos()
-            elif opcion == 6:
+            elif opcion_menu == 6:
                 print("Cerrando...")
-                repetir = False
+                salir = True
         except:
                 print("Formato ingresado no aceptado...")
                 input("Enter para continuar...")
 def modo():
-    repetir = True
-    while repetir:
-        os.system("cls")
-        print("============================================================================================")
-        print("=                      ¡Seleccione el modo de juego!                                       =")
-        print("============================================================================================")
-        print("------->          1.  Un jugador                                              .<------------")
-        print("------->          2.  Versus                                                  .<------------")
-        print("------->          3.  Volver                                                  .<------------")
-        print("============================================================================================")
-        print("=                                          MENU                                            =")
-        print("============================================================================================")
-        try:
-            opcion = int(input("Ingrese opción: "))
-            if opcion == 1:
-                selectdificultad()
-            elif opcion == 2:
-                #versus()
-                pass
-            elif opcion==3:
-                menu()    
-        except:
-            print("Formato ingresado no aceptado...")
-            input("Enter para continuar...")
+    os.system("cls")
+    print("============================================================================================")
+    print("=                      ¡Seleccione el modo de juego!                                       =")
+    print("============================================================================================")
+    print("------->          1.  Un jugador                                              .<------------")
+    print("------->          2.  Versus                                                  .<------------")
+    print("------->          3.  Volver                                                  .<------------")
+    print("============================================================================================")
+    print("=                                          MENU                                            =")
+    print("============================================================================================")
+    opcion_modo = int(input("Ingrese opción_modo: "))
+    if opcion_modo == 1:
+        selectdificultad()
+    elif opcion_modo == 2:
+        #versus()
+        pass
+    elif opcion_modo ==3:
+        input("Enter para volver al menu...")
+    else:
+        print("Formato ingresado no aceptado...")
+        return input("Enter para continuar...")  
+
 def crear_preguntas():
-    repetir = True
-    while repetir:
-        os.system("cls")
-        print("============================================================================================")
-        print("=                ¡Seleccione el tema para el que desea crear preguntas!                    =")
-        print("============================================================================================")
-        print("------->          1.  Seleccionar tema                                        .<------------")
-        print("------->          2.  Volver                                                  .<------------")
-        print("============================================================================================")
-        print("=                                          MENU                                            =")
-        print("============================================================================================")
-        try:
-            opcion = int(input("Ingrese opción: "))
-            if opcion == 1:
-                #crearpregunta()
-                pass
-            elif opcion == 2:
-                menu()
-        except:
-            print("Formato ingresado no aceptado...")
-            input("Enter para continuar...")
+    os.system("cls")
+    print("============================================================================================")
+    print("=                ¡Seleccione el tema para el que desea crear preguntas!                    =")
+    print("============================================================================================")
+    print("------->          1.  Seleccionar tema                                        .<------------")
+    print("------->          2.  Volver                                                  .<------------")
+    print("============================================================================================")
+    print("=                                          MENU                                            =")
+    print("============================================================================================")
+    opcion_crear = int(input("Ingrese opción_crear: "))
+    if opcion_crear == 1:
+        #crearpregunta()
+        pass
+    elif opcion_crear == 2:
+       input("Enter para volver al menu...")
+    else:
+        print("Formato ingresado no aceptado...")
+        return input("Enter para continuar...")
 
 def selectdificultad():
-    repetir = True
-    while repetir:
-        os.system("cls")
-        print("============================================================================================")
-        print("=                      ¡Seleccione la dificultad!                                          =")
-        print("============================================================================================")
-        print("------->          1.  Facil                                                   .<------------")
-        print("------->          2.  Medio                                                   .<------------")
-        print("------->          3.  Dificil                                                 .<------------")
-        print("------->          4.  Volver                                                  .<------------")
-        print("============================================================================================")
-        print("=                                          MENU                                            =")
-        print("============================================================================================")
-        try:
-            opcion = int(input("Ingrese opción: "))
-            if opcion == 1:
-                #variable dificultad facil
-                trivias()
-            elif opcion == 2:
-                #variable dificultad medio
-                trivias()
-            elif opcion == 3:
-                #variable dificultad dificl
-                trivias()
-            elif opcion == 4:
-                menu()
-        except:
-            print("Formato ingresado no aceptado...")
-            input("Enter para continuar...")
-
-
-menu()
-
-
+    os.system("cls")
+    print("============================================================================================")
+    print("=                      ¡Seleccione la dificultad!                                          =")
+    print("============================================================================================")
+    print("------->          1.  Facil                                                   .<------------")
+    print("------->          2.  Medio                                                   .<------------")
+    print("------->          3.  Dificil                                                 .<------------")
+    print("------->          4.  Volver                                                  .<------------")
+    print("============================================================================================")
+    print("=                                          MENU                                            =")
+    print("============================================================================================")
+    opcion_dificultad = int(input("Ingrese opción_dificultad: "))
+    if opcion_dificultad == 1:
+        #variable dificultad facil
+        trivias()
+    elif opcion_dificultad == 2:
+        #variable dificultad medio
+        trivias()
+    elif opcion_dificultad == 3:
+        #variable dificultad dificl
+        trivias()
+    elif opcion_dificultad == 4:
+        input("Enter para volver al menu...")
+    else:
+        print("Formato ingresado no aceptado...")
+        return input("Enter para continuar...")
 #if __name__ == "__main__":
 #    main()
 
