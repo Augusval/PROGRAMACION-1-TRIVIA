@@ -53,7 +53,7 @@ preguntas_autos=[
     ]
 
 # Lista de respuestas correctas
-respuestas_correctas = [
+respuestas_correctas_auto = [
     "d",  # Peugeot
     "c",  # Ford
     "b",  # Italia
@@ -83,7 +83,7 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_autos = [
-    {"pregunta": preguntas_autos[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_autos[i], "respuesta_correcta": respuestas_correctas_auto[i]} 
     for i in range(len(preguntas_autos))
 ]
 
@@ -169,7 +169,7 @@ preguntas_cine = [
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas = [
+respuestas_correctas_Cine = [
     "a",  # Everything Everywhere All at Once (1)
     "a",  # James Cameron (2)
     "a",  # Star Wars (3)
@@ -199,7 +199,7 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_cine = [
-    {"pregunta": preguntas_cine[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_cine[i], "respuesta_correcta": respuestas_correctas_Cine[i]} 
     for i in range(len(preguntas_cine))
 ]
 
@@ -283,7 +283,7 @@ preguntas_deporteGral = [
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas = [
+respuestas_correctas_DprtGral = [
     "a",  # Fútbol
     "a",  # Brasil
     "a",  # Michael Phelps
@@ -313,7 +313,7 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_deporte = [
-    {"pregunta": preguntas_deporteGral[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_deporteGral[i], "respuesta_correcta": respuestas_correctas_DprtGral[i]} 
     for i in range(len(preguntas_deporteGral))
 ]
 
@@ -398,7 +398,7 @@ preguntas_formula = [
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas = [
+respuestas_correctas_formula = [
     "b",  # Monza 
     "c",  # 4h 4m 39s
     "b",  # 25 pts
@@ -427,7 +427,7 @@ respuestas_correctas = [
 ]
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_formula = [
-    {"pregunta": preguntas_formula[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_formula[i], "respuesta_correcta": respuestas_correctas_formula[i]} 
     for i in range(len(preguntas_formula))
 ]
 
@@ -513,7 +513,7 @@ preguntas_futbol = [
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas = [
+respuestas_correctas_futbol = [
     "a",  # Brasil
     "b",  # 1978
     "c",  # Real Madrid
@@ -544,7 +544,7 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_futbol = [
-    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas_futbol[i]} 
     for i in range(len(preguntas_futbol))
 ]
 
@@ -629,7 +629,7 @@ preguntas_videojuego = [
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas = [
+respuestas_correctas_juegos = [
     "b",  # Link (1)
     "b",  # 1985 (2)
     "c",  # Gaia (3)
@@ -659,7 +659,7 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_juegos = [
-    {"pregunta": preguntas_videojuego[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_videojuego[i], "respuesta_correcta": respuestas_correctas_juegos[i]} 
     for i in range(len(preguntas_videojuego))
 ]
 
@@ -743,7 +743,7 @@ preguntas_CienNat=[
 ]
 
 # Lista de respuestas correctas
-respuestas_correctas = [
+respuestas_correctas_CienNat = [
     "c",  # Corazón (1)
     "b",  # Ígnea (2)
     "b",  # Fotosíntesis (3)
@@ -773,7 +773,7 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_CienNat = [
-    {"pregunta": preguntas_CienNat[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_CienNat[i], "respuesta_correcta": respuestas_correctas_CienNat[i]} 
     for i in range(len(preguntas_CienNat))
 ]
 
@@ -855,7 +855,7 @@ preguntas_CulGen=[
     ]
 
 # Lista de respuestas correctas
-respuestas_correctas = [
+respuestas_correctas_CulGen = [
     "d",  # París (1)
     "b",  # Gabriel García Márquez(2)
     "c",  # Asia (3)
@@ -885,7 +885,7 @@ respuestas_correctas = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_CulGen = [
-    {"pregunta": preguntas_CulGen[i], "respuesta_correcta": respuestas_correctas[i]} 
+    {"pregunta": preguntas_CulGen[i], "respuesta_correcta": respuestas_correctas_CulGen[i]} 
     for i in range(len(preguntas_CulGen))
 ]
 
@@ -968,7 +968,7 @@ preguntas_animales = [
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas = [
+respuestas_correctas_animales = [
     "b",  # Ballena azul (1)
     "b",  # Mamífero (2)
     "a",  # Halcón peregrino (3)
@@ -997,9 +997,9 @@ respuestas_correctas = [
 ]
 
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas = [
-    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas[i]} 
-    for i in range(len(preguntas_futbol))
+preguntas_respuestas_animales  = [
+    {"pregunta": preguntas_animales[i], "respuesta_correcta": respuestas_correctas_animales[i]} 
+    for i in range(len(preguntas_animales))
 ]
 
 # Función para jugar al juego de trivia
@@ -1007,7 +1007,7 @@ def jugar_trivia():
     puntaje = 0
     print("¡Bienvenido al juego de trivia de animales!\n")
 
-    for i, item in enumerate(preguntas_respuestas):
+    for i, item in enumerate(preguntas_respuestas_animales):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -1017,13 +1017,12 @@ def jugar_trivia():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
-    if puntaje == len(preguntas_respuestas):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_animales)}")
+    if puntaje == len(preguntas_respuestas_animales):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas) / 2:
+    elif puntaje > len(preguntas_respuestas_animales) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Llamada a la función para comenzar el juego
-jugar_trivia()
