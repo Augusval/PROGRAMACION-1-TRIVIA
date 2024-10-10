@@ -1,59 +1,34 @@
 # Lista de preguntas con opciones
 preguntas_autos=[
-    #1
-    "¿Cuál es la marca de autos más antigua aún en funcionamiento? a) Ford, b) Mercedes-Benz, c) Fiat, d) Peugeot", 
-    #2
-    "¿Qué marca produce el modelo Mustang? a) Chevrolet, b) Dodge, c) Ford, d) Nissan",
-    #3
-    "¿En qué país se fundó Ferrari? a) Alemania, b) Italia, c) Francia, d) Estados Unidos",
-    #4
-    "¿Cuál fue el primer auto producido en masa? a) Ford Model T, b) Mercedes-Benz 300SL, c) Chevrolet Corvette, d) Volkswagen Beetle",   
-    #5
-    "¿Qué marca es conocida por su modelo 911? a) Ferrari, b) Porsche, c) Lamborghini, d) Aston Martin", 
-    #6
-    "¿Cuál de estos autos es conocido como el auto del pueblo? a) Fiat 500, b) Citroën 2CV, c) Volkswagen Beetle, d) Mini Cooper"
-    #7
-    "¿Qué marca produce el superdeportivo Veyron? a) Lamborghini, b) Ferrari, c) Bugatti, d) McLaren",  
-    #8
-    "¿Qué auto eléctrico es producido por Tesla? a) Model X, b) Leaf, c) Bolt, d) i8" ,
-    #9
-    "¿Qué marca fue fundada por Enzo Ferrari? a) Maserati, b) Ferrari, c) Alfa Romeo, d) Lamborghini",  
-    #10
-    "¿Cuál es la marca de lujo de Toyota?  a) Acura, b) Infiniti, c) Lexus, d) Genesis",  
-    #11
-    "¿Qué auto es conocido por sus puertas de ala de gaviota? a) DeLorean DMC-12, b) Lamborghini Aventador, c) Ferrari LaFerrari, d) Porsche 918 ", 
-    #12
-    "¿En qué país se encuentra la sede de Volvo? a) Suecia, b) Alemania, c) Noruega, d) Estados Unidos ",
-    #13
-    "¿Qué auto fue popularmente conocido como Escarabajo? a) Citroën DS, b) Fiat 500, c) Volkswagen Beetle, d) Mini Cooper",
-    #14
-    "¿Qué marca produce el modelo Civic? a) Toyota, b) Nissan, c) Honda, d) Mazda ",
-    #15
-    "¿Cuál fue el primer auto deportivo producido por Lamborghini? a) Miura, b) Countach, c) Diablo, d) 350 GT",
-    #16
-    "¿Qué marca es conocida por sus autos híbridos Prius? a) Honda, b) Toyota, c) Nissan, d) Mitsubishi",
-    #17
-    "¿En qué año se lanzó el primer Ford Mustang?  a) 1955, b) 1964, c) 1970, d) 1980 ",
-    #18
-    "¿Qué marca de autos de lujo tiene un logo con un espíritu alado conocido como Espíritu del Éxtasis? a) Bentley, b) Rolls-Royce, c) Aston Martin, d) Jaguar ",
-    #19
-    "¿Cuál es el auto deportivo más famoso de Chevrolet?  a) Camaro, b) Corvette, c) Impala, d) Malibu",  
-    #20
-    "¿Qué marca alemana es conocida por el eslogan  Das Auto?  a) BMW, b) Audi, c) Volkswagen, d) Mercedes-Benz",  
-    #21
-    "¿Cuál fue el primer auto en superar oficialmente los 300 km/h en una prueba controlada?  a) Ferrari F40 b) Lamborghini Diablo c) McLaren F1 d) Porsche 959",
-    #22
-    "¿En qué año se lanzó el primer auto con frenos antibloqueo (ABS) de serie?  a) 1978 b) 1985 c) 1990 d) 1982",
-    #23
-    "¿Cuál es el nombre del sistema de tracción integral de Subaru?  a) 4Matic b) Symmetrical AWD c) Quattro d) xDrive",
-    #24
-    "¿Qué marca produjo el primer auto híbrido de producción masiva? a) Toyota b) Honda c) Nissan d) Ford",
-    #25
-    "¿Qué marca de autos tenía un modelo conocido como Cosmo Sport en la década de 1960? a) Toyota b) Nissan c) Mazda d) Mitsubishi",
-    ]
+"¿Cuál es la marca de autos más antigua aún en funcionamiento? a) Ford, b) Mercedes-Benz, c) Fiat, d) Peugeot", 
+"¿Qué marca produce el modelo Mustang? a) Chevrolet, b) Dodge, c) Ford, d) Nissan",
+"¿En qué país se fundó Ferrari? a) Alemania, b) Italia, c) Francia, d) Estados Unidos",
+"¿Cuál fue el primer auto producido en masa? a) Ford Model T, b) Mercedes-Benz 300SL, c) Chevrolet Corvette, d) Volkswagen Beetle",   
+"¿Qué marca es conocida por su modelo 911? a) Ferrari, b) Porsche, c) Lamborghini, d) Aston Martin", 
+"¿Cuál de estos autos es conocido como el auto del pueblo? a) Fiat 500, b) Citroën 2CV, c) Volkswagen Beetle, d) Mini Cooper",
+"¿Qué marca produce el superdeportivo Veyron? a) Lamborghini, b) Ferrari, c) Bugatti, d) McLaren",  
+"¿Qué auto eléctrico es producido por Tesla? a) Model X, b) Leaf, c) Bolt, d) i8" ,
+"¿Qué marca fue fundada por Enzo Ferrari? a) Maserati, b) Ferrari, c) Alfa Romeo, d) Lamborghini",  
+"¿Cuál es la marca de lujo de Toyota?  a) Acura, b) Infiniti, c) Lexus, d) Genesis",  
+"¿Qué auto es conocido por sus puertas de ala de gaviota? a) DeLorean DMC-12, b) Lamborghini Aventador, c) Ferrari LaFerrari, d) Porsche 918 ", 
+"¿En qué país se encuentra la sede de Volvo? a) Suecia, b) Alemania, c) Noruega, d) Estados Unidos ",
+"¿Qué auto fue popularmente conocido como Escarabajo? a) Citroën DS, b) Fiat 500, c) Volkswagen Beetle, d) Mini Cooper",
+"¿Qué marca produce el modelo Civic? a) Toyota, b) Nissan, c) Honda, d) Mazda ",
+"¿Cuál fue el primer auto deportivo producido por Lamborghini? a) Miura, b) Countach, c) Diablo, d) 350 GT",
+"¿Qué marca es conocida por sus autos híbridos Prius? a) Honda, b) Toyota, c) Nissan, d) Mitsubishi",
+"¿En qué año se lanzó el primer Ford Mustang?  a) 1955, b) 1964, c) 1970, d) 1980 ",
+"¿Qué marca de autos de lujo tiene un logo con un espíritu alado conocido como Espíritu del Éxtasis? a) Bentley, b) Rolls-Royce, c) Aston Martin, d) Jaguar ",
+"¿Cuál es el auto deportivo más famoso de Chevrolet?  a) Camaro, b) Corvette, c) Impala, d) Malibu",  
+"¿Qué marca alemana es conocida por el eslogan  Das Auto?  a) BMW, b) Audi, c) Volkswagen, d) Mercedes-Benz",  
+"¿Cuál fue el primer auto en superar oficialmente los 300 km/h en una prueba controlada?  a) Ferrari F40 b) Lamborghini Diablo c) McLaren F1 d) Porsche 959",
+"¿En qué año se lanzó el primer auto con frenos antibloqueo (ABS) de serie?  a) 1978 b) 1985 c) 1990 d) 1982",
+"¿Cuál es el nombre del sistema de tracción integral de Subaru?  a) 4Matic b) Symmetrical AWD c) Quattro d) xDrive",
+"¿Qué marca produjo el primer auto híbrido de producción masiva? a) Toyota b) Honda c) Nissan d) Ford",
+"¿Qué marca de autos tenía un modelo conocido como Cosmo Sport en la década de 1960? a) Toyota b) Nissan c) Mazda d) Mitsubishi",
+]
 
 # Lista de respuestas correctas
-respuestas_correctas_auto = [
+respuestas_correctas = [
     "d",  # Peugeot
     "c",  # Ford
     "b",  # Italia
@@ -83,7 +58,7 @@ respuestas_correctas_auto = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_autos = [
-    {"pregunta": preguntas_autos[i], "respuesta_correcta": respuestas_correctas_auto[i]} 
+    {"pregunta": preguntas_autos[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_autos))
 ]
 
@@ -124,7 +99,7 @@ preguntas_cine = [
     #4
     '¿Cuál de estos actores interpretó a Jack Sparrow en "Piratas del Caribe"? a) Orlando Bloom b) brad pitt c) Tom Cruise d) Johnny Depp',
     #5
-    "¿Qué película ganó el Oscar a la Mejor Película en 1994? a) Pulp Fiction b) Forrest Gump c) The Shawshank Redemption d) The Lion King" 
+    "¿Qué película ganó el Oscar a la Mejor Película en 1994? a) Pulp Fiction b) Forrest Gump c) The Shawshank Redemption d) The Lion King", 
     #6
     '¿Quién interpretó a Wolverine en la serie de películas de "X-Men"? a) Hugh Jackman b) Ryan Reynolds c) Chris Hemsworth d) Robert Downey Jr.',
     #7
@@ -169,7 +144,7 @@ preguntas_cine = [
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas_Cine = [
+respuestas_correctas = [
     "a",  # Everything Everywhere All at Once (1)
     "a",  # James Cameron (2)
     "a",  # Star Wars (3)
@@ -199,7 +174,7 @@ respuestas_correctas_Cine = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_cine = [
-    {"pregunta": preguntas_cine[i], "respuesta_correcta": respuestas_correctas_Cine[i]} 
+    {"pregunta": preguntas_cine[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_cine))
 ]
 
@@ -230,60 +205,35 @@ def Cine():
 
 
 preguntas_deporteGral = [
-    #1
     "¿Cuál es el deporte más practicado a nivel mundial? A) Fútbol b) Baloncesto c) Natación d) Esgrima ",
-    #2
     "¿Qué país ha ganado más Copas del Mundo de la FIFA en fútbol? a) Brasil b) Argentina c) Alemania d)EEUU",
-    #3
     "¿Quién es el atleta con más medallas de oro en los Juegos Olímpicos de verano? a) Michael Phelps, b) Lebron James c) Ricardo Montaner d) Michael Jordan",
-    #4
     "¿En qué año se celebraron los primeros Juegos Olímpicos modernos? a) 1896 b)1850 c)1990 d)1930",
-    #5
     "¿Qué equipo ha ganado más títulos en la NBA? a)Boston Celtics b)Golden state Warriors c)Los Angeles Lakers d)Brooklyn Nets",
-    #6
     "¿Qué deportista es conocido como “La Pantera Rosa” en el fútbol? a)Carlos “El Pibe” Valderrama b) Lionel Messi  c) Diego Armando Maradona d)",
-    #7
     "¿Cuál es la distancia de una maratón en kilómetros? a)42.195 kilómetros b) 45.000 kilómetros c) 43.000 kilómetros d) 40.0000 kilómetros",
-    #8
     "¿Qué deporte se juega en una cancha con una red en el centro y se utiliza una raqueta? a)Tenis b)Voleibol c)Pádel d)Tenis de mesa",
-    #9
     "¿Quién es el tenista con más Grand Slam en la historia del tenis? a) Novak Djokovic b) Rafael Nadal c) Roger Federer d) Jannik Sinner ",
-    #10
     "¿Qué evento deportivo se celebra cada cuatro años y reúne a los mejores atletas de invierno? a) Juegos Olímpicos de Invierno b) Juegos Olímpicos de Verano c) Juego Olímpicos de la juventud d) Juegos Paralímpicos",
-    #11
     "¿Qué país es famoso por su deporte nacional, el cricket? a)India b)EEUU c)Japón d)Rusia",
-    #12
     "¿Cuál es el nombre del torneo de tenis que se juega en Wimbledon? a) El Torneo de Wimbledon b)US open c)Torneo de Roland Garros d)ASB Classic Auckland",
-    #13
     "¿En qué deporte se utiliza un balón ovalado y se juega con el objetivo de anotar tries? a) Rugby b) Bádminton c) Soccer d) Baloncesto ",
-    #14
     "¿Qué equipo de fútbol español ha ganado más títulos de La Liga? a)Real Madrid, b)fc Barcelona, c)Paris Saint Germain, d)Real Betis Balompié",
-    #15
     "¿Cuál es el deporte más popular en Estados Unidos? A)Fútbol americano b)Baloncesto c)Soccer d) béisbol",
-    #16
     "¿Qué tipo de carrera es el Tour de Francia? a) Una carrera de ciclismo b) Un triatlón c) Un maratón d) Una competencia de relevos",
-    #17
     "¿Qué deporte se juega con una pelota que se lanza a una canasta a una altura de 3,05 metros? a)Baloncesto b) Golf c)Curling d) Lanzamiento de bala",
-    #18
     "¿Qué atleta es conocido como “El Reloj” y es famoso por su habilidad en la esgrima? a) Mariel Zagunis b) Zhong Weiping c)Valentina Vezzali d)Stanislav Pozdnyakov",
-    #19
     "¿Cuál es el nombre del campeonato mundial de automovilismo que se celebra anualmente? a) Fórmula 1 b) Turismo c)NASCAR Cup Series d)24 horas de Le Mans",
-    #20
     "¿Qué deporte combina elementos de natación, ciclismo y carrera en una sola competencia? a) Triatlón b) Ultraman c) Ironman d) Todas las acciones son correctas ",
-    #21
     "¿Cuál es el club que tiene más fanáticos en el mundo? a)Club Atlético Independiente b)Galatasaray SK c)Borussia Dortmund d) Real Madrid" , 
-    #22
     "¿Cuál es la cancha más conocida en el mundo? a)Estadio Benito Villamarín b)Estadio Nacional de Chile c)Estadio de Wembley d)Estadio de San Mamés",
-    #23
     "¿Qué deportista ha vendido más camisetas en su carrera? a)Rafael Nadal b)Cristiano Ronaldo c)Usain Bolt d)Tiger Woods",
-    #24
     "¿Qué países no han participado en un campeonato del mundo? a)Liechtenstein, b)Brasil c)Francia d)Guinea-Bisáu",
-    #25
     "¿Cuál fue la primera disciplina que se consideró deporte? a)Atletismo b)Esgrima c)Boxeo d)Lucha"
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas_DprtGral = [
+respuestas_correctas = [
     "a",  # Fútbol
     "a",  # Brasil
     "a",  # Michael Phelps
@@ -313,7 +263,7 @@ respuestas_correctas_DprtGral = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_deporte = [
-    {"pregunta": preguntas_deporteGral[i], "respuesta_correcta": respuestas_correctas_DprtGral[i]} 
+    {"pregunta": preguntas_deporteGral[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_deporteGral))
 ]
 
@@ -345,60 +295,35 @@ def DeporteGral():
 
 # Lista de preguntas con opciones
 preguntas_formula = [
-        #1
         "En que circuito se establecio el record de la vuelta mas rapida? a)Nurburgring b)Monza c)Monaco d)Silverstone",
-        #2
         "Cuanto duró la carrera mas larga de la historia de Formula 1? a)3 dias b)3h 30m 25s c)4h 4m 39s d)4h 19m 22s",
-        #3
         "Cuantos puntos vale el primer puesto cuando terminas la carrera? a)18 pts b)25 pts c)22 pts d)30 pts",
-        #4
         "Que motor utiliza Red Bull en sus autos Formula 1 2024? a)PU106C Hybrid b)Mercedes-AMG F1 M15 c)TAG Heuer R.E.18 V6 Turbo d)Honda RBPTH002 ",
-        #5
         "Cuantos mecanicos hay en una parada de pits? a)12 b)20 c)15 d)8",
-        #6
         "En que pais se disputo el primer gran premio de la temporada 2020? a)Australia b)Alemania c)España d)Mexico",
-        #7
         "Quien fue el campeon mundial de la formula 1 en 2019? a)Lewis Hamilton b)Fernando Alonso c)Niki Lauda d)Max Verstappen",
-        #8
         "Cuantas veces fue campeon munial Juan Manuel Fangio? a)más de 5 b)3 c)ninguno d)5",
-        #9
         "Cuantos muniales en Formula 1 tiene Max Verstappen? a)1 b)3 c)más de 3 d)2",
-        #10
         "Cuantos pilotos corren en cada carrera?  a)20 b)15 c)10 d)22",
-        #11
         "Cual es la marca con mas campeonatos de constructores? a)McLaren b)Mercedes c)Ferrari d)Red Bull",
-        #12
         "En que año se fundo la Formula 1? a)1890 b)1954 c)1950 d)1960",
-        #13
         "En que categoria compiten los de la Formula 1? a)Gt b)Turismo c)Nascar d)Monoplazas",
-        #14
         "Cual fue el ultimo piloto en perder la vida? a)Jules Bianchi b)Niki Lauda c)Ayrton Senna d)David Ferrer",
-        #15
         "Cual es el circuito con mas vueltas hechas? a)Hungaroring b)Red Bull Ring c)Spa-Francorchamps d)Silverstone",
-        #16
         "De que color son los neumaticos de categoria Hard? a)Azul b)Rojo c)Amarillod)Rosa",
-        #17
         "De que color son los neumaticos de categoria Soft?  a)Morado b)Blanco c)Naranja d)Amarillo",
-        #18
         "De que color son los neumaticos de categoria Medium? a)Blanco b)Morado c)Rojo d)Azul",
-        #19
         "Cual es el circuito mas famoso del mundo? a)Nurburgring b)Spa-Francorchamps c)Silverstone d)Monaco",
-        #20
         "Quien tiene la vuelta mas rapida de Formula 1 en la hitoria? a)Max Verstappen b)Fernando Alonso c)Lewis Hamilton d)Niki Lauda",
-        #21
         "Que piloto dijo la iconica frace 'El muro se movio'? a)Niki Lauda b)Fernando Alonso c)Aryton Senna d)David Ferrare",
-        #22
         "Cuantas banderas hay en Formula 1? a)6 b)9 c)3 d)5",
-        #23
         "Quienes son los pilotos con mas poseedores de titulos mundiales? a)Lewis Hamilton y Niki Lauda b) Max Verstappen y Juan Manuel Fangio c) Lewis Hamilton y Michael Schaumer d)Niki Lauda y Max Verstappen",
-        #24
         "En que año entro McLaren en la competencia de Formula 1? a) 1996 b) 1955 c) 1976 d) 1992",
-        #25
         "Que piloto fue el primero en morir en Nurburgring? a)Lorenzo Bandini b)Cenek Junek c)Ayrton Senna d)Jules Bianchi"
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas_formula = [
+respuestas_correctas = [
     "b",  # Monza 
     "c",  # 4h 4m 39s
     "b",  # 25 pts
@@ -427,7 +352,7 @@ respuestas_correctas_formula = [
 ]
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_formula = [
-    {"pregunta": preguntas_formula[i], "respuesta_correcta": respuestas_correctas_formula[i]} 
+    {"pregunta": preguntas_formula[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_formula))
 ]
 
@@ -459,61 +384,36 @@ def Formula():
 
 # Lista de preguntas con opciones
 preguntas_futbol = [
-    #1
     "¿Qué selección ha ganado más Copas del Mundo? a) Brasil b) Alemania c) Italia d) Argentina",
-    #2
     "¿En qué año Argentina ganó su primer Mundial de fútbol? a) 1974 b) 1978 c) 1986 d) 1990",
-    #3
     "¿Cuál es el club con más títulos de la UEFA Champions League? a) AC Milan b) FC Barcelona c) Real Madrid d) Bayern Múnich",
-    #4
     "¿Qué jugador fue transferido por una cifra récord de 222 millones de euros en 2017? a) Cristiano Ronaldo b) Neymar Jr. c) Lionel Messi d) Kylian Mbappé",
-    #5
     "¿Qué equipo ganó la Premier League en la temporada 2015-2016? a) Manchester City b) Leicester City c) Chelsea d) Liverpool",
-    #6
     "¿Cuál es el máximo goleador en la historia de la selección de Portugal? a) Eusébio b) Pauleta c) Cristiano Ronaldo d) Luís Figo",
-    #7
     "¿Qué equipo es conocido como 'Los Diablos Rojos'? a) Manchester United b) AC Milan c) Independiente d) Bayern Múnich",
-    #8
     "¿Quién ganó el Balón de Oro en 2021? a) Lionel Messi b) Robert Lewandowski c) Karim Benzema d) Cristiano Ronaldo",
-    #9
     "¿Qué selección ganó la Eurocopa en 2004? a) Portugal b) Francia c) Italia d) Grecia",
-    #10
     "¿Qué club argentino tiene más títulos de la Copa Libertadores? a) River Plate b) Boca Juniors c) Independiente d) Racing Club",
-    #11
     "¿En qué estadio juega el FC Barcelona? a) Santiago Bernabéu b) Camp Nou c) Anfield d) Allianz Arena",
-    #12
     "¿Qué entrenador ha ganado más Champions League como entrenador? a) Carlo Ancelotti b) Pep Guardiola c) Sir Alex Ferguson d) Zinedine Zidane",
-    #13
     "¿Qué país ganó la Copa América 2021? a) Argentina b) Brasil c) Chile d) Uruguay",
-    #14
     "¿Qué equipo español ha ganado más títulos de La Liga? a) Atlético Madrid b) Real Madrid c) Valencia d) FC Barcelona",
-    #15
     "¿En qué equipo jugó Diego Maradona entre 1984 y 1991? a) FC Barcelona b) Sevilla FC c) SSC Napoli d) Boca Juniors",
-    #16
     "¿Qué país fue anfitrión del Mundial de fútbol en 2014? a) Sudáfrica b) Brasil c) Alemania d) Rusia",
-    #17
     "¿Qué selección tiene el récord de más victorias consecutivas en los Mundiales? a) Alemania b) Italia c) Brasil d) Francia",
-    #18
     "¿Qué equipo de la Serie A ha ganado más títulos de liga? a) Juventus b) AC Milan c) Inter de Milán d) AS Roma",
-    #19
     "¿Cuál es el club más antiguo del mundo aún en existencia? a) Sheffield FC b) Notts County c) Preston North End d) Aston Villa",
-    #20
-    "¿Qué selección ganó la primera Copa del Mundo en 1930? a) Argentina b) Brasil c) Italia d) Uruguay"
-    #21
+    "¿Qué selección ganó la primera Copa del Mundo en 1930? a) Argentina b) Brasil c) Italia d) Uruguay",
     "¿Que club tiene mas Champions? a) Barcelona b) Sarmiento de Junin c) Real Madrid d) Liverpool",
-    #22
     "¿Que seleccion gano el mundial de 2022? a) Argentina b) Francia c) Italia d) Alemania",
-    #23
     "¿Contra que Equipo jugo Uruguay la final del mundial de 1930? a) Brasil b) Paraguay c) Argentina d) Colombia",
-    #24
     "¿Como se llamaba el balon del mundial Sudafrica 2010? a) Jabulani b) Telstar c) Oliva d) Tango",
-    #25
     "¿Que seleccion de futbol fue conocida como La Naranja Mecanica? a) La Brasil del 1970 b) La Alemania de 2014 c) La Argentina de 1978  d) La Holanda del 1974"
 
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas_futbol = [
+respuestas_correctas = [
     "a",  # Brasil
     "b",  # 1978
     "c",  # Real Madrid
@@ -544,7 +444,7 @@ respuestas_correctas_futbol = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_futbol = [
-    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas_futbol[i]} 
+    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_futbol))
 ]
 
@@ -575,61 +475,36 @@ def Futbol():
 
 # Lista de preguntas con opciones
 preguntas_videojuego = [
-    #1
     '¿Cuál de los siguientes personajes es el protagonista principal en la serie de videojuegos "The Legend of Zelda"? a) Ganondorf b) Link c) Zelda d) Navi',
-    #2
     '¿En qué año se lanzó el videojuego "Super Mario Bros." para la consola NES? a) 1983 b) 1985 c) 1987 d) 1989',
-    #3
     '¿Cuál es el nombre del mundo en el que se desarrolla la saga de "Final Fantasy VII"? a) Eorzea b) Spira c) Gaia d) Ivalice',
-    #4
     '¿Cuál de estos juegos fue desarrollado por Rockstar Games? a) The Elder Scrolls V: Skyrim b) Grand Theft Auto V c) Dark Souls d) Halo: Combat Evolved',
-    #5
-    "¿En qué juego de la saga “The Legend of Zelda” se explora un mundo subterráneo conocido como el" '"Inframundo"'"? a) The Legend of Zelda: A Link to the Past b) The Legend of Zelda: Ocarina of Time c) The Legend of Zelda: Breath of the Wild d) The Legend of Zelda: Majora's Mask" 
-    #6
+    "¿En qué juego de la saga “The Legend of Zelda” se explora un mundo subterráneo conocido como el" '"Inframundo"'"? a) The Legend of Zelda: A Link to the Past b) The Legend of Zelda: Ocarina of Time c) The Legend of Zelda: Breath of the Wild d) The Legend of Zelda: Majora's Mask", 
     '¿En qué juego de disparos en primera persona puedes jugar como el personaje Master Chief? a) Destiny b) Battlefield c) Call of Duty d) Halo',
-    #7
     '¿Cuál de estos videojuegos pertenece a la serie de rol conocida por sus batallas y exploración en el mundo de "Eorzea"? a) Final Fantasy XIV b) Dragon Age: Inquisition c)World of Warcraft d) Elder Scrolls Online',
-    #8
     '¿En qué juego se encuentra el personaje llamado “Pac-Man”? a) Donkey Kong b) Space Invaders c) Pac-Man d) Galaga',
-    #9
     '¿Qué tipo de juego es “Among Us”? a) Juego de plataformas b) Juego de rol c) Juego de misterio social d) Shooter en primera persona',
-    #10
     '¿Cuál de los siguientes juegos es un título clásico de la consola Sega Genesis? a) Sonic the Hedgehog b) Super Mario World c) The Legend of Zelda: Ocarina of Time d) Donkey Kong Country',
-    #11
     '¿En qué serie de videojuegos luchan los personajes conocidos como "Hunters" contra monstruos gigantes? a) Horizon Zero Dawn b) Dark Souls c) Bloodborne d) Monster Hunter',
-    #12
-    '¿Cuál de estos videojuegos fue creado por la compañía Nintendo? a) Metal Gear Solid b) Final Fantasy c) The Legend of Zelda d) Fallout'
-    #13
+    '¿Cuál de estos videojuegos fue creado por la compañía Nintendo? a) Metal Gear Solid b) Final Fantasy c) The Legend of Zelda d) Fallout',
     '¿Cuál es el objetivo principal en el juego “Minecraft”? a) Completar una campaña de historia b) Construir y explorar c) Ganar en batallas en línea d) Resolver rompecabezas',
-    #14
     '¿En qué juego puedes encontrar el "Pikachu" como uno de los personajes principales? a) Pokémon b) Digimon c) Yu-Gi-Oh! d) Final Fantasy',
-    #15
     '¿Qué videojuego se ambienta en una ciudad ficticia llamada Raccoon City? a) Silent Hill b) Resident Evil c) Dead Space d) Outlast',
-    #16
     '¿Qué videojuego es conocido por introducir el personaje "Kratos" en un mundo de mitología griega? a) God of War b) Dante’s Inferno c) Castlevania d) Demon’s Souls',
-    #17
     '¿Cuál es el nombre del universo de "Mass Effect"? a) The Elder Scrolls b) The Halo Universe c) The Mass Effect Universe d) The Star Wars Universe',
-    #18
     '¿Qué videojuego se desarrolla en el universo de Star Wars y se centra en combates espaciales? a) Star Wars: Knights of the Old Republic b) Star Wars: Battlefront c) Star Wars: Jedi: Fallen Order d) Star Wars: The Old Republic',
-    #19
     '¿En qué tipo de juego se basa el título “The Witcher 3: Wild Hunt”? a) Juego de rol de acción b) Juego de estrategia en tiempo real c) Juego de disparos en primera persona d) Juego de plataformas ',
-    #20
     '¿Qué videojuego es conocido por sus mapas y escenarios destructibles y fue creado por DICE? a) Call of Duty b) Battlefield c) Rainbow Six Siege d) Counter-Strike',
-    #21
     '¿En qué juego puedes encontrar el personaje llamado “Ellie” como uno de los protagonistas? a) The Last of Us b) Uncharted c) Red Dead Redemption d) God of War',
-    #22
     '¿Cuál de estos videojuegos es conocido por su mecánica de combate basada en el uso de espadas y magia? a) Skyrim b) Dark Souls c) Overwatch d) Apex Legends',
-    #23
     '¿En qué juego se destacan la construcción de estructuras y la defensa contra enemigos en un entorno de supervivencia? a) Rust b) Fornite c) ARK: Survival Evolved d) Conan Exiles',
-    #24
     '¿En qué salio el juego World of Warcraft? a) 1998 b) 2002 c) 2000 d) 2004',
-    #25
     '¿Cuál de estos juegos fue uno de los primeros en popularizar el género de batalla real? a) Fortnite b) PUBG (PlayerUnknowns Battlegrounds) c) Apex Legends d) Warzone',
 
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
-respuestas_correctas_juegos = [
+respuestas_correctas = [
     "b",  # Link (1)
     "b",  # 1985 (2)
     "c",  # Gaia (3)
@@ -659,7 +534,7 @@ respuestas_correctas_juegos = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_juegos = [
-    {"pregunta": preguntas_videojuego[i], "respuesta_correcta": respuestas_correctas_juegos[i]} 
+    {"pregunta": preguntas_videojuego[i], "respuesta_correcta": respuestas_correctas[i]} 
     for i in range(len(preguntas_videojuego))
 ]
 
@@ -689,6 +564,119 @@ def VideoJuegos():
 # Llamada a la función para comenzar el juego
 
 # Lista de preguntas con opciones
+preguntas_Lite=[
+    #1
+    '¿Quién escribió "Cien años de soledad"? a) Julio Cortázar  b) Gabriel García Márquez  c) Mario Vargas Llosa  d) Jorge Luis Borges ',
+    #2
+    '¿Qué novela comienza con la frase "En un lugar de la Mancha, de cuyo nombre no quiero acordarme"? a) La casa de los espíritus b) Don Quijote de la Mancha c) La colmena d) Crónica de una muerte anunciada',
+    #3
+    '¿Quién es el autor de "1984"? a) Aldous Huxley b) Ray Bradbury c) George Orwell d) H.G. Wells',
+    #4
+    '¿Cuál es el autor de "Don Quijote de la Mancha"? a) Miguel de Unamuno b) Gabriel García Márquez c) Miguel de Cervantes d) Lope de Vega',
+    #5
+    '¿Qué obra es famosa por la frase "Soy un hombre en busca de sentido"? a) El extranjero b) El guardián entre el centeno c) El hombre en busca de sentido d) La nausea',
+    #6 
+    '¿Quién escribió "La metamorfosis"? a) Franz Kafka b) Fiódor Dostoyevski c) Thomas Mann d) Hermann Hesse',
+    #7
+    '¿Cuál es la obra más famosa de Shakespeare? a) El sueño de una noche de verano b) Hamlet c) Romeo y Julieta d) Otelo',
+    #8
+    '¿Qué autor escribió "Orgullo y prejuicio"? a) Charlotte Brontë b) Jane Austen c) Emily Brontë d) Mary Shelley',
+    #9
+    '¿Quién es el protagonista de "Moby Dick"? a) Ahab b) Ishmael c) Queequeg d) Starbuck',
+    #10
+    '¿En qué obra aparece el personaje de Holden Caulfield? a) El guardián entre el centeno b) El gran Gatsby c) Las uvas de la ira d) Moby Dick',
+    #11
+    '¿Qué autor es conocido por su obra "El proceso"? a) Fiódor Dostoyevski b) Franz Kafka  c) Albert Camus d) Leo Tolstoy',
+    #12
+    '¿Quién escribió "El viejo y el mar"? a) Mark Twain b) John Steinbeck c) F. Scott Fitzgerald d) Ernest Hemingway',
+    #13
+    '¿Cuál es la temática central de "La casa de los espíritus"? a) La guerra b) La soledad c) La familia y la historia d) La libertad',
+    #14
+    '¿Quién es el autor de "Crónica de una muerte anunciada"? a) Gabriel García Márquez b) Mario Vargas Llosa c) Julio Cortázar d) Isabel Allende',
+    #15
+    '¿Qué poeta escribió "Rimas y leyendas"? a) Gustavo Adolfo Bécquer b) Rubén Darío c) Pablo Neruda d) Vicente Huidobro',
+    #16
+    '¿Cuál es la obra más famosa de Gabriel García Márquez? a) El amor en los tiempos del cólera b) Cien años de soledad c) El otoño del patriarca d) Crónica de una muerte anunciada',
+    #17
+    '¿Quién escribió "En busca del tiempo perdido"? a) Marcel Proust b) Virginia Woolf c) James Joyce d) Franz Kafka',
+    #18
+    '¿Qué novela tiene como protagonista a un joven llamado Santiago Nasar? a) El túnel b) Crónica de una muerte anunciada c) La sombra del viento d) La casa de los espíritus',
+    #19
+    '¿Quién es el autor de "Rayuela"? a) Gabriel García Márquez b) Julio Cortázar c) Mario Vargas Llosa d) Jorge Luis Borges',
+    #20
+    '¿Qué obra de teatro es considerada una tragedia griega clásica? a) La Orestíada b) Antígona c) Edipo Rey d) Las bacantes',
+    #21
+    '¿Quién escribió "Los miserables"? a) Honoré de Balzac b) Victor Hugo c) Gustave Flaubert d) Émile Zola',
+    #22
+    '¿Qué poeta es conocido por su obra "Veinte poemas de amor y una canción desesperada"? a) Pablo Neruda b) Gabriela Mistral c) Vicente Huidobro d) Jorge Luis Borges',
+    #23
+    '¿Quién es el autor de "El retrato de Dorian Gray"? a) Oscar Wilde b) Bram Stoker c) Charles Dickens d) Mark Twain',
+    #24
+    '¿Qué novela de Miguel de Cervantes sigue las aventuras de un caballero loco? a) La Galatea b) Don Quijote de la Mancha c) Novelas ejemplares d) Los trabajos de Persiles y Sigismunda',
+    #25
+    '¿Qué autora escribió "El cuento de la criada"? a) Margaret Atwood b) Virginia Woolf c) Toni Morrison d) Sylvia Plath',
+
+]
+
+# Lista de respuestas correctas
+respuestas_correctas_Lite = [
+    "b",  # Gabriel García Márquez (1)
+    "b",  # Don Quijote de la Mancha (2)
+    "c",  # George Orwell (3)
+    "c",  # Miguel de Cervantes (4)
+    "c",  #  El hombre en busca de sentido (5)
+    "a",  # Franz Kafka (6)
+    "b",  # Hamlet (7)
+    "b",  # Jane Austen (8)
+    "a",  # Ahab (9)
+    "a",  # El guardián entre el centeno (10)
+    "b",  # Franz Kafka (11)
+    "d",  # Ernest Hemingway (12)
+    "c",  # La familia y la historia (13)
+    "a",  # Gabriel García Márquez (14)
+    "a",  # Gustavo Adolfo Bécquer (15)
+    "b",  # Cien años de soledad (16)
+    "a",  # Marcel Proust (17)
+    "b",  # Crónica de una muerte anunciada (18)
+    "b",  # Julio Cortázar (19)
+    "a",  # La Orestíada (20)
+    "b",  # Victor Hugo (21)
+    "a",  # Pablo Neruda (22)
+    "a",  # Oscar Wilde (23)
+    "b",  # Don Quijote de la Mancha (24)
+    "a"  # Margaret Atwood (25)
+]
+
+# Lista con las preguntas y respuestas correctas
+preguntas_respuestas_Lite = [
+    {"pregunta": preguntas_Lite[i], "respuesta_correcta": respuestas_correctas_Lite[i]} 
+    for i in range(len(preguntas_Lite))
+]
+
+# Función para jugar al juego de trivia
+def Lite():
+    puntaje = 0
+    print("¡Bienvenido al juego de trivia de autos!\n")
+
+    for i, item in enumerate(preguntas_respuestas_Lite):
+        print(f"Pregunta {i + 1}: {item['pregunta']}")
+        respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
+
+        if respuesta_usuario == item['respuesta_correcta']:
+            print("¡Correcto!\n")
+            puntaje += 1
+        else:
+            print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
+
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_Lite)}")
+    if puntaje == len(preguntas_respuestas_Lite):
+        print("¡Felicidades! ¡Has acertado todas las preguntas!")
+    elif puntaje > len(preguntas_respuestas_Lite) / 2:
+        print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
+    else:
+        print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
+
+        # Lista de preguntas con opciones
 preguntas_CienNat=[
     #1
     '¿Cuál es el órgano principal del sistema circulatorio? a) Pulmón b) Hígado c) Corazón d) Riñón', 
@@ -743,7 +731,7 @@ preguntas_CienNat=[
 ]
 
 # Lista de respuestas correctas
-respuestas_correctas_CienNat = [
+respuestas_correctas_CieNat = [
     "c",  # Corazón (1)
     "b",  # Ígnea (2)
     "b",  # Fotosíntesis (3)
@@ -773,14 +761,14 @@ respuestas_correctas_CienNat = [
 
 # Lista con las preguntas y respuestas correctas
 preguntas_respuestas_CienNat = [
-    {"pregunta": preguntas_CienNat[i], "respuesta_correcta": respuestas_correctas_CienNat[i]} 
+    {"pregunta": preguntas_CienNat[i], "respuesta_correcta": respuestas_correctas_CieNat[i]} 
     for i in range(len(preguntas_CienNat))
 ]
 
 # Función para jugar al juego de trivia
-def CienNat():
+def CieNat():
     puntaje = 0
-    print("¡Bienvenido al juego de trivia de ciencias naturales !\n")
+    print("¡Bienvenido al juego de trivia de autos!\n")
 
     for i, item in enumerate(preguntas_respuestas_CienNat):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
@@ -802,57 +790,57 @@ def CienNat():
 
 # Lista de preguntas con opciones
 preguntas_CulGen=[
-    #1
-    "¿Cuál es la capital de Francia? a) Berlín b) Madrid c) Roma d) París", 
-    #2
-    '¿Quién escribió "Cien años de soledad"? a) Julio Cortázar b) Gabriel García Márquez c) Jorge Luis Borges d) Mario Vargas Llosa',
-    #3
-    "¿Cuál es el continente más grande?  a) África b) Europa c) Asia d) América",
-    #4
-    "¿En qué año llegó el hombre a la Luna? a) 1965 b) 1969 c) 1972 d) 1975",   
-    #5
-    "¿Qué océano es el más grande del mundo? a) Atlántico b) Índico c) Pacífico d) Ártico", 
-    #6
-    "¿Quién pintó la Mona Lisa? a) Vincent van Gogh b) Pablo Picasso  c) Leonardo da Vinci d) Salvador Dalí",
-    #7
-    "¿Cuál es la moneda oficial de Japón? a) Yen b) Won c) Yuan d) Dólar",  
-    #8
-    '¿Qué planeta es conocido como el "planeta rojo"? a) Venus b) Júpiter c) Saturno d) Marte' ,
-    #9
-    "¿Quién fue el primer presidente de los Estados Unidos? a) Thomas Jefferson b) Abraham Lincoln c) George Washington d) John Adams",  
-    #10
-    "¿Cuál es el río más largo del mundo? a) Amazonas b) Nilo c) Yangtsé d) Misisipi",  
-    #11
-    "¿Qué idioma se habla principalmente en Brasil? a) Español b) Inglés c) Portugués  d) Francés", 
-    #12
-    "¿Cuál es la capital de Egipto? a)Alejandría  b) El Cairo c) Casablanca d) Túnez",
-    #13
-    '¿Qué deporte es conocido como "el rey de los deportes"?  a) Fútbol b) Baloncesto c) Tenis d) Rugby',
-    #14
-    "¿Cuál es la principal fuente de energía del sol? a) Fisión nuclear b) Química c) Geotérmica d) Fusión nuclear",
-    #15
-    '¿Quién es el autor de "Don Quijote de la Mancha"? a) Lope de Vega b) Miguel de Cervantes c) Gabriel García Márquez d) Federico García Lorca',
-    #16
-    "¿Cuál es el animal terrestre más grande? a) Elefante africano b) Jirafa c) Hipopótamo d) Rinoceronte",
-    #17
-    "¿Qué estructura es considerada una de las siete maravillas del mundo antiguo? a) La Gran Muralla b) Las Pirámides de Giza c) El Coloso de Rodas d) El Partenón",
-    #18
-    "¿Qué tipo de animal es un delfín? a) Pez b) Reptil c) Anfibio d) Mamífero",
-    #19
-    "¿Cuál es el deporte más practicado en el mundo? a) Baloncesto b) Tenis c) Fútbol d) Rugby ",  
-    #20
-    "¿Qué invento es atribuido a Thomas Edison? a) Bombilla eléctrica b) Teléfonno c) Radio d) Computadora",  
-    #21
-    "¿Cuál es el sistema operativo de Apple? a) Windows b) Linux c) macOS d) Andoroid",
-    #22
-    '¿Qué elemento químico tiene el símbolo "H"? a) Helio b) Hidrógeno c) Mercurio d) Oxígeno',
-    #23
-    "¿En qué país se originó el tango?  a) Argentina b) Uruguay c) Chile d) Perú",
-    #24
-    "¿Qué famoso científico desarrolló la teoría de la relatividad? a) Isaac Newton b) Stephen Hawking c) Nikola Tesla d) Albert Einstein",
-    #25
-    "¿Qué planeta es conocido por tener anillos? a) Júpiter b) Saturno c) Urano d) Neptuno",
-    ]
+#1
+"¿Cuál es la capital de Francia? a) Berlín b) Madrid c) Roma d) París", 
+#2
+'¿Quién escribió "Cien años de soledad"? a) Julio Cortázar b) Gabriel García Márquez c) Jorge Luis Borges d) Mario Vargas Llosa',
+#3
+"¿Cuál es el continente más grande?  a) África b) Europa c) Asia d) América",
+#4
+"¿En qué año llegó el hombre a la Luna? a) 1965 b) 1969 c) 1972 d) 1975",   
+#5
+"¿Qué océano es el más grande del mundo? a) Atlántico b) Índico c) Pacífico d) Ártico", 
+#6
+"¿Quién pintó la Mona Lisa? a) Vincent van Gogh b) Pablo Picasso  c) Leonardo da Vinci d) Salvador Dalí",
+#7
+"¿Cuál es la moneda oficial de Japón? a) Yen b) Won c) Yuan d) Dólar",  
+#8
+'¿Qué planeta es conocido como el "planeta rojo"? a) Venus b) Júpiter c) Saturno d) Marte' ,
+#9
+"¿Quién fue el primer presidente de los Estados Unidos? a) Thomas Jefferson b) Abraham Lincoln c) George Washington d) John Adams",  
+#10
+"¿Cuál es el río más largo del mundo? a) Amazonas b) Nilo c) Yangtsé d) Misisipi",  
+#11
+"¿Qué idioma se habla principalmente en Brasil? a) Español b) Inglés c) Portugués  d) Francés", 
+#12
+"¿Cuál es la capital de Egipto? a)Alejandría  b) El Cairo c) Casablanca d) Túnez",
+#13
+'¿Qué deporte es conocido como "el rey de los deportes"?  a) Fútbol b) Baloncesto c) Tenis d) Rugby',
+#14
+"¿Cuál es la principal fuente de energía del sol? a) Fisión nuclear b) Química c) Geotérmica d) Fusión nuclear",
+#15
+'¿Quién es el autor de "Don Quijote de la Mancha"? a) Lope de Vega b) Miguel de Cervantes c) Gabriel García Márquez d) Federico García Lorca',
+#16
+"¿Cuál es el animal terrestre más grande? a) Elefante africano b) Jirafa c) Hipopótamo d) Rinoceronte",
+#17
+"¿Qué estructura es considerada una de las siete maravillas del mundo antiguo? a) La Gran Muralla b) Las Pirámides de Giza c) El Coloso de Rodas d) El Partenón",
+#18
+"¿Qué tipo de animal es un delfín? a) Pez b) Reptil c) Anfibio d) Mamífero",
+#19
+"¿Cuál es el deporte más practicado en el mundo? a) Baloncesto b) Tenis c) Fútbol d) Rugby ",  
+#20
+"¿Qué invento es atribuido a Thomas Edison? a) Bombilla eléctrica b) Teléfonno c) Radio d) Computadora",  
+#21
+"¿Cuál es el sistema operativo de Apple? a) Windows b) Linux c) macOS d) Andoroid",
+#22
+'¿Qué elemento químico tiene el símbolo "H"? a) Helio b) Hidrógeno c) Mercurio d) Oxígeno',
+#23
+"¿En qué país se originó el tango?  a) Argentina b) Uruguay c) Chile d) Perú",
+#24
+"¿Qué famoso científico desarrolló la teoría de la relatividad? a) Isaac Newton b) Stephen Hawking c) Nikola Tesla d) Albert Einstein",
+#25
+"¿Qué planeta es conocido por tener anillos? a) Júpiter b) Saturno c) Urano d) Neptuno",
+]
 
 # Lista de respuestas correctas
 respuestas_correctas_CulGen = [
@@ -892,7 +880,7 @@ preguntas_respuestas_CulGen = [
 # Función para jugar al juego de trivia
 def CulGen():
     puntaje = 0
-    print("¡Bienvenido al juego de trivia de cultura general!\n")
+    print("¡Bienvenido al juego de trivia de autos!\n")
 
     for i, item in enumerate(preguntas_respuestas_CulGen):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
@@ -913,7 +901,7 @@ def CulGen():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Lista de preguntas con opciones
-preguntas_animales = [
+preguntas_futbol = [
     #1
     '¿Cuál es el mamífero más grande del mundo? a) Elefante b) Ballena azul c) Jirafa d) Oso polar',
     #2
@@ -964,7 +952,6 @@ preguntas_animales = [
     '¿Cuál es el principal depredador de los pingüinos? a) León marino b) Orca c) Halcón d) Tiburón',
     #25
     '¿Qué tipo de animal es un flamenco? a) Mamífero b) Pez c) Ave d) Reptil',
-
 ]
 
 # Lista de respuestas correctas (solo la opción correcta)
@@ -997,17 +984,17 @@ respuestas_correctas_animales = [
 ]
 
 # Lista con las preguntas y respuestas correctas
-preguntas_respuestas_animales  = [
-    {"pregunta": preguntas_animales[i], "respuesta_correcta": respuestas_correctas_animales[i]} 
-    for i in range(len(preguntas_animales))
+preguntas_respuestas = [
+    {"pregunta": preguntas_futbol[i], "respuesta_correcta": respuestas_correctas_animales[i]} 
+    for i in range(len(preguntas_futbol))
 ]
 
 # Función para jugar al juego de trivia
-def jugar_trivia():
+def animales():
     puntaje = 0
-    print("¡Bienvenido al juego de trivia de animales!\n")
+    print("¡Bienvenido al juego de trivia de fútbol!\n")
 
-    for i, item in enumerate(preguntas_respuestas_animales):
+    for i, item in enumerate(preguntas_respuestas):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
         respuesta_usuario = input("Tu respuesta (a, b, c, d): ").lower()
 
@@ -1017,12 +1004,10 @@ def jugar_trivia():
         else:
             print(f"Incorrecto. La respuesta correcta era '{item['respuesta_correcta']}'.\n")
 
-    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas_animales)}")
-    if puntaje == len(preguntas_respuestas_animales):
+    print(f"Tu puntaje final es: {puntaje}/{len(preguntas_respuestas)}")
+    if puntaje == len(preguntas_respuestas):
         print("¡Felicidades! ¡Has acertado todas las preguntas!")
-    elif puntaje > len(preguntas_respuestas_animales) / 2:
+    elif puntaje > len(preguntas_respuestas) / 2:
         print("¡Buen trabajo! Has acertado la mayoría de las preguntas.")
     else:
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
-
-# Llamada a la función para comenzar el juego

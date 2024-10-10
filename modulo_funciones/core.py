@@ -24,6 +24,7 @@ def trivias():
     print("->      7. Trivia Ciencias Naturales             .<-")
     print("->      8. Trivia Cultura General                .<-")
     print("->      9. Trivia Animales                       .<-")
+    print("->     10. Trivia Literatura                     .<-")
     print("====================================================")
     print("=                    JUEGO                         =")
     print("====================================================")
@@ -193,6 +194,24 @@ def trivias():
             """)  
         print()
         animales()
+        input("Enter para continuar...")
+    elif trivia == 10:
+        print()
+        print("======[Bienvenido trivia de Literatura]======")
+        print()
+        from preguntas import Lite
+        print("""
+                 /$$       /$$   /$$                                    /$$                                 
+                | $$      |__/  | $$                                   | $$                                 
+                | $$       /$$ /$$$$$$    /$$$$$$   /$$$$$$  /$$$$$$  /$$$$$$   /$$   /$$  /$$$$$$  /$$$$$$ 
+                | $$      | $$|_  $$_/   /$$__  $$ /$$__  $$|____  $$|_  $$_/  | $$  | $$ /$$__  $$|____  $$
+                | $$      | $$  | $$    | $$$$$$$$| $$  \__/ /$$$$$$$  | $$    | $$  | $$| $$  \__/ /$$$$$$$
+                | $$      | $$  | $$ /$$| $$_____/| $$      /$$__  $$  | $$ /$$| $$  | $$| $$      /$$__  $$
+                | $$$$$$$$| $$  |  $$$$/|  $$$$$$$| $$     |  $$$$$$$  |  $$$$/|  $$$$$$/| $$     |  $$$$$$$
+                |________/|__/   \___/   \_______/|__/      \_______/   \___/   \______/ |__/      \_______/
+            """)
+        print()
+        Lite()
         input("Enter para continuar...")
     else:
         print("Error de ingreso...")
