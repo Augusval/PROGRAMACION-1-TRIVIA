@@ -901,7 +901,7 @@ def CulGen():
         print("¡Sigue practicando! Puedes hacerlo mejor la próxima vez.")
 
 # Lista de preguntas con opciones
-preguntas_futbol = [
+preguntas_animales = [
     #1
     '¿Cuál es el mamífero más grande del mundo? a) Elefante b) Ballena azul c) Jirafa d) Oso polar',
     #2
