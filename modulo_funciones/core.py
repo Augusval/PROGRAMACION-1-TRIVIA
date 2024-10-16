@@ -1,51 +1,60 @@
 import os
 def equipos():
     os.system("cls")
-    print(""""
-             /$$$$$$$$                     /$$                              
-            | $$_____/                    |__/                              
-            | $$        /$$$$$$  /$$   /$$ /$$  /$$$$$$   /$$$$$$   /$$$$$$$
-            | $$$$$    /$$__  $$| $$  | $$| $$ /$$__  $$ /$$__  $$ /$$_____/
-            | $$__/   | $$  \ $$| $$  | $$| $$| $$  \ $$| $$  \ $$|  $$$$$$ 
-            | $$      | $$  | $$| $$  | $$| $$| $$  | $$| $$  | $$ \____  $$
-            | $$$$$$$$|  $$$$$$$|  $$$$$$/| $$| $$$$$$$/|  $$$$$$/ /$$$$$$$/
-            |________/ \____  $$ \______/ |__/| $$____/  \______/ |_______/ 
-                            | $$              | $$                          
-                            | $$              | $$                          
-                            |__/              |__/                          
-          """)
-    print("==================================")
-    print("=           EQUIPOS              =")
-    print("==================================")
+    print("""
+ /$$$$$$$$                     /$$                              
+| $$_____/                    |__/                              
+| $$        /$$$$$$  /$$   /$$ /$$  /$$$$$$   /$$$$$$   /$$$$$$$
+| $$$$$    /$$__  $$| $$  | $$| $$ /$$__  $$ /$$__  $$ /$$_____/
+| $$__/   | $$  \ $$| $$  | $$| $$| $$  \ $$| $$  \ $$|  $$$$$$ 
+| $$      | $$  | $$| $$  | $$| $$| $$  | $$| $$  | $$ \____  $$
+| $$$$$$$$|  $$$$$$$|  $$$$$$/| $$| $$$$$$$/|  $$$$$$/ /$$$$$$$/
+|________/ \____  $$ \______/ |__/| $$____/  \______/ |_______/ 
+                | $$              | $$                          
+                | $$              | $$                          
+                |__/              |__/                          
+    """)
+
+    print("="*66)
+    print("="+" "*29+"EQUIPOS"+" "*28+"=")
+    print("="*66)
     n = ("---> Valentini Augusto\n ---> Jesus Quijada\n ---> Centurion Gonzalo\n ---> Leomagno Ernesto\n ---> Oksana Bernkhart\n ---> Luis Agustin Chen")
     print("Equipos conformados por: \n" ,n)
+    print("="*66)
+    print("="+" "*29+"EQUIPOS"+" "*28+"=")
+    print("="*66)
     input("Enter para continuar...")
+
 def juegoinfo():
     print("\n'El trivia'\n Es un juego interactivo de preguntas y respuestas que ofrece a los jugadores una experiencia desafiante y educativa.\n Gracias a una amplia gama de temas y niveles de dificultad, diseñadas para jugadores de todas las edades. \n Este juego combina elementos de competencia y aprendizaje, permitiendo a los usuarios probar y ampliar sus conocimientos en diversas áreas")
     print(" ")
     input("Enter para continuar...")
+
 def trivias():
     os.system("cls")
-    print("====================================================")
-    print("=        ¡Bienvenido al menu de las trivias!       =")
-    print("====================================================")
-    print("->      1. Trivia Formula 1                      .<-")
-    print("->      2. Trivia Cine                           .<-")
-    print("->      3. Trivia Futbol                         .<-")
-    print("->      4. Trivia Deporte General                .<-")
-    print("->      5. Trivia Video Juegos                   .<-")
-    print("->      6. Trivia Autos                          .<-")
-    print("->      7. Trivia Ciencias Naturales             .<-")
-    print("->      8. Trivia Cultura General                .<-")
-    print("->      9. Trivia Animales                       .<-")
-    print("->     10. Trivia Literatura                     .<-")
-    print("====================================================")
-    print("=                    JUEGO                         =")
-    print("====================================================")
+    print("""
+    ====================================================
+    =       ¡Bienvenido al menu de las trivias!        =
+    ====================================================
+    ->      1. Trivia Formula 1                      .<-
+    ->      2. Trivia Cine                           .<-
+    ->      3. Trivia Futbol                         .<-
+    ->      4. Trivia Deporte General                .<-
+    ->      5. Trivia Video Juegos                   .<-
+    ->      6. Trivia Autos                          .<-
+    ->      7. Trivia Ciencias Naturales             .<-
+    ->      8. Trivia Cultura General                .<-
+    ->      9. Trivia Animales                       .<-
+    ->     10. Trivia Literatura                     .<-
+    ====================================================
+    =                    JUEGO                         =
+    ====================================================
+    """)
+
     trivia = int(input("Ingrese opcion de trivia o enter para volver al menu: "))
     if trivia == 1:
         print()
-        print("======[Bienvenido trivia del Formula 1]======")
+        print("="*7+"[Bienvenido trivia del Formula 1]"+ "="*7)
         print()
         from preguntas import Formula
         print("""
@@ -61,9 +70,10 @@ def trivias():
         """)
         Formula()
         input("Enter Para Continuar...")
+        
     elif trivia == 2:
         print()
-        print("======[Bienvenido trivia del Cine]======")
+        print("="*7+"[Bienvenido trivia del cine]"+ "="*7)
         print()
         from preguntas import Cine
         print("""
@@ -79,9 +89,10 @@ def trivias():
         """)
         Cine()
         input("Enter Para Continuar...")
+
     elif trivia == 3:
         print()
-        print("======[Bienvenido trivia del Futbol]======")
+        print("="*7+"[Bienvenido trivia del Futbol]"+ "="*7)
         print()
         from preguntas import Futbol
         print("""
@@ -97,9 +108,10 @@ def trivias():
         """)
         Futbol()
         input("Enter Para Continuar...")
+
     elif trivia == 4:
         print()
-        print("======[Bienvenido trivia del Deporte General]======")
+        print("="*7+"[Bienvenido trivia del Deporte General]"+ "="*7)
         print()
         from preguntas import DeporteGral
         print("""
@@ -117,9 +129,10 @@ def trivias():
         """)
         DeporteGral()
         input("Enter Para Continuar...")
+
     elif trivia == 5:
         print()
-        print("======[Bienvenido trivia del Video Juegos]======")
+        print("="*7+"[Bienvenido trivia de Video Juegos]"+ "="*7)
         print()
         from preguntas import VideoJuegos
         print("""
@@ -137,9 +150,10 @@ def trivias():
         """)
         VideoJuegos()
         input("Enter Para Continuar...")
+
     elif  trivia == 6:
         print()
-        print("======[Bienvenido trivia de Autos]======")
+        print("="*7+"[Bienvenido trivia de Autos]"+ "="*7)
         print()
         from preguntas import Auto
         print(""")
@@ -155,27 +169,29 @@ def trivias():
         """)
         Auto()
         input("Enter Para Continuar...")
+
     elif trivia == 7:
         print()
-        print("======[Bienvenido trivia de Ciencias Naturales]======")
+        print("="*7+"[Bienvenido trivia de Ciencias Naturales]"+ "="*7)
         print()
         from preguntas import ciennat
         print("""
-             /$$$$$$  /$$                               /$$                           /$$   /$$             /$$                                  /$$                    
-            /$$__  $$|__/                              |__/                          | $$$ | $$            | $$                                 | $$                    
+              /$$$$$$  /$$                               /$$                           /$$   /$$             /$$                                  /$$                    
+             /$$__  $$|__/                              |__/                          | $$$ | $$            | $$                                 | $$                    
             | $$  \__/ /$$  /$$$$$$  /$$$$$$$   /$$$$$$$ /$$  /$$$$$$   /$$$$$$$      | $$$$| $$  /$$$$$$  /$$$$$$   /$$   /$$  /$$$$$$  /$$$$$$ | $$  /$$$$$$   /$$$$$$$
             | $$      | $$ /$$__  $$| $$__  $$ /$$_____/| $$ |____  $$ /$$_____/      | $$ $$ $$ |____  $$|_  $$_/  | $$  | $$ /$$__  $$|____  $$| $$ /$$__  $$ /$$_____/
             | $$      | $$| $$$$$$$$| $$  \ $$| $$      | $$  /$$$$$$$|  $$$$$$       | $$  $$$$  /$$$$$$$  | $$    | $$  | $$| $$  \__/ /$$$$$$$| $$| $$$$$$$$|  $$$$$$ 
             | $$    $$| $$| $$_____/| $$  | $$| $$      | $$ /$$__  $$ \____  $$      | $$\  $$$ /$$__  $$  | $$ /$$| $$  | $$| $$      /$$__  $$| $$| $$_____/ \____  $$
             |  $$$$$$/| $$|  $$$$$$$| $$  | $$|  $$$$$$$| $$|  $$$$$$$ /$$$$$$$/      | $$ \  $$|  $$$$$$$  |  $$$$/|  $$$$$$/| $$     |  $$$$$$$| $$|  $$$$$$$ /$$$$$$$/
-            \______/ |__/ \_______/|__/  |__/ \_______/|__/ \_______/|_______/       |__/  \__/ \_______/   \___/   \______/ |__/      \_______/|__/ \_______/|_______/                                                                                                                                       
+             \______/ |__/ \_______/|__/  |__/ \_______/|__/ \_______/|_______/       |__/  \__/ \_______/   \___/   \______/ |__/      \_______/|__/ \_______/|_______/                                                                                                                                       
               """)
         print()
         ciennat()
         input("Enter para continuar...")
+
     elif trivia == 8:
         print()
-        print("======[Bienvenido trivia de Cultura General]======")
+        print("="*7+"[Bienvenido trivia de Cultura General]"+ "="*7)
         print()
         from preguntas import CulGen
         print("""
@@ -191,14 +207,15 @@ def trivias():
         print()
         CulGen()
         input("Enter para continuar...")
+
     elif trivia == 9:
         print()
-        print("======[Bienvenido trivia de Animales]======")
+        print("="*7+"[Bienvenido trivia de Animales]"+ "="*7)
         print()
         from preguntas import animales
         print("""
-                 /$$$$$$            /$$                         /$$                    
-                /$$__  $$          |__/                        | $$                    
+                  /$$$$$$            /$$                         /$$                    
+                 /$$__  $$          |__/                        | $$                    
                 | $$  \ $$ /$$$$$$$  /$$ /$$$$$$/$$$$   /$$$$$$ | $$  /$$$$$$   /$$$$$$$
                 | $$$$$$$$| $$__  $$| $$| $$_  $$_  $$ |____  $$| $$ /$$__  $$ /$$_____/
                 | $$__  $$| $$  \ $$| $$| $$ \ $$ \ $$  /$$$$$$$| $$| $$$$$$$$|  $$$$$$ 
@@ -209,9 +226,10 @@ def trivias():
         print()
         animales()
         input("Enter para continuar...")
+
     elif trivia == 10:
         print()
-        print("======[Bienvenido trivia de Literatura]======")
+        print("="*7+"[Bienvenido trivia de Literatura]"+"="*7)
         print()
         from preguntas import Lite
         print("""
@@ -244,19 +262,21 @@ def menu():
         | $$\  $ | $$| $$_____/| $$  | $$| $$  | $$
         | $$ \/  | $$|  $$$$$$$| $$  | $$|  $$$$$$/
         |__/     |__/ \_______/|__/  |__/ \______/
-            """)
-        print("============================================================================================")
-        print("=                 ¡Bienvenido al menu elija alguna de las opciones!                        =")
-        print("============================================================================================")
-        print("------->          1.  Juego Trivia                                            .<------------")
-        print("------->          2.  Crear preguntas                                         .<------------")
-        print("------->          3.  Puntajes                                                .<------------")
-        print("------->          4.  Instrucciones                                           .<------------")
-        print("------->          5.  Equipo                                                  .<------------")
-        print("------->          6.  Salir                                                   .<------------")
-        print("============================================================================================")
-        print("=                                          MENU                                            =")
-        print("============================================================================================")
+            
+        ============================================================================================
+        =                 ¡Bienvenido al menu elija alguna de las opciones!                        =
+        ============================================================================================
+        ------->          1.  Juego Trivia                                            .<------------
+        ------->          2.  Crear preguntas                                         .<------------
+        ------->          3.  Puntajes                                                .<------------
+        ------->          4.  Instrucciones                                           .<------------
+        ------->          5.  Equipo                                                  .<------------
+        ------->          6.  Salir                                                   .<------------
+        ============================================================================================
+        =                                          MENU                                            =
+        ============================================================================================
+        """)
+
         try:
             opcion_menu = int(input("Ingrese opción_menu: "))
             if opcion_menu == 1:
@@ -276,17 +296,21 @@ def menu():
         except:
                 print("Formato ingresado no aceptado...")
                 input("Enter para continuar...")
+
 def modo():
     os.system("cls")
-    print("============================================================================================")
-    print("=                      ¡Seleccione el modo de juego!                                       =")
-    print("============================================================================================")
-    print("------->          1.  Un jugador                                              .<------------")
-    print("------->          2.  Versus                                                  .<------------")
-    print("------->          3.  Volver                                                  .<------------")
-    print("============================================================================================")
-    print("=                                          MENU                                            =")
-    print("============================================================================================")
+    print("""
+    ============================================================================================
+    =                      ¡Seleccione el modo de juego!                                       =
+    ============================================================================================
+    ------->          1.  Un jugador                                              .<------------
+    ------->          2.  Versus                                                  .<------------
+    ------->          3.  Volver                                                  .<------------
+    ============================================================================================
+    =                                          MENU                                            =
+    ============================================================================================
+    """)
+
     opcion_modo = int(input("Ingrese opción_modo: "))
     if opcion_modo == 1:
         selectdificultad()
@@ -301,14 +325,17 @@ def modo():
 
 def crear_preguntas():
     os.system("cls")
-    print("============================================================================================")
-    print("=                ¡Seleccione el tema para el que desea crear preguntas!                    =")
-    print("============================================================================================")
-    print("------->          1.  Seleccionar tema                                        .<------------")
-    print("------->          2.  Volver                                                  .<------------")
-    print("============================================================================================")
-    print("=                                          MENU                                            =")
-    print("============================================================================================")
+    print("""
+    ============================================================================================
+    =                ¡Seleccione el tema para el que desea crear preguntas!                    =
+    ============================================================================================
+    ------->          1.  Seleccionar tema                                        .<------------
+    ------->          2.  Volver                                                  .<------------
+    ============================================================================================
+    =                                          MENU                                            =
+    ============================================================================================
+    """)
+
     opcion_crear = int(input("Ingrese opción_crear: "))
     if opcion_crear == 1:
         #crearpregunta()
@@ -321,16 +348,19 @@ def crear_preguntas():
 
 def selectdificultad():
     os.system("cls")
-    print("============================================================================================")
-    print("=                      ¡Seleccione la dificultad!                                          =")
-    print("============================================================================================")
-    print("------->          1.  Facil                                                   .<------------")
-    print("------->          2.  Medio                                                   .<------------")
-    print("------->          3.  Dificil                                                 .<------------")
-    print("------->          4.  Volver                                                  .<------------")
-    print("============================================================================================")
-    print("=                                          MENU                                            =")
-    print("============================================================================================")
+    print("""
+    ============================================================================================
+    =                      ¡Seleccione la dificultad!                                          =
+    ============================================================================================
+    ------->          1.  Facil                                                   .<------------
+    ------->          2.  Medio                                                   .<------------
+    ------->          3.  Dificil                                                 .<------------
+    ------->          4.  Volver                                                  .<------------
+    ============================================================================================
+    =                                          MENU                                            =
+    ============================================================================================
+    """)
+    
     opcion_dificultad = int(input("Ingrese opción_dificultad: "))
     if opcion_dificultad == 1:
         #variable dificultad facil
@@ -346,6 +376,7 @@ def selectdificultad():
     else:
         print("Formato ingresado no aceptado...")
         return input("Enter para continuar...")
+
 #if __name__ == "__main__":
 #    main()
 

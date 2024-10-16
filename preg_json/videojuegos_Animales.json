@@ -1,0 +1,406 @@
+{"videojuego": {"1":{"qst":"¿Cuál de los siguientes personajes es el protagonista principal en la serie de videojuegos ´The Legend of Zelda´?",
+                        "a":"Ganondorf",
+                        "b": "Link", 
+                        "c": "Zelda",
+                        "d": "Navi",
+                    "ans": "b"
+                    },
+
+                "2":{"qst":"¿En qué año se lanzó el videojuego 'Super Mario Bros.' para la consola NES?",
+                        "a":"1983",
+                        "b": "1985",
+                        "c": "1987",
+                        "d": "1989",
+                    "ans":"b"
+                    },
+
+                "3":{"qst":"¿Cuál es el nombre del mundo en el que se desarrolla la saga de 'Final Fantasy VII'?",
+                        "a":"Eorzea",
+                        "b": "Spira",
+                        "c": "Gaia",
+                        "d": "Ivalice",
+                    "ans":"c"
+                    },
+
+                "4":{"qst":"¿Cuál de estos juegos fue desarrollado por Rockstar Games?",
+                        "a":"The Elder Scrolls V: Skyrim",
+                        "b": "Grand Theft Auto V",
+                        "c": "Dark Souls",
+                        "d": "Halo: Combat Evolved",
+                    "ans":"b"
+                    },
+ 
+                "5":{"qst":"¿En qué juego de la saga 'The Legend of Zelda' se explora un mundo subterráneo conocido como el 'Inframundo'?",
+                        "a":"The Legend of Zelda: A Link to the Past",
+                        "b": "The Legend of Zelda: Ocarina of Time",
+                        "c": "The Legend of Zelda: Breath of the Wild",
+                        "d": "The Legend of Zelda: Majora's Mask",
+                    "ans":"a"
+                    },
+                
+                "6":{"qst":"¿En qué juego de disparos en primera persona puedes jugar como el personaje Master Chief?",
+                        "a":"Destiny",
+                        "b":"Battlefield",
+                        "c":"Call of Duty",
+                        "d":"Halo",
+                    "ans":"d"
+                    },
+
+                "7":{"qst":"¿Cuál de estos videojuegos pertenece a la serie de rol conocida por sus batallas y exploración en el mundo de 'Eorzea'?",
+                        "a":"Final Fantasy XIV",
+                        "b":"Dragon Age: Inquisition",
+                        "c":"World of Warcraft",
+                        "d":"Elder Scrolls Online",
+                    "ans":"a"
+                    },
+                
+                "8":{"qst":"¿En qué juego se encuentra el personaje llamado 'Pac-Man'?",
+                        "a":"Donkey Kong",
+                        "b":"Space Invaders",
+                        "c":"Pac-Man",
+                        "d":"Galaga",
+                    "ans":"c"
+                    },
+                    
+                "9":{"qst":"¿Qué tipo de juego es 'Among Us'?",
+                        "a":"Juego de plataformas",
+                        "b":"Juego de rol",
+                        "c":"Juego de misterio social",
+                        "d":"Shooter en primera persona",
+                    "ans":"c"
+                    },
+
+                "10":{"qst":"¿Cuál de los siguientes juegos es un título clásico de la consola Sega Genesis?",
+                        "a":"Sonic the Hedgehog",
+                        "b":"Super Mario World",
+                        "c":"The Legend of Zelda: Ocarina of Time",
+                        "d":"Donkey Kong Country",
+                    "ans":"a"
+                    },
+                
+                "11":{"qst":"¿En qué serie de videojuegos luchan los personajes conocidos como ´Hunters´ contra monstruos gigantes?",
+                        "a":"Horizon Zero Dawn",
+                        "b":"Dark Souls",
+                        "c":"Bloodborne",
+                        "d":"Monster Hunter",
+                    "ans":"d"
+                    },
+
+                "12":{"qst":"¿Cuál de estos videojuegos fue creado por la compañia Nintentdo?",
+                        "a":"Metal Gear Solid",
+                        "b":"Final Fantasy ",
+                        "c":"The Legend of Zelda ",
+                        "d":"Fallout ",
+                    "ans":"c"
+                    },
+
+                "13":{"qst":"¿Cuál es el objetivo principal en el juego ´Minecraft´?",
+                        "a":"Completar una campaña de historia",
+                        "b":"Completar y explorar",
+                        "c":"Ganar en batalla en línea",
+                        "d":"Resolver rompecabezas",
+                    "ans":"b"
+                    },
+
+                "14":{"qst":"¿En qué juego puedes encontrar el ´Pikachu´ como uno de los personajes principales ?",
+                        "a":"Pokémon",
+                        "b":"Digimon",
+                        "c":"Yu-Gi-oh!",
+                        "d":"Final Fantasy",
+                    "ans":"a"
+                    },
+                
+                "15":{"qst":"¿Qué videojuego se ambienta en una ciudad ficticia llamada Raccoon City ?",
+                        "a":"Silent Hill",
+                        "b":"Resident Evil",
+                        "c":"Dead Space!",
+                        "d":"Outlast",
+                    "ans":"b"
+                    },
+
+                "16":{"qst":"¿'¿Qué videojuego es conocido por introducir el personaje ´Kratos´ en un mundo de mitología griega?",
+                        "a":"God of War",
+                        "b":"Dante’s Inferno",
+                        "c":"Castlevania ",
+                        "d":"Demon’Souls'",
+                    "ans":"a"
+                    },
+                
+                "17":{"qst":"'¿Cuál es el nombre del universo de ´Mass Effect´?",
+                        "a":"The Elder Scrolls",
+                        "b":"The Halo Universe",
+                        "c":"The Mass Effect Universe",
+                        "d":"The Star Wars Universe",
+                    "ans":"c"
+                    },
+                
+                "18":{"qst":"¿Qué videojuego se desarrolla en el universo de Star Wars y se centra en combates espaciales?",
+                        "a":"Star Wars: Knights of the Old Republic",
+                        "b":"Star Wars: Battlefront ",
+                        "c":"Star Wars: Jedi: Fallen Order",
+                        "d":"Star Wars: The Old Republic",
+                    "ans":"b"
+                    },
+                
+                "19":{"qst":"¿En qué tipo de juego se basa el título ´The Witcher 3: Wild Hunt´? ",
+                        "a":"Juego de rol de acción",
+                        "b":"Juego de estrategia en tiempo real",
+                        "c":"Juego de disparos en primera persona",
+                        "d":"Juego de plataformas",
+                    "ans":"a"
+                    },
+
+                "20":{"qst":"¿Qué videojuego es conocido por sus mapas y escenarios destructibles y fue creado por DICE?",
+                        "a":"Call of Duty",
+                        "b":"Battlefield",
+                        "c":"Rainbow Six Siege",
+                        "d":"Counter-Strike",
+                    "ans":"b"
+                    },
+
+                "21":{"qst":"¿En qué juego puedes encontrar el personaje llamado ´Ellie´ como uno de los protagonistas?",
+                        "a":"The Last of Us",
+                        "b":"Uncharted",
+                        "c":"Red Dead Redemption",
+                        "d":"God of War",
+                    "ans":"a"
+                    },
+
+                "22":{"qst":"¿Cuál de estos videojuegos es conocido por su mecánica de combate basada en el uso de espadas y magia?",
+                        "a":"Skyrim",
+                        "b":"Dark Souls",
+                        "c":"Overwatch",
+                        "d":"Apex Legends",
+                    "ans":"a"
+                    },
+
+                "23":{"qst":"¿En qué juego se destacan la construcción de estructuras y la defensa contra enemigos en un entorno de supervivencia?",
+                        "a":"Rust",
+                        "b":"Fornite",
+                        "c":"ARK: Survival Evolved",
+                        "d":"Conan Exiles",
+                    "ans":"c"
+                    },
+
+                "24":{"qst":"¿En qué salio el juego World of Warcraft?",
+                        "a":"1998",
+                        "b":"2002",
+                        "c":"2000",
+                        "d":"2004",
+                    "ans":"d"
+                    },
+                
+                "25":{"qst":"¿Cuál de estos juegos fue uno de los primeros en popularizar el género de batalla real?",
+                        "a":"Fortnite",
+                        "b":"PUBG (PlayerUnknowns Battlegrounds)",
+                        "c":"Apex Legends",
+                        "d":"Warzone",
+                    "ans":"b"
+                    }               
+                }
+}
+
+{"animales": {"1":{"qst":"¿Cuál es el mamífero más grande del mundo? ",
+                        "a":"Elefante",
+                        "b":"Ballena azul", 
+                        "c":"Jirafa",
+                        "d":"Oso polar",
+                    "ans": "b"
+                    },
+
+                "2":{"qst":"¿Qué tipo de animal es un delfín?",
+                        "a":"Pez",
+                        "b":"Mamífero",
+                        "c":"Reptil",
+                        "d":"Anfibio",
+                    "ans":"b"
+                    },
+
+                "3":{"qst":"'¿Cuál es el ave más rápida en vuelo? a)  b)  c)  d) '",
+                        "a":"Halcón peregrino",
+                        "b":"Águila",
+                        "c":"Colibrí",
+                        "d":"Faisán",
+                    "ans":"a"
+                    },
+
+                "4":{"qst":"¿Qué animal es conocido por su habilidad para cambiar de color?",
+                        "a":"Gecko",
+                        "b":"Pulpo",
+                        "c":"Rana",
+                        "d":"Camaleón",
+                    "ans":"d"
+                    },
+ 
+                "5":{"qst":"¿Cuál de estos animales es un marsupial?",
+                        "a":"Oso",
+                        "b":"Lobo",
+                        "c":"Canguro",
+                        "d":"Gato",
+                    "ans":"c"
+                    },
+                
+                "6":{"qst":"¿Qué animal puede vivir más tiempo sin agua?",
+                        "a":"Camello",
+                        "b":"Perro",
+                        "c":"Gato",
+                        "d":"Elefante",
+                    "ans":"a"
+                    },
+
+                "7":{"qst":"¿Cuál es el único mamífero que puede volar? d) Murciélago",
+                        "a":"Ardilla voladora",
+                        "b":"Colugo",
+                        "c":"Pájaro carpintero",
+                        "d":"Murciélago",
+                    "ans":"d"
+                    },
+                
+                "8":{"qst":"¿Qué animal tiene la lengua más larga en relación a su cuerpo?'",
+                        "a":"Rana",
+                        "b":"Camaleón",
+                        "c":"Jirafa",
+                        "d":"Hummingbird",
+                    "ans":"b"
+                    },
+                    
+                "9":{"qst":"'¿Cuál de estos animales es un depredador tope en su hábitat?'",
+                        "a":"León",
+                        "b":"Cebra",
+                        "c":"Jirafa",
+                        "d":"Elefante",
+                    "ans":"a"
+                    },
+
+                "10":{"qst":"¿Qué tipo de animal es un tiburón?",
+                        "a":"Mamífero",
+                        "b":"Anfibio",
+                        "c":"Reptil",
+                        "d":"Pez",
+                    "ans":"d"
+                    },
+                
+                "11":{"qst":"¿Cuál es el animal más rápido en tierra? '",
+                        "a":"Conejo",
+                        "b":"Antílope",
+                        "c":"Cheetah",
+                        "d":"Perro",
+                    "ans":"c"
+                    },
+
+                "12":{"qst":"¿Qué animal es conocido por ser el ´rey de la selva´?",
+                        "a":"Tigre",
+                        "b":"León",
+                        "c":"Gorila",
+                        "d":"Elefante",
+                    "ans":"b"
+                    },
+
+                "13":{"qst":"¿Cuál es la principal dieta de un panda gigante?",
+                        "a":"Carne",
+                        "b":"Insectos",
+                        "c":"Bambú",
+                        "d":"Frutas",
+                    "ans":"c"
+                    },
+
+                "14":{"qst":"¿Qué tipo de animal es una oruga?",
+                        "a":"Mamífero",
+                        "b":"Reptil",
+                        "c":"Anfibio",
+                        "d":"Insecto",
+                    "ans":"d"
+                    },
+                
+                "15":{"qst":"¿Cuál es el único primate que no vive en los árboles?",
+                        "a":"Humano",
+                        "b":"Chimpancé",
+                        "c":"Gorila",
+                        "d":"Orangután",
+                    "ans":"a"
+                    },
+
+                "16":{"qst":"¿Qué animal se considera el más inteligente?",
+                        "a":"Perro",
+                        "b":"Delfín",
+                        "c":"Cuervo",
+                        "d":"Elefante",
+                    "ans":"b"
+                    },
+                
+                "17":{"qst":"¿Cuál de estos animales es un roedor?",
+                        "a":"Gato",
+                        "b":"Conejo",
+                        "c":"Ratón",
+                        "d":"Serpiente",
+                    "ans":"c"
+                    },
+                
+                "18":{"qst":"¿Qué animal es conocido por su capacidad para imitar sonidos?",
+                        "a":"Loro",
+                        "b":"Búho",
+                        "c":"Pájaro cantor",
+                        "d":"Golondrina",
+                    "ans":"a"
+                    },
+                
+                "19":{"qst":"¿Cuál de estos animales vive en la Antártida?",
+                        "a":"Leopardo",
+                        "b":"Camello",
+                        "c":"Cebra",
+                        "d":"Foca",
+                    "ans":"d"
+                    },
+
+                "20":{"qst":"¿Qué animal tiene el corazón más grande en relación a su tamaño?",
+                        "a":"Elefante",
+                        "b":"Ballena azul",
+                        "c":"Gato",
+                        "d":"Ratón",
+                    "ans":"b"
+                    },
+
+                "21":{"qst":"¿Cuál es el animal terrestre más grande?",
+                        "a":"Elefante africano",
+                        "b":"Hipopótamo",
+                        "c":"Rinoceronte",
+                        "d":"Jirafa",
+                    "ans":"a"
+                    },
+
+                "22":{"qst":"¿Qué tipo de animal es una anaconda?",
+                        "a":"Reptil",
+                        "b":"Mamífero",
+                        "c":"Anfibio",
+                        "d":"Pez",
+                    "ans":"a"
+                    },
+
+                "23":{"qst":"¿Qué animal tiene la capacidad de ver en la oscuridad?",
+                        "a":"Gato",
+                        "b":"Perro",
+                        "c":"Murciélago",
+                        "d":"Todos los anteriores",
+                    "ans":"c"
+                    },
+
+                "24":{"qst":"¿Cuál es el principal depredador de los pingüinos?",
+                        "a":"León marino",
+                        "b":"Orca",
+                        "c":"Halcón",
+                        "d":"Tiburón",
+                    "ans":"b"
+                    },
+                
+                "25":{"qst":"¿Qué tipo de animal es un flamenco?",
+                        "a":"Mamífero",
+                        "b":"Pez",
+                        "c":"Ave",
+                        "d":"Reptil",
+                    "ans":"c"
+                    }               
+           }
+}
+
+
+

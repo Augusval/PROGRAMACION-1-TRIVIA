@@ -475,15 +475,25 @@ def Futbol():
 
 # Lista de preguntas con opciones
 preguntas_videojuego = [
+    #1
     '¿Cuál de los siguientes personajes es el protagonista principal en la serie de videojuegos "The Legend of Zelda"? a) Ganondorf b) Link c) Zelda d) Navi',
+    #2
     '¿En qué año se lanzó el videojuego "Super Mario Bros." para la consola NES? a) 1983 b) 1985 c) 1987 d) 1989',
+    #3
     '¿Cuál es el nombre del mundo en el que se desarrolla la saga de "Final Fantasy VII"? a) Eorzea b) Spira c) Gaia d) Ivalice',
+    #4
     '¿Cuál de estos juegos fue desarrollado por Rockstar Games? a) The Elder Scrolls V: Skyrim b) Grand Theft Auto V c) Dark Souls d) Halo: Combat Evolved',
+    #5
     "¿En qué juego de la saga “The Legend of Zelda” se explora un mundo subterráneo conocido como el" '"Inframundo"'"? a) The Legend of Zelda: A Link to the Past b) The Legend of Zelda: Ocarina of Time c) The Legend of Zelda: Breath of the Wild d) The Legend of Zelda: Majora's Mask", 
+    #6
     '¿En qué juego de disparos en primera persona puedes jugar como el personaje Master Chief? a) Destiny b) Battlefield c) Call of Duty d) Halo',
+    #7
     '¿Cuál de estos videojuegos pertenece a la serie de rol conocida por sus batallas y exploración en el mundo de "Eorzea"? a) Final Fantasy XIV b) Dragon Age: Inquisition c)World of Warcraft d) Elder Scrolls Online',
+    #8
     '¿En qué juego se encuentra el personaje llamado “Pac-Man”? a) Donkey Kong b) Space Invaders c) Pac-Man d) Galaga',
+    #9
     '¿Qué tipo de juego es “Among Us”? a) Juego de plataformas b) Juego de rol c) Juego de misterio social d) Shooter en primera persona',
+    #10
     '¿Cuál de los siguientes juegos es un título clásico de la consola Sega Genesis? a) Sonic the Hedgehog b) Super Mario World c) The Legend of Zelda: Ocarina of Time d) Donkey Kong Country',
     '¿En qué serie de videojuegos luchan los personajes conocidos como "Hunters" contra monstruos gigantes? a) Horizon Zero Dawn b) Dark Souls c) Bloodborne d) Monster Hunter',
     '¿Cuál de estos videojuegos fue creado por la compañía Nintendo? a) Metal Gear Solid b) Final Fantasy c) The Legend of Zelda d) Fallout',
@@ -518,7 +528,7 @@ respuestas_correctas = [
     "d",  # Monster Hunter (11)
     "c",  # The Legend of Zelda (12)
     "b",  # Construir y explorar (13)
-    "a",  # Pokémon (14)
+    "a",  # Pokémon (14)***
     "b",  # Resident Evil (15)
     "a",  # God of War (16)
     "c",  # The Mass Effect Universe (17)
@@ -528,8 +538,8 @@ respuestas_correctas = [
     "a",  # The Last of Us (21)
     "a",  # Skyrim (22)
     "c",  # ARK: Survival Evolved (23)
-    "d",  # 2004
-    "b"  # PUBG (PlayerUnknown’s Battlegrounds)
+    "d",  # 2004 (24)
+    "b"  # PUBG (PlayerUnknown’s Battlegrounds) (25)
 ]
 
 # Lista con las preguntas y respuestas correctas
