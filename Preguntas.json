@@ -702,6 +702,7 @@
                     "d": "Gimnasia",
                     "ans": "b"
                     } 
+<<<<<<< HEAD
 },
 "Autos": {"1": {"qst": "¿Cuál es la marca de autos más antigua aún en funcionamiento?",
                                 "a": "Ford",
@@ -1829,6 +1830,10 @@
                     }               
            }
         }
+=======
+        }
+    }
+>>>>>>> 70d0050f359b581932a4602530e19b979d4ad073
 
 
 
