@@ -33,7 +33,7 @@ respuestas_correctas = [
     "c",  # Ford
     "b",  # Italia
     "a",  # Ford Model
-    "b",  # Lamborghini
+    "b",  # Porsche
     "c",  # Volkswagen Beetle
     "c",  # Bugatti
     "a",  # Model X
@@ -109,7 +109,7 @@ preguntas_cine = [
     #9
     '¿Cuál es el nombre del protagonista en la serie de películas "The Matrix"? a) Neo b) Trinity c) Morpheus d) Cypher ',
     #10
-    ' ¿Qué director es conocido por la trilogía "El Señor de los Anillos"? a) Guillermo del Toro b) George Lucas c) Francis Ford Coppola d) Peter Jackson',
+    '¿Qué director es conocido por la trilogía "El Señor de los Anillos"? a) Guillermo del Toro b) George Lucas c) Francis Ford Coppola d) Peter Jackson',
     #11
     '¿Cuál es el nombre de la joven protagonista en "Harry Potter y la Piedra Filosofal"? a) Hermione Granger b) Ginny Weasley c) Luna Lovegood d) Molly Weasley',
     #12
