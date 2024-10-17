@@ -359,7 +359,7 @@ preguntas_respuestas_formula = [
 # Función para jugar al juego de trivia
 def Formula():
     puntaje = 0
-    print("¡Bienvenido al juego de trivia de Formula 1!\n")
+    #print("¡Bienvenido al juego de trivia de Formula 1!\n")
 
     for i, item in enumerate(preguntas_respuestas_formula):
         print(f"Pregunta {i + 1}: {item['pregunta']}")
