@@ -1,0 +1,93 @@
+{"Literatura": {"1": {"qst": "¿Quién escribió 'Cien años de soledad'?",
+                    "a": "Julio Cortázar",
+                    "b": "Gabriel García Márquez",
+                    "c": "Mario Vargas Llosa",
+                    "d": "Jorge Luis Borges",
+                    "ans": "b"
+                    },
+                "2": {"qst": "¿Qué novela comienza con la frase 'En un lugar de la Mancha, de cuyo nombre no quiero acordarme'?",
+                    "a": "La casa de los espíritus",
+                    "b": "Don Quijote de la Mancha",
+                    "c": "La colmena",
+                    "d": "Crónica de una muerte anunciada",
+                    "ans": "b"
+                    },
+                "3": {"qst": "¿Quién es el autor de '1984'?",
+                    "a": "Aldous Huxley",
+                    "b": "Ray Bradbury",
+                    "c": "George Orwell",
+                    "d": "H.G. Wells",
+                    "ans": "c"
+                    },
+                "4": {"qst": "¿Cuál es el autor de 'Don Quijote de la Mancha'?",
+                    "a": "Miguel de Unamuno",
+                    "b": "Gabriel García Márquez",
+                    "c": "Miguel de Cervantes",
+                    "d": "Lope de Vega",
+                    "ans": "c"
+                    }
+                },
+"Formula":{"1":{"qst":"En que circuito se establecio el record de la vuelta mas rapida?",
+                "a":"Nurburgring",
+                "b":"Monza",
+                "c":"Monaco",
+                "d":"Silverstone",
+                "ans":"b"
+                },
+            "2":{"qst":"Cuanto duró la carrera mas larga de la historia de Formula 1?",
+                "a":"3 dias",
+                "b":"3h 30m 25s",
+                "c":"4h 4m 39s",
+                "d":"4h 19m 22s",
+                "ans":"c"
+                },
+            "3":{"qst":"Cuantos puntos vale el primer puesto cuando terminas la carrera?",
+                "a":"18 pts",
+                "b":"25 pts",
+                "c":"22 pts",
+                "d":"30 pts",
+                "ans":"b"
+                },
+            "4":{"qst":"Que motor utiliza Red Bull en sus autos Formula 1 2024?",
+                "a":"PU106C Hybrid",
+                "b":"Mercedes-AMG F1 M15",
+                "c":"TAG Heuer R.E.18 V6 Turbo",
+                "d":"Honda RBPTH002",
+                "ans":"d"
+                }
+},
+"Futbol": {"1": {"qst": "¿Qué selección ha ganado más Copas del Mundo?",
+                                "a": "Brasil",
+                                "b": "Alemania",
+                                "c": "Italia",
+                                "d": "Argentina",
+                                "ans": "a"
+                                },
+                        "2": {"qst": "¿En qué año Argentina ganó su primer Mundial de fútbol?",
+                                "a": "1974",
+                                "b": "1978",
+                                "c": "1986",
+                                "d": "1990",
+                                "ans": "b"
+                                },
+                        "3": {"qst": "¿Cuál es el club con más títulos de la UEFA Champions League?",
+                                "a": "AC Milan",
+                                "b": "FC Barcelona",
+                                "c": "Real Madrid",
+                                "d": "Bayern Múnich",
+                                "ans": "c"
+                                },
+                        "4": {"qst": "¿Qué jugador fue transferido por una cifra récord de 222 millones de euros en 2017?",
+                                "a": "Cristiano Ronaldo",
+                                "b": "Neymar Jr",
+                                "c": "Lionel Messi",
+                                "d": "Kylian Mbappé",
+                                "ans": "b"
+                                }
+}
+
+
+
+
+
+}
