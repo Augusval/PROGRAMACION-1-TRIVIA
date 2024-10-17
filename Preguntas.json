@@ -1,4 +1,4 @@
-{"Ciencias Naturales": {"1": {"qst": "¿Cuál es el órgano principal del sistema circulatorio?",
+{"CienciasNaturales": {"1": {"qst": "¿Cuál es el órgano principal del sistema circulatorio?",
                                 "a": "Pulmón",
                                 "b": "Hígado",
                                 "c": "Corazón",
@@ -702,7 +702,1133 @@
                     "d": "Gimnasia",
                     "ans": "b"
                     } 
-}
+},
+"Autos": {"1": {"qst": "¿Cuál es la marca de autos más antigua aún en funcionamiento?",
+                                "a": "Ford",
+                                "b": "Mercedes-Benz",
+                                "c": "Fiat",
+                                "d": "Peugeout",
+                                "ans": "d"
+                                },
+                        "2": {"qst": "¿Qué marca produce el modelo Mustang?",
+                                "a": "Chevrolet",
+                                "b": "Dodge",
+                                "c": "Ford",
+                                "d": "Nissan",
+                                "ans": "c"
+                                },
+                        "3": {"qst": "¿En qué país se fundó Ferrari?",
+                                "a": "Alemania",
+                                "b": "Italia",
+                                "c": "Francia",
+                                "d": "Estados Unidos",
+                                "ans": "b"
+                                },
+                        "4": {"qst": "¿Cuál fue el primer auto producido en masa?",
+                                "a": "Ford Model T",
+                                "b": "Mercedes-Benz 300SL",
+                                "c": "Chevrolet Corvette",
+                                "d": "Volkswagen Beetle",
+                                "ans": "a"
+                                },
+                        "5": {"qst": "¿Qué marca es conocida por su modelo 911?",
+                                "a": "Ferrari",
+                                "b": "Porsche",
+                                "c": "Lamborgini",
+                                "d": "Aston Martin",
+                                "ans": "b"
+                                },
+                        "6": {"qst": "¿Cuál de estos autos es conocido como el auto del pueblo?",
+                                "a": "Fiat 500",
+                                "b": "Citroën 2CV",
+                                "c": "Volkswagen Beetle",
+                                "d": "Mini Cooper",
+                                "ans": "c"
+                              },
+                        "7": {"qst": "¿Qué marca produce el superdeportivo Veyron?",
+                                "a": "Lamborghini",
+                                "b": "Ferrari",
+                                "c": "Bugatti",
+                                "d": "McLaren",
+                                "ans": "c"
+                                },
+                        "8": {"qst": "¿Qué auto eléctrico es producido por Tesla?",
+                                "a": "Model X",
+                                "b": "Leaf",
+                                "c": "Bolt",
+                                "d": "i8",
+                                "ans": "a"
+                                },
+                        "9": {"qst": "¿Qué marca fue fundada por Enzo Ferrari?",
+                                "a": "Maserati",
+                                "b": "Ferrari",
+                                "c": "Bugatti",
+                                "d": "McLaren",
+                                "ans": "b"
+                                },
+                        "10": {"qst": "¿Cuál es la marca de lujo de Toyota?",
+                                "a": "Acura",
+                                "b": "Infiniti",
+                                "c": "Lexus",
+                                "d": "Genesis",
+                                "ans": "c"
+                                },
+                        "11": {"qst": "¿Qué auto es conocido por sus puertas de ala de gaviota?",
+                                "a": "DeLorean DMC-12",
+                                "b": "Lamborghini Aventador",
+                                "c": "Ferrari LaFerrari",
+                                "d": "Porsche 918",
+                                "ans": "a"
+                                },
+                        "12": {"qst": "¿En qué país se encuentra la sede de Volvo?",
+                                "a": "Suecia",
+                                "b": "Alemania",
+                                "c": "Noruega",
+                                "d": "Estados Unidos",
+                                "ans": "a"
+                                },
+                        "13": {"qst": "¿Qué auto fue popularmente conocido como Escarabajo?",
+                                "a": "Citroen DS",
+                                "b": "Fiat 500",
+                                "c": "Volkswagen Beetle",
+                                "d": "Mini Cooper",
+                                "ans": "c"
+                                },
+                        "14": {"qst": "¿Qué marca produce el modelo Civic?",
+                                "a": "Toyota",
+                                "b": "Nissan",
+                                "c": "Honda",
+                                "d": "Mazda",
+                                "ans": "c"
+                                },
+                        "15": {"qst": "¿Cuál fue el primer auto deportivo producido por Lamborghini?",
+                                "a": "Miura",
+                                "b": "Countach",
+                                "c": "Diablo",
+                                "d": "350 GT",
+                                "ans": "d"
+                                },
+                        "16": {"qst": "¿Qué marca es conocida por sus autos híbridos Prius?",
+                                "a": "Honda",
+                                "b": "Toyota",
+                                "c": "Nissan",
+                                "d": "Mitsubishi",
+                                "ans": "b"
+                                },
+                        "17": {"qst": "¿En qué año se lanzó el primer Ford Mustang?",
+                                "a": "1955",
+                                "b": "1964",
+                                "c": "1970",
+                                "d": "19980",
+                                "ans": "b"
+                                },
+                        "18": {"qst": "¿Qué marca de autos de lujo tiene un logo con un espíritu alado conocido como Espíritu del Éxtasis?",
+                                "a": "Bentley",
+                                "b": "Rolls-Royce",
+                                "c": "Aston Martin",
+                                "d": "Jaguar",
+                                "ans": "b"
+                                },
+                        "19": {"qst": "¿Cuál es el auto deportivo más famoso de Chevrolet?",
+                                "a": "Camaro",
+                                "b": "Corvette",
+                                "c": "Impala",
+                                "d": "Malibu",
+                                "ans": "b"
+                                },
+                        "20": {"qst": "¿Qué marca alemana es conocida por el eslogan  Das Auto?",
+                                "a": "BMW",
+                                "b": "Audi",
+                                "c": "Volkswagen",
+                                "d": "Mercedes-Benz",
+                                "ans": "c"
+                                },
+                        "21": {"qst": "¿Cuál fue el primer auto en superar oficialmente los 300 km/h en una prueba controlada?",
+                                "a": "Ferrari F40",
+                                "b": "Lamborghini Diablo",
+                                "c": "McLaren F1",
+                                "d": "Porsche 959",
+                                "ans": "c"
+                                },
+                        "22": {"qst": "¿En qué año se lanzó el primer auto con frenos antibloqueo (ABS) de serie?",
+                                "a": "1978",
+                                "b": "1985",
+                                "c": "1990",
+                                "d": "1982",
+                                "ans": "a"
+                                },
+                        "23": {"qst": "¿Cuál es el nombre del sistema de tracción integral de Subaru?",
+                                "a": "4Matic",
+                                "b": "Symmetrical AWD",
+                                "c": "Quattro",
+                                "d": "xDrive",
+                                "ans": "b"
+                                },
+                        "24": {"qst": "¿Qué marca produjo el primer auto híbrido de producción masiva?",
+                                "a": "Toyota",
+                                "b": "Honda",
+                                "c": "Nissan",
+                                "d": "Ford",
+                                "ans": "a"
+                                },
+                        "25": {"qst": "¿Qué marca de autos tenía un modelo conocido como Cosmo Sport en la década de 1960?",
+                                "a": "Toyota",
+                                "b": "Nissan",
+                                "c": "Mazda",
+                                "d": "Mitsubishi",
+                                "ans": "c"
+        }
+    },
+    
+"Cine": {"1": {"qst": "¿Cuál de las siguientes películas ganó el Oscar a Mejor Película en 2023?",
+                    "a": "Everything Everywhere All at Once",
+                    "b": "The Fabelmans",
+                    "c": "Top Gun: Maverick",
+                    "d": "Avatar: The Way of Water",
+                    "ans": "a"
+                    },
+                "2": {"qst": "¿Quién dirigió la película Titanic?",
+                    "a": "James Cameron",
+                    "b": "Steven Spielberg",
+                    "c": "Martin Scorsese",
+                    "d": "Ridley Scott",
+                    "ans": "a"
+                    },
+                "3": {"qst": "¿En qué película se dice la famosa frase 'Que la fuerza te acompañe'?",
+                    "a": "Star Wars",
+                    "b": "Star Trek",
+                    "c": "Dune",
+                    "d": "Avatar",
+                    "ans": "a"
+                    },
+                "4": {"qst": "¿Cuál de estos actores interpretó a Jack Sparrow en 'Piratas del Caribe'?",
+                    "a": "Orlando Bloom",
+                    "b": "Brad Pitt",
+                    "c": "Tom Cruise",
+                    "d": "Johnny Depp",
+                    "ans": "d"
+                    },
+                "5": {"qst": "¿Qué película ganó el Oscar a la Mejor Película en 1994?",
+                    "a": "Pulp Fiction",
+                    "b": "Forrest Gump",
+                    "c": "The Shawshank Redemption",
+                    "d": "The Lion King",
+                    "ans": "b"
+                    },
+                "6": {"qst": "¿Quién interpretó a Wolverine en la serie de películas de 'X-Men'?",
+                    "a": "Hugh Jackman",
+                    "b": "Ryan Reynolds",
+                    "c": "Chris Hemsworth",
+                    "d": "Robert Downey Jr.",
+                    "ans": "a"
+                    },
+                "7": {"qst": "¿En qué año se estrenó 'Jurassic Park'?",
+                    "a": "1990",
+                    "b": "1993",
+                    "c": "1996",
+                    "d": "1999",
+                    "ans": "b"
+                    },
+                "8": {"qst": "¿Qué película animada de Pixar trata sobre un grupo de ratones que quiere convertirse en chefs?",
+                    "a": "Buscando a Nemo",
+                    "b": "Up",
+                    "c": "Ratatouille",
+                    "d": "Toy Story",
+                    "ans": "c"
+                    },
+                "9": {"qst": "¿Cuál es el nombre del protagonista en la serie de películas 'The Matrix'?",
+                    "a": "Neo",
+                    "b": "Trinity",
+                    "c": "Morpheus",
+                    "d": "Cypher",
+                    "ans": "a"
+                    },
+                "10": {"qst": "¿Qué director es conocido por la trilogía 'El Señor de los Anillos'?",
+                    "a": "Guillermo del Toro",
+                    "b": "George Lucas",
+                    "c": "Francis Ford Coppola",
+                    "d": "Peter Jackson",
+                    "ans": "d"
+                    },
+                "11": {"qst": "¿Cuál es el nombre de la joven protagonista en 'Harry Potter y la Piedra Filosofal'?",
+                    "a": "Hermione Granger",
+                    "b": "Ginny Weasley",
+                    "c": "Luna Lovegood",
+                    "d": "Molly Weasley",
+                    "ans": "a"
+                    },
+                "12": {"qst": "¿Quién interpretó a la princesa Leia en 'Star Wars'?",
+                    "a": "Daisy Ridley",
+                    "b": "Natalie Portman",
+                    "c": "Carrie Fisher",
+                    "d": "Emilia Clarke",
+                    "ans": "c"
+                    },
+                "13": {"qst": "¿En qué película el personaje principal es un extraterrestre llamado E.T.?",
+                    "a": "Close Encounters of the Third Kind",
+                    "b": "E.T. the Extra-Terrestrial",
+                    "c": "The Day the Earth Stood Still",
+                    "d": "Men in Black",
+                    "ans": "b"
+                    },
+                "14": {"qst": "¿Qué película protagonizada por Tom Hanks está ambientada en un campo de guerra durante la Segunda Guerra Mundial?",
+                    "a": "Forrest Gump",
+                    "b": "Cast Away",
+                    "c": "Saving Private Ryan",
+                    "d": "Apollo 13",
+                    "ans": "c"
+                    },
+                "15": {"qst": "¿Quién dirigió 'Inception' (Origen)?",
+                    "a": "Christopher Nolan",
+                    "b": "Quentin Tarantino",
+                    "c": "David Fincher",
+                    "d": "Denis Villeneuve",
+                    "ans": "a"
+                    },
+                "16": {"qst": "¿Qué película cuenta la historia de un joven que se convierte en un luchador profesional en la India y se convierte en una estrella de Gollywood?",
+                    "a": "Slumdog Millionaire",
+                    "b": "Lagaan",
+                    "c": "Dangal",
+                    "d": "3 Idiots",
+                    "ans": "c"
+                    },
+                "17": {"qst": "¿Quién interpretó a Jack Dawson en 'Titanic'?",
+                    "a": "Leonardo DiCaprio",
+                    "b": "Tom Cruise",
+                    "c": "Brad Pitt",
+                    "d": "Matt Damon",
+                    "ans": "a"
+                    },
+                "18": {"qst": "¿En qué año se estrenó 'Star Wars: Episodio IV-Una nueva esperanza'?",
+                    "a": "1975",
+                    "b": "1977",
+                    "c": "1980",
+                    "d": "1983",
+                    "ans": "b"
+                    },
+                "19": {"qst": "¿¿Qué actor interpretó al Joker en 'El caballero oscuro' (2008)?",
+                    "a": "Jack Nicholson",
+                    "b": "Jared Leto",
+                    "c": "Heath Ledger",
+                    "d": "Joaquin Phoenix",
+                    "ans": "c"
+                    },
+                "20": {"qst": "¿En qué película se basa el famoso libro de J.R.R. Tolkien 'El señor de los anillos'?",
+                    "a": "Harry Potter",
+                    "b": "Los juegos del hambre",
+                    "c": "El señor de los anillos",
+                    "d": "El hobbit",
+                    "ans": "c"
+                    },
+                "21": {"qst": "¿Cuál es el nombre del famoso arqueólogo interpretado por Harrison Ford?",
+                    "a": "Indiana Jones",
+                    "b": "Han Solo",
+                    "c": "James Bond",
+                    "d": "Luke Skywalker",
+                    "ans": "a"
+                    },
+                "22": {"qst": "¿Qué película de ciencia ficción trata sobre una invasión alienígena en una ciudad?",
+                    "a": "E.T.",
+                    "b": "Independence Day",
+                    "c": "Encuentros Cercanos del Tercer Tipo",
+                    "d": "Blade Runner",
+                    "ans": "b"
+                    },
+                "23": {"qst": "¿Qué director es conocido por sus películas de terror como 'El resplandor' y 'La naranja mecánica'?",
+                    "a": "Stanley Kubrick",
+                    "b": "Steven Spielberg",
+                    "c": "Alfred Hitchcock",
+                    "d": "Ridley Scott",
+                    "ans": "a"
+                    },
+                "24": {"qst": "¿Cual de la siguientes series es de medicina?",
+                    "a": "Grey's anatomy",
+                    "b": "Dc House",
+                    "c": "The Good Doctor",
+                    "d": "Todas las anteriores",
+                    "ans": "d"
+                    },
+                "25": {"qst": "¿Cuál de las siguientes no es una serie centrada en la física?",
+                    "a": "The Big Bang Theory",
+                    "b": "Breaking Bad",
+                    "c": "Cosmos",
+                    "d": "The IT Crowd",
+                    "ans": "a"
+        }
+    },
+"Futbol": {"1": {"qst": "¿Qué selección ha ganado más Copas del Mundo?",
+                                "a": "Brasil",
+                                "b": "Alemania",
+                                "c": "Italia",
+                                "d": "Argentina",
+                                "ans": "a"
+                                },
+                        "2": {"qst": "¿En qué año Argentina ganó su primer Mundial de fútbol?",
+                                "a": "1974",
+                                "b": "1978",
+                                "c": "1986",
+                                "d": "1990",
+                                "ans": "b"
+                                },
+                        "3": {"qst": "¿Cuál es el club con más títulos de la UEFA Champions League?",
+                                "a": "AC Milan",
+                                "b": "FC Barcelona",
+                                "c": "Real Madrid",
+                                "d": "Bayern Múnich",
+                                "ans": "c"
+                                },
+                        "4": {"qst": "¿Qué jugador fue transferido por una cifra récord de 222 millones de euros en 2017?",
+                                "a": "Cristiano Ronaldo",
+                                "b": "Neymar Jr",
+                                "c": "Lionel Messi",
+                                "d": "Kylian Mbappé",
+                                "ans": "b"
+                                },
+                        "5": {"qst": "¿Qué equipo ganó la Premier League en la temporada 2015-2016?",
+                                "a": "Manchester City",
+                                "b": "Leicester City",
+                                "c": "Chelsea",
+                                "d": "Liverpool",
+                                "ans": "b"
+                                },
+                        "6": {"qst": "¿Cuál es el máximo goleador en la historia de la selección de Portugal?",
+                                "a": "Eusébio",
+                                "b": "Pauleta",
+                                "c": "Cristiano Ronaldo",
+                                "d": "Luís Figo",
+                                "ans": "c"
+                              },
+                        "7": {"qst": "¿Qué equipo es conocido como 'Los Diablos Rojos'? a) Manchester United b) AC Milan c) Independiente d) Bayern Múnich",
+                                "a": "Manchester United",
+                                "b": "AC Milan",
+                                "c": "FC Barcelona",
+                                "d": "Bayern Múnich",
+                                "ans": "a"
+                                },
+                        "8": {"qst": "¿Quién ganó el Balón de Oro en 2021?",
+                                "a": "Lionel Messi",
+                                "b": "Robert Lewandowski",
+                                "c": "Karim Benzema",
+                                "d": "Cristiano Ronaldo",
+                                "ans": "a"
+                                },
+                        "9": {"qst": "¿Qué selección ganó la Eurocopa en 2004?",
+                                "a": "Portugal",
+                                "b": "Francia",
+                                "c": "Italia",
+                                "d": "Grecia",
+                                "ans": "d"
+                                },
+                        "10": {"qst": "¿Qué club argentino tiene más títulos de la Copa Libertadores?",
+                                "a": "River Plate",
+                                "b": "Boca Juniors",
+                                "c": "Independiente",
+                                "d": "Racing Club",
+                                "ans": "c"
+                                },
+                        "11": {"qst": "¿En qué estadio juega el FC Barcelona?",
+                                "a": "Santiago Bernabéu",
+                                "b": "Camp Nou",
+                                "c": "Anfield",
+                                "d": "Allianz Arena",
+                                "ans": "b"
+                                },
+                        "12": {"qst": "¿Qué entrenador ha ganado más Champions League como entrenador?",
+                                "a": "Carlo Ancelotti",
+                                "b": "Pep Guardiola",
+                                "c": "Sir Alex Ferguson",
+                                "d": "Zinedine Zidane",
+                                "ans": "a"
+                                },
+                        "13": {"qst": "¿Qué país ganó la Copa América 2021?",
+                                "a": "Argentina",
+                                "b": "Brasil",
+                                "c": "Chile",
+                                "d": "Uruguay",
+                                "ans": "a"
+                                },
+                        "14": {"qst": "¿Qué equipo español ha ganado más títulos de La Liga?",
+                                "a": "Atlético Madrid",
+                                "b": "Real Madrid",
+                                "c": "Valencia",
+                                "d": "FC Barcelona",
+                                "ans": "b"
+                                },
+                        "15": {"qst": "¿En qué equipo jugó Diego Maradona entre 1984 y 1991?",
+                                "a": "FC Barcelona",
+                                "b": "Sevilla FC",
+                                "c": "SSC Napoli",
+                                "d": "Boca Juniors",
+                                "ans": "c"
+                                },
+                        "16": {"qst": "¿Qué país fue anfitrión del Mundial de fútbol en 2014? a) Sudáfrica b) Brasil c) Alemania d) Rusia",
+                                "a": "Sudáfrica",
+                                "b": "Brasil",
+                                "c": "Alemania",
+                                "d": "Rusia",
+                                "ans": "b"
+                                },
+                        "17": {"qst": "¿Qué selección tiene el récord de más victorias consecutivas en los Mundiales? a) Alemania b) Italia c) Brasil d) Francia",
+                                "a": "Alemania",
+                                "b": "Italia",
+                                "c": "Brasil",
+                                "d": "Francia",
+                                "ans": "c"
+                                },
+                        "18": {"qst": "¿Cuál es el club más antiguo del mundo aún en existencia? a) Sheffield FC b) Notts County c) Preston North End d) Aston Villa",
+                                "a": "Sheffield FC",
+                                "b": "Notts County",
+                                "c": "Preston North End",
+                                "d": "Aston Villa",
+                                "ans": "a"
+                                },
+                        "19": {"qst": "¿Qué equipo de la Serie A ha ganado más títulos de liga? a) Juventus b) AC Milan c) Inter de Milán d) AS Roma",
+                                "a": "Juventus",
+                                "b": "AC Milan",
+                                "c": "Inter de Milán",
+                                "d": "AS Roma",
+                                "ans": "a"
+                                },
+                        "20": {"qst": "¿Qué selección ganó la primera Copa del Mundo en 1930? a) Argentina b) Brasil c) Italia d) Uruguay",
+                                "a": "Argentina",
+                                "b": "Brasil",
+                                "c": "Italia",
+                                "d": "Uruguay",
+                                "ans": "d"
+                                },
+                        "21": {"qst": "¿Que club tiene mas Champions?",
+                                "a": "Barcelona",
+                                "b": "Sarmiento de Junin",
+                                "c": "Real Madrid",
+                                "d": "Liverpool",
+                                "ans": "c"
+                                },
+                        "22": {"qst": "¿Que seleccion gano el mundial de 2022?",
+                                "a": "Argentina",
+                                "b": "Francia",
+                                "c": "Italia",
+                                "d": "Alemania",
+                                "ans": "a"
+                                },
+                        "23": {"qst": "¿Contra que Equipo jugo Uruguay la final del mundial de 1930?",
+                                "a": "Brasil",
+                                "b": "Paraguay",
+                                "c": "Argentina",
+                                "d": "Colombia",
+                                "ans": "c"
+                                },
+                        "24": {"qst": "¿Como se llamaba el balon del mundial Sudafrica 2010? a) Jabulani b) Telstar c) Oliva d) Tango",
+                                "a": "Jabulani",
+                                "b": "Telstar",
+                                "c": "Oliva",
+                                "d": "Tango",
+                                "ans": "a"
+                                },
+                        "25": {"qst": "¿Que seleccion de futbol fue conocida como La Naranja Mecanica? a)  b)  c)   d) ",
+                                "a": "La Brasil del 1970",
+                                "b": "La Alemania de 2014",
+                                "c": "La Argentina de 1978",
+                                "d": "La Holanda del 1974",
+                                "ans": "d"
+        }
+    },
+
+    
+        "CulturaGral": {
+          "1": {
+            "qst": "¿Quién escribió 'Cien años de soledad'?",
+            "a": "Julio Cortázar",
+            "b": "Gabriel García Márquez",
+            "c": "Jorge Luis Borges",
+            "d": "Mario Vargas Llosa",
+            "ans": "b"
+          },
+          "2": {
+            "qst": "¿Cuál es el continente más grande?",
+            "a": "África",
+            "b": "Europa",
+            "c": "Asia",
+            "d": "América",
+            "ans": "c"
+          },
+          "3": {
+            "qst": "¿En qué año llegó el hombre a la Luna?",
+            "a": "1965",
+            "b": "1969",
+            "c": "1972",
+            "d": "1975",
+            "ans": "b"
+          },
+          "4": {
+            "qst": "¿Qué océano es el más grande del mundo?",
+            "a": "Atlántico",
+            "b": "Índico",
+            "c": "Pacífico",
+            "d": "Ártico",
+            "ans": "c"
+          },
+          "5": {
+            "qst": "¿Quién pintó la Mona Lisa?",
+            "a": "Vincent van Gogh",
+            "b": "Pablo Picasso",
+            "c": "Leonardo da Vinci",
+            "d": "Salvador Dalí",
+            "ans": "c"
+          },
+          "6": {
+            "qst": "¿Cuál es la moneda oficial de Japón?",
+            "a": "Yen",
+            "b": "Won",
+            "c": "Yuan",
+            "d": "Dólar",
+            "ans": "a"
+          },
+          "7": {
+            "qst": "¿Qué planeta es conocido como el 'planeta rojo'?",
+            "a": "Venus",
+            "b": "Júpiter",
+            "c": "Saturno",
+            "d": "Marte",
+            "ans": "d"
+          },
+          "8": {
+            "qst": "¿Quién fue el primer presidente de los Estados Unidos?",
+            "a": "Thomas Jefferson",
+            "b": "Abraham Lincoln",
+            "c": "George Washington",
+            "d": "John Adams",
+            "ans": "c"
+          },
+          "9": {
+            "qst": "¿Cuál es el río más largo del mundo?",
+            "a": "Amazonas",
+            "b": "Nilo",
+            "c": "Yangtsé",
+            "d": "Misisipi",
+            "ans": "a"
+          },
+          "10": {
+            "qst": "¿Qué idioma se habla principalmente en Brasil?",
+            "a": "Español",
+            "b": "Inglés",
+            "c": "Portugués",
+            "d": "Francés",
+            "ans": "c"
+          },
+          "11": {
+            "qst": "¿Cuál es la capital de Egipto?",
+            "a": "Alejandría",
+            "b": "El Cairo",
+            "c": "Casablanca",
+            "d": "Túnez",
+            "ans": "b"
+          },
+          "12": {
+            "qst": "¿Qué deporte es conocido como 'el rey de los deportes'?",
+            "a": "Fútbol",
+            "b": "Baloncesto",
+            "c": "Tenis",
+            "d": "Rugby",
+            "ans": "a"
+          },
+          "13": {
+            "qst": "¿Cuál es la principal fuente de energía del sol?",
+            "a": "Fisión nuclear",
+            "b": "Química",
+            "c": "Geotérmica",
+            "d": "Fusión nuclear",
+            "ans": "d"
+          },
+          "14": {
+            "qst": "¿Quién es el autor de 'Don Quijote de la Mancha'?",
+            "a": "Lope de Vega",
+            "b": "Miguel de Cervantes",
+            "c": "Gabriel García Márquez",
+            "d": "Federico García Lorca",
+            "ans": "b"
+          },
+          "15": {
+            "qst": "¿Cuál es el animal terrestre más grande?",
+            "a": "Elefante africano",
+            "b": "Jirafa",
+            "c": "Hipopótamo",
+            "d": "Rinoceronte",
+            "ans": "a"
+          },
+          "16": {
+            "qst": "¿Qué estructura es considerada una de las siete maravillas del mundo antiguo?",
+            "a": "La Gran Muralla",
+            "b": "Las Pirámides de Giza",
+            "c": "El Coloso de Rodas",
+            "d": "El Partenón",
+            "ans": "b"
+          },
+          "17": {
+            "qst": "¿Qué tipo de animal es un delfín?",
+            "a": "Pez",
+            "b": "Reptil",
+            "c": "Anfibio",
+            "d": "Mamífero",
+            "ans": "d"
+          },
+          "18": {
+            "qst": "¿Cuál es el deporte más practicado en el mundo?",
+            "a": "Baloncesto",
+            "b": "Tenis",
+            "c": "Fútbol",
+            "d": "Rugby",
+            "ans": "c"
+          },
+          "19": {
+            "qst": "¿Qué invento es atribuido a Thomas Edison?",
+            "a": "Bombilla eléctrica",
+            "b": "Teléfono",
+            "c": "Radio",
+            "d": "Computadora",
+            "ans": "a"
+          },
+          "20": {
+            "qst": "¿Cuál es el sistema operativo de Apple?",
+            "a": "Windows",
+            "b": "Linux",
+            "c": "macOS",
+            "d": "Android",
+            "ans": "c"
+          },
+          "21": {
+            "qst": "¿Qué elemento químico tiene el símbolo 'H'?",
+            "a": "Helio",
+            "b": "Hidrógeno",
+            "c": "Mercurio",
+            "d": "Oxígeno",
+            "ans": "b"
+          },
+          "22": {
+            "qst": "¿En qué país se originó el tango?",
+            "a": "Argentina",
+            "b": "Uruguay",
+            "c": "Chile",
+            "d": "Perú",
+            "ans": "a"
+          },
+          "23": {
+            "qst": "¿Qué famoso científico desarrolló la teoría de la relatividad?",
+            "a": "Isaac Newton",
+            "b": "Stephen Hawking",
+            "c": "Nikola Tesla",
+            "d": "Albert Einstein",
+            "ans": "d"
+          },
+          "24": {
+            "qst": "¿Qué planeta es conocido por tener anillos?",
+            "a": "Júpiter",
+            "b": "Saturno",
+            "c": "Urano",
+            "d": "Neptuno",
+            "ans": "b"
+          }
+        },
+"videojuegos": {"1":{"qst":"¿Cuál de los siguientes personajes es el protagonista principal en la serie de videojuegos ´The Legend of Zelda´?",
+                        "a":"Ganondorf",
+                        "b": "Link", 
+                        "c": "Zelda",
+                        "d": "Navi",
+                    "ans": "b"
+                    },
+
+                "2":{"qst":"¿En qué año se lanzó el videojuego 'Super Mario Bros.' para la consola NES?",
+                        "a":"1983",
+                        "b": "1985",
+                        "c": "1987",
+                        "d": "1989",
+                    "ans":"b"
+                    },
+
+                "3":{"qst":"¿Cuál es el nombre del mundo en el que se desarrolla la saga de 'Final Fantasy VII'?",
+                        "a":"Eorzea",
+                        "b": "Spira",
+                        "c": "Gaia",
+                        "d": "Ivalice",
+                    "ans":"c"
+                    },
+
+                "4":{"qst":"¿Cuál de estos juegos fue desarrollado por Rockstar Games?",
+                        "a":"The Elder Scrolls V: Skyrim",
+                        "b": "Grand Theft Auto V",
+                        "c": "Dark Souls",
+                        "d": "Halo: Combat Evolved",
+                    "ans":"b"
+                    },
+ 
+                "5":{"qst":"¿En qué juego de la saga 'The Legend of Zelda' se explora un mundo subterráneo conocido como el 'Inframundo'?",
+                        "a":"The Legend of Zelda: A Link to the Past",
+                        "b": "The Legend of Zelda: Ocarina of Time",
+                        "c": "The Legend of Zelda: Breath of the Wild",
+                        "d": "The Legend of Zelda: Majora's Mask",
+                    "ans":"a"
+                    },
+                
+                "6":{"qst":"¿En qué juego de disparos en primera persona puedes jugar como el personaje Master Chief?",
+                        "a":"Destiny",
+                        "b":"Battlefield",
+                        "c":"Call of Duty",
+                        "d":"Halo",
+                    "ans":"d"
+                    },
+
+                "7":{"qst":"¿Cuál de estos videojuegos pertenece a la serie de rol conocida por sus batallas y exploración en el mundo de 'Eorzea'?",
+                        "a":"Final Fantasy XIV",
+                        "b":"Dragon Age: Inquisition",
+                        "c":"World of Warcraft",
+                        "d":"Elder Scrolls Online",
+                    "ans":"a"
+                    },
+                
+                "8":{"qst":"¿En qué juego se encuentra el personaje llamado 'Pac-Man'?",
+                        "a":"Donkey Kong",
+                        "b":"Space Invaders",
+                        "c":"Pac-Man",
+                        "d":"Galaga",
+                    "ans":"c"
+                    },
+                    
+                "9":{"qst":"¿Qué tipo de juego es 'Among Us'?",
+                        "a":"Juego de plataformas",
+                        "b":"Juego de rol",
+                        "c":"Juego de misterio social",
+                        "d":"Shooter en primera persona",
+                    "ans":"c"
+                    },
+
+                "10":{"qst":"¿Cuál de los siguientes juegos es un título clásico de la consola Sega Genesis?",
+                        "a":"Sonic the Hedgehog",
+                        "b":"Super Mario World",
+                        "c":"The Legend of Zelda: Ocarina of Time",
+                        "d":"Donkey Kong Country",
+                    "ans":"a"
+                    },
+                
+                "11":{"qst":"¿En qué serie de videojuegos luchan los personajes conocidos como ´Hunters´ contra monstruos gigantes?",
+                        "a":"Horizon Zero Dawn",
+                        "b":"Dark Souls",
+                        "c":"Bloodborne",
+                        "d":"Monster Hunter",
+                    "ans":"d"
+                    },
+
+                "12":{"qst":"¿Cuál de estos videojuegos fue creado por la compañia Nintentdo?",
+                        "a":"Metal Gear Solid",
+                        "b":"Final Fantasy ",
+                        "c":"The Legend of Zelda ",
+                        "d":"Fallout ",
+                    "ans":"c"
+                    },
+
+                "13":{"qst":"¿Cuál es el objetivo principal en el juego ´Minecraft´?",
+                        "a":"Completar una campaña de historia",
+                        "b":"Completar y explorar",
+                        "c":"Ganar en batalla en línea",
+                        "d":"Resolver rompecabezas",
+                    "ans":"b"
+                    },
+
+                "14":{"qst":"¿En qué juego puedes encontrar el ´Pikachu´ como uno de los personajes principales ?",
+                        "a":"Pokémon",
+                        "b":"Digimon",
+                        "c":"Yu-Gi-oh!",
+                        "d":"Final Fantasy",
+                    "ans":"a"
+                    },
+                
+                "15":{"qst":"¿Qué videojuego se ambienta en una ciudad ficticia llamada Raccoon City ?",
+                        "a":"Silent Hill",
+                        "b":"Resident Evil",
+                        "c":"Dead Space!",
+                        "d":"Outlast",
+                    "ans":"b"
+                    },
+
+                "16":{"qst":"¿'¿Qué videojuego es conocido por introducir el personaje ´Kratos´ en un mundo de mitología griega?",
+                        "a":"God of War",
+                        "b":"Dante’s Inferno",
+                        "c":"Castlevania ",
+                        "d":"Demon’Souls'",
+                    "ans":"a"
+                    },
+                
+                "17":{"qst":"'¿Cuál es el nombre del universo de ´Mass Effect´?",
+                        "a":"The Elder Scrolls",
+                        "b":"The Halo Universe",
+                        "c":"The Mass Effect Universe",
+                        "d":"The Star Wars Universe",
+                    "ans":"c"
+                    },
+                
+                "18":{"qst":"¿Qué videojuego se desarrolla en el universo de Star Wars y se centra en combates espaciales?",
+                        "a":"Star Wars: Knights of the Old Republic",
+                        "b":"Star Wars: Battlefront ",
+                        "c":"Star Wars: Jedi: Fallen Order",
+                        "d":"Star Wars: The Old Republic",
+                    "ans":"b"
+                    },
+                
+                "19":{"qst":"¿En qué tipo de juego se basa el título ´The Witcher 3: Wild Hunt´? ",
+                        "a":"Juego de rol de acción",
+                        "b":"Juego de estrategia en tiempo real",
+                        "c":"Juego de disparos en primera persona",
+                        "d":"Juego de plataformas",
+                    "ans":"a"
+                    },
+
+                "20":{"qst":"¿Qué videojuego es conocido por sus mapas y escenarios destructibles y fue creado por DICE?",
+                        "a":"Call of Duty",
+                        "b":"Battlefield",
+                        "c":"Rainbow Six Siege",
+                        "d":"Counter-Strike",
+                    "ans":"b"
+                    },
+
+                "21":{"qst":"¿En qué juego puedes encontrar el personaje llamado ´Ellie´ como uno de los protagonistas?",
+                        "a":"The Last of Us",
+                        "b":"Uncharted",
+                        "c":"Red Dead Redemption",
+                        "d":"God of War",
+                    "ans":"a"
+                    },
+
+                "22":{"qst":"¿Cuál de estos videojuegos es conocido por su mecánica de combate basada en el uso de espadas y magia?",
+                        "a":"Skyrim",
+                        "b":"Dark Souls",
+                        "c":"Overwatch",
+                        "d":"Apex Legends",
+                    "ans":"a"
+                    },
+
+                "23":{"qst":"¿En qué juego se destacan la construcción de estructuras y la defensa contra enemigos en un entorno de supervivencia?",
+                        "a":"Rust",
+                        "b":"Fornite",
+                        "c":"ARK: Survival Evolved",
+                        "d":"Conan Exiles",
+                    "ans":"c"
+                    },
+
+                "24":{"qst":"¿En qué salio el juego World of Warcraft?",
+                        "a":"1998",
+                        "b":"2002",
+                        "c":"2000",
+                        "d":"2004",
+                    "ans":"d"
+                    },
+                
+                "25":{"qst":"¿Cuál de estos juegos fue uno de los primeros en popularizar el género de batalla real?",
+                        "a":"Fortnite",
+                        "b":"PUBG (PlayerUnknowns Battlegrounds)",
+                        "c":"Apex Legends",
+                        "d":"Warzone",
+                    "ans":"b"
+                    }               
+                },
+"Animales": {"1":{"qst":"¿Cuál es el mamífero más grande del mundo? ",
+                        "a":"Elefante",
+                        "b":"Ballena azul", 
+                        "c":"Jirafa",
+                        "d":"Oso polar",
+                    "ans": "b"
+                    },
+
+                "2":{"qst":"¿Qué tipo de animal es un delfín?",
+                        "a":"Pez",
+                        "b":"Mamífero",
+                        "c":"Reptil",
+                        "d":"Anfibio",
+                    "ans":"b"
+                    },
+
+                "3":{"qst":"'¿Cuál es el ave más rápida en vuelo? a)  b)  c)  d) '",
+                        "a":"Halcón peregrino",
+                        "b":"Águila",
+                        "c":"Colibrí",
+                        "d":"Faisán",
+                    "ans":"a"
+                    },
+
+                "4":{"qst":"¿Qué animal es conocido por su habilidad para cambiar de color?",
+                        "a":"Gecko",
+                        "b":"Pulpo",
+                        "c":"Rana",
+                        "d":"Camaleón",
+                    "ans":"d"
+                    },
+ 
+                "5":{"qst":"¿Cuál de estos animales es un marsupial?",
+                        "a":"Oso",
+                        "b":"Lobo",
+                        "c":"Canguro",
+                        "d":"Gato",
+                    "ans":"c"
+                    },
+                
+                "6":{"qst":"¿Qué animal puede vivir más tiempo sin agua?",
+                        "a":"Camello",
+                        "b":"Perro",
+                        "c":"Gato",
+                        "d":"Elefante",
+                    "ans":"a"
+                    },
+
+                "7":{"qst":"¿Cuál es el único mamífero que puede volar? d) Murciélago",
+                        "a":"Ardilla voladora",
+                        "b":"Colugo",
+                        "c":"Pájaro carpintero",
+                        "d":"Murciélago",
+                    "ans":"d"
+                    },
+                
+                "8":{"qst":"¿Qué animal tiene la lengua más larga en relación a su cuerpo?'",
+                        "a":"Rana",
+                        "b":"Camaleón",
+                        "c":"Jirafa",
+                        "d":"Hummingbird",
+                    "ans":"b"
+                    },
+                    
+                "9":{"qst":"'¿Cuál de estos animales es un depredador tope en su hábitat?'",
+                        "a":"León",
+                        "b":"Cebra",
+                        "c":"Jirafa",
+                        "d":"Elefante",
+                    "ans":"a"
+                    },
+
+                "10":{"qst":"¿Qué tipo de animal es un tiburón?",
+                        "a":"Mamífero",
+                        "b":"Anfibio",
+                        "c":"Reptil",
+                        "d":"Pez",
+                    "ans":"d"
+                    },
+                
+                "11":{"qst":"¿Cuál es el animal más rápido en tierra? '",
+                        "a":"Conejo",
+                        "b":"Antílope",
+                        "c":"Cheetah",
+                        "d":"Perro",
+                    "ans":"c"
+                    },
+
+                "12":{"qst":"¿Qué animal es conocido por ser el ´rey de la selva´?",
+                        "a":"Tigre",
+                        "b":"León",
+                        "c":"Gorila",
+                        "d":"Elefante",
+                    "ans":"b"
+                    },
+
+                "13":{"qst":"¿Cuál es la principal dieta de un panda gigante?",
+                        "a":"Carne",
+                        "b":"Insectos",
+                        "c":"Bambú",
+                        "d":"Frutas",
+                    "ans":"c"
+                    },
+
+                "14":{"qst":"¿Qué tipo de animal es una oruga?",
+                        "a":"Mamífero",
+                        "b":"Reptil",
+                        "c":"Anfibio",
+                        "d":"Insecto",
+                    "ans":"d"
+                    },
+                
+                "15":{"qst":"¿Cuál es el único primate que no vive en los árboles?",
+                        "a":"Humano",
+                        "b":"Chimpancé",
+                        "c":"Gorila",
+                        "d":"Orangután",
+                    "ans":"a"
+                    },
+
+                "16":{"qst":"¿Qué animal se considera el más inteligente?",
+                        "a":"Perro",
+                        "b":"Delfín",
+                        "c":"Cuervo",
+                        "d":"Elefante",
+                    "ans":"b"
+                    },
+                
+                "17":{"qst":"¿Cuál de estos animales es un roedor?",
+                        "a":"Gato",
+                        "b":"Conejo",
+                        "c":"Ratón",
+                        "d":"Serpiente",
+                    "ans":"c"
+                    },
+                
+                "18":{"qst":"¿Qué animal es conocido por su capacidad para imitar sonidos?",
+                        "a":"Loro",
+                        "b":"Búho",
+                        "c":"Pájaro cantor",
+                        "d":"Golondrina",
+                    "ans":"a"
+                    },
+                
+                "19":{"qst":"¿Cuál de estos animales vive en la Antártida?",
+                        "a":"Leopardo",
+                        "b":"Camello",
+                        "c":"Cebra",
+                        "d":"Foca",
+                    "ans":"d"
+                    },
+
+                "20":{"qst":"¿Qué animal tiene el corazón más grande en relación a su tamaño?",
+                        "a":"Elefante",
+                        "b":"Ballena azul",
+                        "c":"Gato",
+                        "d":"Ratón",
+                    "ans":"b"
+                    },
+
+                "21":{"qst":"¿Cuál es el animal terrestre más grande?",
+                        "a":"Elefante africano",
+                        "b":"Hipopótamo",
+                        "c":"Rinoceronte",
+                        "d":"Jirafa",
+                    "ans":"a"
+                    },
+
+                "22":{"qst":"¿Qué tipo de animal es una anaconda?",
+                        "a":"Reptil",
+                        "b":"Mamífero",
+                        "c":"Anfibio",
+                        "d":"Pez",
+                    "ans":"a"
+                    },
+
+                "23":{"qst":"¿Qué animal tiene la capacidad de ver en la oscuridad?",
+                        "a":"Gato",
+                        "b":"Perro",
+                        "c":"Murciélago",
+                        "d":"Todos los anteriores",
+                    "ans":"c"
+                    },
+
+                "24":{"qst":"¿Cuál es el principal depredador de los pingüinos?",
+                        "a":"León marino",
+                        "b":"Orca",
+                        "c":"Halcón",
+                        "d":"Tiburón",
+                    "ans":"b"
+                    },
+                
+                "25":{"qst":"¿Qué tipo de animal es un flamenco?",
+                        "a":"Mamífero",
+                        "b":"Pez",
+                        "c":"Ave",
+                        "d":"Reptil",
+                    "ans":"c"
+                    }               
+           }
+        }
 
 
 
