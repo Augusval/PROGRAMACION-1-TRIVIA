@@ -12,7 +12,7 @@ def SeleccionarPreguntas():  # pregunta cuantas preguntas responder y crea una l
     choice = int(input("1 para 10 preguntas , 2 para 20 preguntas"))
     listarandpreguntas = []
     if  choice == 1:
-        cantqst = 4  # 2 es para testea debe ser 10
+        cantqst = 4  # 2 es para test debe ser 10
     elif choice ==2:
         cantqst=20
     for i in range (cantqst):
@@ -28,7 +28,7 @@ def SeleccionarPreguntas():  # pregunta cuantas preguntas responder y crea una l
 randomMode = False
 continuar = True
 while continuar:
-    tema=int(input("ingrese 0 a 6 para tema 8 PARA RANDOM: "))
+    tema=int(input("ingrese 0 para fomrula, 2 para cine, 3 para futbol, 8 PARA RANDOM: "))
     listtema=["Formula","Cine","Futbol","DeporteGeneral","Videojuegos","Autos","CienciasNaturales","CulturaGral","Animales"]
     if tema ==8:
         randomMode = True
