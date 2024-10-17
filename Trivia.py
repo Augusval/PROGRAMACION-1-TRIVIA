@@ -28,8 +28,8 @@ def SeleccionarPreguntas():  # pregunta cuantas preguntas responder y crea una l
 randomMode = False
 continuar = True
 while continuar:
-    tema=int(input("ingrese 0 para fomrula, 2 para cine, 3 para futbol, 8 PARA RANDOM: "))
-    listtema=["Formula","Cine","Futbol","DeporteGeneral","Videojuegos","Autos","CienciasNaturales","CulturaGral","Animales"]
+    tema=int(input("ingrese 0 para formula, 2 para cine, 3 para futbol, 8 PARA RANDOM: "))
+    listtema=["Formula","Futbol","Literatura"]  #agregar tematicas
     if tema ==8:
         randomMode = True
     else:
@@ -44,11 +44,10 @@ while continuar:
         qst = str(i)
 
         if randomMode == True:
-            listtema=["Literatura","Fromula","Futbol","Deporte General","Video Juegos","Autos","Ciencias Naturales","Cine"] #abria que agregar todas la categorias
+            listtema=["Literatura","Futbol","Formula","Deporte General","Video Juegos","Autos","Ciencias Naturales","Cine"] #abria que agregar todas la categorias
             select=listtema[random.randint(0,1)] #1 es para test cambiar
-            qst=str(random.randint(1,4))
-        else:
-            pass
+            qst=str(random.randint(1,4)) #4 es para test cambiar a 25
+        
 
         ans = arch[select][qst]["ans"]
 
