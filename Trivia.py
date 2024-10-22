@@ -1,72 +1,118 @@
 import json
 import random
-contenido = open("newtest.json","r") #sacar todas las tildes del json o da error
-trivia=contenido.read()
-contenido.close
-arch=json.loads(trivia)
+with open("Preguntas.json", "r", encoding="utf-8") as contenido: #para que no de error
+    trivia = contenido.read()
+arch = json.loads(trivia)
+
+puntajes = open("puntajes.txt","a")
 
 
 
 def SeleccionarPreguntas():  # pregunta cuantas preguntas responder y crea una lista de preguntas que no se repiten
     cantqst = 0
-    choice = int(input("1 para 10 preguntas , 2 para 20 preguntas"))
+    choice = int(input("1 para 5 preguntas , 2 para 10 preguntas, 3 para 20 preguntas"))
     listarandpreguntas = []
     if  choice == 1:
-        cantqst = 4  # 2 es para test debe ser 10
+        cantqst = 5  
     elif choice ==2:
+        cantqst=10
+    elif choice ==3:
         cantqst=20
     for i in range (cantqst):
-        rndqst = random.randint(1,4)   # 2 es para test debe ser 25 o variable para poder agregar preguntas
+        rndqst = random.randint(1,24)   # 24 por variable para poder agregar preguntas
         while rndqst in listarandpreguntas:
-            rndqst = random.randint(1,4)   # aca lo mismo
+            rndqst = random.randint(1,24)   
         listarandpreguntas.append(rndqst)
     print(listarandpreguntas)
 
     return(listarandpreguntas)
 
-#MAIN
-randomMode = False
-continuar = True
-while continuar:
-    tema=int(input("ingrese 0 para formula, 2 para cine, 3 para futbol, 8 PARA RANDOM: "))
-    listtema=["Formula","Futbol","Literatura"]  #agregar tematicas
-    if tema ==8:
-        randomMode = True
+def crearpreguntas():  #incompleto
+    seleccion = int(input("ingrese tema: "))
+    listtema=["Literatura","Futbol","Formula","Deporte General","Video Juegos","Autos","Ciencias Naturales","Cine"]
+    tema =listtema[seleccion]
+    cantpreguntastema = int(arch[tema]["cant"])
+    cantpreguntas =+1 # falta que los escriba en el archivo (lo de abajo tambien)
+    #arch[tema]["cant"] = string(cantpreguntas)
+    input("Ingrese Pregunta: ")
+    input("Ingrese Opcion A: ")
+    input("Ingrese Opcion B: ")
+    input("Ingrese Opcion C: ")
+    input("Ingrese Opcion D: ")
+    input("Ingrese Opcion Correcta: ")
+
+def agregarpuntaje(puntajejuego): #incompleto
+    save = int(input("desea guardar su puntaje 1 si // 2 no: "))
+    if save == 1:
+        puntajejuego = str(puntajejuego)
+        name = input("Ingrese su nombre en 4 letras")
+        namelen = list(name)
+        while len(namelen) !=4:
+            print("nombre invalido")
+            name = input("Ingrese su nombre en 4 letras")
+            namelen = list(name)
+        puntajes.write(name+" "+puntajejuego)
+        puntajes.write("\n") 
     else:
-        select=listtema[tema]
-    
+        pass
 
-    cantpreguntas = 10
-    listapreguntas=SeleccionarPreguntas()
+def maingame():
 
-    for i in listapreguntas:
-        
-        qst = str(i)
+    randomMode = False
+    continuar = True
+    puntaje = 0
+    while continuar:
+        tema=int(input("0Lite , 1Futbol, 2Fromula, 3DeporteGral, 4Videojuegos 8 PARA RANDOM: "))
+        listtema=["Literatura","Futbol","Formula","Deporte General","videoJuegos","Autos","Ciencias Naturales","Cine"]  #se puede hacer lisstema variable global para no llamarla dos veces
 
-        if randomMode == True:
-            listtema=["Literatura","Futbol","Formula","Deporte General","Video Juegos","Autos","Ciencias Naturales","Cine"] #abria que agregar todas la categorias
-            select=listtema[random.randint(0,1)] #1 es para test cambiar
-            qst=str(random.randint(1,4)) #4 es para test cambiar a 25
-        
-
-        ans = arch[select][qst]["ans"]
-
-
-        print(arch[select][qst]["qst"])
-        print("A)", arch[select][qst]["a"])
-        print("B)", arch[select][qst]["b"])
-        print("C)", arch[select][qst]["c"])
-        print("D)", arch[select][qst]["d"])
-        pans=input("ingrese respuesta: ")
-        if pans == ans:
-            print("correcto")           
+        if tema ==8:
+            randomMode = True
         else:
-            print("incorrecto")
+            select=listtema[tema]
+                
+                
+            
+
+        listapreguntas=SeleccionarPreguntas()
+
+        for i in listapreguntas:
+            qst = str(i)
+            #modorandom
+            if randomMode == True:
+                listtema=["Literatura","Futbol","Formula","Deporte General","Video Juegos","Autos","Ciencias Naturales","Cine"] 
+                select=listtema[random.randint(0,8)] 
+                qst=str(random.randint(1,24)) 
+
+            #guarda la respuesta
+            ans = arch[select][qst]["ans"]
+
+
+            print(arch[select][qst]["qst"])
+            print("A)", arch[select][qst]["a"])
+            print("B)", arch[select][qst]["b"])
+            print("C)", arch[select][qst]["c"])
+            print("D)", arch[select][qst]["d"])
+            pans=input("ingrese respuesta: ")
+            if pans == ans:
+                print("correcto")
+                puntaje=puntaje+100           
+            else:
+                print("incorrecto")
+        agregarpuntaje(puntaje)
+            
+        play = int(input("1 seguir 2 terminar: "))
+        if play==1:
+            continuar = True
+        elif play==2:
+            continuar = False
+
+#puntos = int(input("ingrese puntaje: ")) #probar ingreso de puntos
+#agregarpuntaje(puntos)
+maingame()
+
+
     
-    play = int(input("1 seguir 2 terminar: "))
-    if play==1:
-        continuar = True
-    elif play==2:
-        continuar = False
+
+
     
 

@@ -1,0 +1,32 @@
+{"Geografia":{"1":{"qst":"Cual de estas ciudades nunca fue capital de japon?",
+                    "a":"Kioto", 
+                    "b":"Osaka", 
+                    "c":"Nara", 
+                    "d":"Tokio",
+                    "ans":"b"
+                    },
+             "2":{"qst":"Cual de estos paises NO limita con Argentina?",
+                    "a":"Peru", 
+                    "b":"Brasil", 
+                    "c":"Uruguay", 
+                    "d":"Chile",
+                    "ans":"a"
+                    },
+              "cant":2      
+            },
+ "Historia":{"1":{"qst":"Cuando termino la 2da guerra mundial?",
+                    "a":"1930", 
+                    "b":"1911", 
+                    "c":"1925", 
+                    "d":"1945",
+                    "ans":"d"},
+             "2":{"qst":"Cuando empezo la 1er guerra mundial?",
+                    "a":"1911", 
+                    "b":"1907", 
+                    "c":"1914", 
+                    "d":"1920",
+                    "ans":"c"},
+              "cant":2   
+            }
+    
+}
