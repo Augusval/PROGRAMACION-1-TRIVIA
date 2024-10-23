@@ -172,7 +172,7 @@
                                 "c": "Luz solar",
                                 "d": "Agua",
                                 "ans": "d"
-        }
+        }, "cant": "25"
     },
     
 "Literatura": {"1": {"qst": "¿Quién escribió 'Cien años de soledad'?",
@@ -349,7 +349,7 @@
                     "c": "Toni Morrison",
                     "d": "Sylvia Plath",
                     "ans": "a"
-        }
+        }, "cant": "25"
     },
 "Formula":{"1":{"qst":"En que circuito se establecio el record de la vuelta mas rapida?",
                 "a":"Nurburgring",
@@ -525,7 +525,7 @@
                 "c":"Ayrton Senna",
                 "d":"Jules Bianchi",
                 "ans":"b"
-                }
+                }, "cant": "25"
 },
 "DeporteGeneral":{"1":{"qst":"¿Cuál es el deporte más practicado a nivel mundial?",
                     "a":"Fútbol", 
@@ -701,7 +701,7 @@
                     "c": "Natación",
                     "d": "Gimnasia",
                     "ans": "b"
-                    } 
+                    }, "cant": "25"
         },
         "Autos": {"1": {"qst": "¿Cuál es la marca de autos más antigua aún en funcionamiento?",
                                 "a": "Ford",
@@ -877,7 +877,7 @@
                                 "c": "Mazda",
                                 "d": "Mitsubishi",
                                 "ans": "c"
-        }
+        }, "cant": "25"
     },
     
 "Cine": {"1": {"qst": "¿Cuál de las siguientes películas ganó el Oscar a Mejor Película en 2023?",
@@ -1054,7 +1054,7 @@
                     "c": "Cosmos",
                     "d": "The IT Crowd",
                     "ans": "a"
-        }
+        }, "cant": "25"
     },
 "Futbol": {"1": {"qst": "¿Qué selección ha ganado más Copas del Mundo?",
                                 "a": "Brasil",
@@ -1098,7 +1098,7 @@
                                 "d": "Luís Figo",
                                 "ans": "c"
                               },
-                        "7": {"qst": "¿Qué equipo es conocido como 'Los Diablos Rojos'? a) Manchester United b) AC Milan c) Independiente d) Bayern Múnich",
+                        "7": {"qst": "¿Qué equipo es conocido como 'Los Diablos Rojos'?" ,
                                 "a": "Manchester United",
                                 "b": "AC Milan",
                                 "c": "FC Barcelona",
@@ -1161,35 +1161,35 @@
                                 "d": "Boca Juniors",
                                 "ans": "c"
                                 },
-                        "16": {"qst": "¿Qué país fue anfitrión del Mundial de fútbol en 2014? a) Sudáfrica b) Brasil c) Alemania d) Rusia",
+                        "16": {"qst": "¿Qué país fue anfitrión del Mundial de fútbol en 2014? ",
                                 "a": "Sudáfrica",
                                 "b": "Brasil",
                                 "c": "Alemania",
                                 "d": "Rusia",
                                 "ans": "b"
                                 },
-                        "17": {"qst": "¿Qué selección tiene el récord de más victorias consecutivas en los Mundiales? a) Alemania b) Italia c) Brasil d) Francia",
+                        "17": {"qst": "¿Qué selección tiene el récord de más victorias consecutivas en los Mundiales?",
                                 "a": "Alemania",
                                 "b": "Italia",
                                 "c": "Brasil",
                                 "d": "Francia",
                                 "ans": "c"
                                 },
-                        "18": {"qst": "¿Cuál es el club más antiguo del mundo aún en existencia? a) Sheffield FC b) Notts County c) Preston North End d) Aston Villa",
+                        "18": {"qst": "¿Cuál es el club más antiguo del mundo aún en existencia? ",
                                 "a": "Sheffield FC",
                                 "b": "Notts County",
                                 "c": "Preston North End",
                                 "d": "Aston Villa",
                                 "ans": "a"
                                 },
-                        "19": {"qst": "¿Qué equipo de la Serie A ha ganado más títulos de liga? a) Juventus b) AC Milan c) Inter de Milán d) AS Roma",
+                        "19": {"qst": "¿Qué equipo de la Serie A ha ganado más títulos de liga? ",
                                 "a": "Juventus",
                                 "b": "AC Milan",
                                 "c": "Inter de Milán",
                                 "d": "AS Roma",
                                 "ans": "a"
                                 },
-                        "20": {"qst": "¿Qué selección ganó la primera Copa del Mundo en 1930? a) Argentina b) Brasil c) Italia d) Uruguay",
+                        "20": {"qst": "¿Qué selección ganó la primera Copa del Mundo en 1930? ",
                                 "a": "Argentina",
                                 "b": "Brasil",
                                 "c": "Italia",
@@ -1217,20 +1217,20 @@
                                 "d": "Colombia",
                                 "ans": "c"
                                 },
-                        "24": {"qst": "¿Como se llamaba el balon del mundial Sudafrica 2010? a) Jabulani b) Telstar c) Oliva d) Tango",
+                        "24": {"qst": "¿Como se llamaba el balon del mundial Sudafrica 2010? ",
                                 "a": "Jabulani",
                                 "b": "Telstar",
                                 "c": "Oliva",
                                 "d": "Tango",
                                 "ans": "a"
                                 },
-                        "25": {"qst": "¿Que seleccion de futbol fue conocida como La Naranja Mecanica? a)  b)  c)   d) ",
+                        "25": {"qst": "¿Que seleccion de futbol fue conocida como La Naranja Mecanica?",
                                 "a": "La Brasil del 1970",
                                 "b": "La Alemania de 2014",
                                 "c": "La Argentina de 1978",
                                 "d": "La Holanda del 1974",
                                 "ans": "d"
-        }
+        }, "cant": "25"
     },
 
     
@@ -1426,7 +1426,7 @@
             "c": "Urano",
             "d": "Neptuno",
             "ans": "b"
-          }
+          }, "cant": "25"
         },
 "videojuegos": {"1":{"qst":"¿Cuál de los siguientes personajes es el protagonista principal en la serie de videojuegos ´The Legend of Zelda´?",
                         "a":"Ganondorf",
@@ -1626,7 +1626,7 @@
                         "c":"Apex Legends",
                         "d":"Warzone",
                     "ans":"b"
-                    }               
+                    }, "cant": "25"               
                 },
 "Animales": {"1":{"qst":"¿Cuál es el mamífero más grande del mundo? ",
                         "a":"Elefante",
@@ -1826,13 +1826,6 @@
                         "c":"Ave",
                         "d":"Reptil",
                     "ans":"c"
-                    }               
+                    }, "cant": "25"               
            }
         }
-
-
-
-
-
-
-
