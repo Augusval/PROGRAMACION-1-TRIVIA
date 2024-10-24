@@ -108,6 +108,8 @@ def maingame():
         if tema ==10:
             randomMode = True
             cantidadpreguntas = 25
+            select=listtema[random.randint(0,9)]
+            
         else:
             select=listtema[tema]
             
