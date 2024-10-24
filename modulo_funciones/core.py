@@ -5,19 +5,19 @@ import time
 #-----------------------------------------------------------------------------------funciones----------------------------------------------------------------------------------------------------------------
 def asci():
   print("\033[33;1;10m    /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$         /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$   \033[0m")
-  time.sleep(0.2)
+  time.sleep(0.1)
   print("\033[33;1;10m   /$$__  $$| $$__  $$|_  $$_/ $$   | $$|_  $$_/| $$$ | $$ /$$__  $$       /$$__  $$| $$__  $$|_  $$_/ $$   | $$|_  $$_/| $$$ | $$ /$$__  $$| $$__  $$ /$$__  $$| $$__  $$\033[0m")
-  time.sleep(0.2)
+  time.sleep(0.1)
   print("\033[31;1;10m  | $$  \\ $$| $$  \\ $$  | $$ | $$   | $$  | $$  | $$$$| $$| $$  \\ $$      | $$  \\ $$| $$  \\ $$  | $$ | $$   | $$  | $$  | $$$$| $$| $$  \\ $$| $$  \\ $$| $$  \\ $$| $$  \\ $$\033[0m")
-  time.sleep(0.2)
+  time.sleep(0.1)
   print("\033[31;1;10m  | $$$$$$$$| $$  | $$  | $$ |  $$ / $$/  | $$  | $$ $$ $$| $$$$$$$$      | $$$$$$$$| $$  | $$  | $$ |  $$ / $$/  | $$  | $$ $$ $$| $$$$$$$$| $$  | $$| $$  | $$| $$$$$$$/ \033[0m")
-  time.sleep(0.2)
+  time.sleep(0.1)
   print("\033[36;1;10m  | $$__  $$| $$  | $$  | $$  \\  $$ $$/   | $$  | $$  $$$$| $$__  $$      | $$__  $$| $$  | $$  | $$  \\  $$ $$/   | $$  | $$  $$$$| $$__  $$| $$  | $$| $$  | $$| $$__  $$\033[0m")
-  time.sleep(0.2)
+  time.sleep(0.1)
   print("\033[36;1;10m  | $$  | $$| $$  | $$  | $$   \\  $$$/    | $$  | $$\\  $$$| $$  | $$      | $$  | $$| $$  | $$  | $$   \\  $$$/    | $$  | $$\\  $$$| $$  | $$| $$  | $$| $$  | $$| $$  \\ $$ \033[0m")
-  time.sleep(0.2)
+  time.sleep(0.1)
   print("\033[37;1;10m  | $$  | $$| $$$$$$$/ /$$$$$$  \\  $/    /$$$$$$| $$ \\  $$| $$  | $$      | $$  | $$| $$$$$$$/ /$$$$$$  \\  $/    /$$$$$$| $$ \\  $$| $$  | $$| $$$$$$$/|  $$$$$$/| $$  | $$ \033[0m")
-  time.sleep(0.2)
+  time.sleep(0.1)
   print("\033[37;1;10m  |__/  |__/|_______/ |______/   \\_/    |______/|__/  \\__/|__/  |__/      |__/  |__/|_______/ |______/   \\_/    |______/|__/  \\__/|__/  |__/|_______/  \\______/ |__/  |__/ \033[0m")
 
 def borde():
@@ -25,9 +25,9 @@ def borde():
 
 def borde2():
     borde()
-    time.sleep(0.2)
+    time.sleep(0.1)
     print(f"\033[97;1;22m{"="}{"¿?"*85}{"="}\033[0m")
-    time.sleep(0.2)
+    time.sleep(0.1)
     borde()
 
 def logo():
@@ -51,7 +51,7 @@ def equipos():
     ]
     for i in b:
         print(f"\033[32;1;22m{" "*50}{i}\033[0m")
-        time.sleep(0.2)
+        time.sleep(0.1)
     borde2()
 
     integrantes=["Valentini Augusto","Centurion Gonzalo","Leomagno Ernesto","Oksana Bernkhart","Luis Agustin Chen","Jesus Quijada"]
@@ -86,9 +86,9 @@ def menu():
         ]
         for i in h:
             print(f"\033[32;1;22m{" "*48}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde2()
-        time.sleep(0.2)
+        time.sleep(0.1)
         print(f"\033[97;1;22m{" "*45}{"¡Bienvenido al menú elija alguna de las opciones!"}{" "*60}\033[0m")
         borde()
         modos=("1.Juego Trivia","2.Crear preguntas ","3.Puntajes","4.¿Como se juega?","5.Equipo","6.Salir")
@@ -155,7 +155,7 @@ def crear_preguntas():
     temas=["1.  Seleccionar tema","2.  Volver"]
     for i in temas:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
-        time.sleep(0.2)
+        time.sleep(0.1)
     borde()
     print(f"\033[97;1;22m{" "*82}{"MENU"}{" "*83}\033[0m")
     borde()
@@ -180,7 +180,7 @@ def crear_preguntas():
     temas=["1.  Seleccionar tema","2.  Volver"]
     for i in temas:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
-        time.sleep(0.2)
+        time.sleep(0.1)
     borde()
     print(f"\033[97;1;22m{" "*82}{"MENU"}{" "*83}\033[0m")
     borde()
@@ -242,7 +242,7 @@ def trivias():
 
     for i in e:
         print(f"\033[33;1;22m{" "*15}{i}\033[0m")
-        time.sleep(0.2)
+        time.sleep(0.1)
 
     borde()
     print(f"\033[97;1;22m{" "*79}{"¡Bienvenido!"}{" "*78}\033[0m")
@@ -276,7 +276,7 @@ def trivias():
         ]
         for i in f:
             print(f"\033[31;1;22m{" "*48}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         print(f"\033[97;1;22m{"="}{"¿?"*85}{"="}\033[0m")
         borde()
@@ -301,7 +301,7 @@ def trivias():
         ]
         for i in g:
             print(f"\033[93;1;22m{" "*62}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         print(f"\033[97;1;22m{" "*66}{"¡Bienvenido a la trivia!"}{" "*66}\033[0m")
         borde()
@@ -326,7 +326,7 @@ def trivias():
         ]
         for i in h:
             print(f"\033[92;1;22m{" "*53}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         print(f"\033[97;1;22m{" "*66}{"¡Bienvenido a la trivia!"}{" "*66}\033[0m")
         borde()
@@ -354,7 +354,7 @@ def trivias():
         ]
         for i in j:
             print(f"\033[94;1;22m{" "*15}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         print(f"\033[97;1;22m{" "*66}{"¡Bienvenido a la trivia!"}{" "*66}\033[0m")
         borde()
@@ -382,7 +382,7 @@ def trivias():
         ]
         for i in K:
             print(f"\033[92;1;22m{" "*15}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         print(f"\033[97;1;22m{" "*66}{"¡Bienvenido a la trivia!"}{" "*66}\033[0m")
         borde()
@@ -407,7 +407,7 @@ def trivias():
         ]
         for i in m:
             print(f"\033[36;1;22m{" "*55}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         print(f"\033[97;1;22m{" "*66}{"¡Bienvenido a la trivia!"}{" "*66}\033[0m")
         borde()
@@ -432,7 +432,7 @@ def trivias():
         ]
         for i in n:
             print(f"\033[36;1;22m{" "*8}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         ciennat()
         input("Enter para continuar...")
@@ -455,7 +455,7 @@ def trivias():
         ]
         for i in l:
             print(f"\033[92;1;22m{" "*18}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         CulGen()
         input("Enter para continuar...")
@@ -478,7 +478,7 @@ def trivias():
         ]
         for i in o:
             print(f"\033[96;1;22m{" "*40}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         animales()
         input("Enter para continuar...")
@@ -501,7 +501,7 @@ def trivias():
         ]
         for i in p:
             print(f"\033[97;1;22m{" "*30}{i}\033[0m")
-            time.sleep(0.2)
+            time.sleep(0.1)
         borde()
         Lite()
         input("Enter para continuar...")
