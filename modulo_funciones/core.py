@@ -65,6 +65,7 @@ def juegoinfo():
     os.system("cls")
     logo()
     print(" Es un juego interactivo de preguntas y respuestas que ofrece a los jugadores una experiencia desafiante y educativa.\n Gracias a una amplia gama de temas y niveles de dificultad, diseñadas para jugadores de todas las edades. \n Este juego combina elementos de competencia y aprendizaje, permitiendo a los usuarios probar y ampliar sus conocimientos en diversas áreas")
+    print('La forma de jugar: \n 1)Si queremos jugar a alguna trivia, primero debemos seleccionar la opción "1.Juego Trivia" en el primer menu. Luego debemos seleccionar el modo de juego. Tendremos que decidir entre "1.Un jugador","2.Versus","3.Volver". Ahora lo unico que nos queda por hacer es elegir la trivia a la que querramos jugar. ')
     borde()
     input("Enter para continuar...")
 #-----------------------------------------------------------------------------------MENU----------------------------------------------------------------------------------------------------------------
@@ -90,7 +91,7 @@ def menu():
         time.sleep(0.2)
         print(f"\033[97;1;22m{" "*45}{"¡Bienvenido al menú elija alguna de las opciones!"}{" "*60}\033[0m")
         borde()
-        modos=("1.Juego Trivia","2.Crear preguntas ","3.Puntajes","4.Instrucciones","5.Equipo","6.Salir")
+        modos=("1.Juego Trivia","2.Crear preguntas ","3.Puntajes","4.Instrucciones/descripcion del juego","5.Equipo","6.Salir")
         for i in modos:
             print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
         borde2()
