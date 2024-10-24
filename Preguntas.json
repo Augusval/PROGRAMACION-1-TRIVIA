@@ -172,7 +172,7 @@
                                 "c": "Luz solar",
                                 "d": "Agua",
                                 "ans": "d"
-        }, "cant": "25"
+        }
     },
     
 "Literatura": {"1": {"qst": "¿Quién escribió 'Cien años de soledad'?",
@@ -349,7 +349,7 @@
                     "c": "Toni Morrison",
                     "d": "Sylvia Plath",
                     "ans": "a"
-        }, "cant": "25"
+        }
     },
 "Formula":{"1":{"qst":"En que circuito se establecio el record de la vuelta mas rapida?",
                 "a":"Nurburgring",
@@ -525,7 +525,7 @@
                 "c":"Ayrton Senna",
                 "d":"Jules Bianchi",
                 "ans":"b"
-                }, "cant": "25"
+                }
 },
 "DeporteGeneral":{"1":{"qst":"¿Cuál es el deporte más practicado a nivel mundial?",
                     "a":"Fútbol", 
@@ -701,7 +701,7 @@
                     "c": "Natación",
                     "d": "Gimnasia",
                     "ans": "b"
-                    }, "cant": "25"
+                    }
         },
         "Autos": {"1": {"qst": "¿Cuál es la marca de autos más antigua aún en funcionamiento?",
                                 "a": "Ford",
@@ -877,7 +877,7 @@
                                 "c": "Mazda",
                                 "d": "Mitsubishi",
                                 "ans": "c"
-        }, "cant": "25"
+        }
     },
     
 "Cine": {"1": {"qst": "¿Cuál de las siguientes películas ganó el Oscar a Mejor Película en 2023?",
@@ -1054,7 +1054,7 @@
                     "c": "Cosmos",
                     "d": "The IT Crowd",
                     "ans": "a"
-        }, "cant": "25"
+        }
     },
 "Futbol": {"1": {"qst": "¿Qué selección ha ganado más Copas del Mundo?",
                                 "a": "Brasil",
@@ -1230,7 +1230,7 @@
                                 "c": "La Argentina de 1978",
                                 "d": "La Holanda del 1974",
                                 "ans": "d"
-        }, "cant": "25"
+        }
     },
 
     
@@ -1426,7 +1426,7 @@
             "c": "Urano",
             "d": "Neptuno",
             "ans": "b"
-          }, "cant": "25"
+          }
         },
 "videojuegos": {"1":{"qst":"¿Cuál de los siguientes personajes es el protagonista principal en la serie de videojuegos ´The Legend of Zelda´?",
                         "a":"Ganondorf",
@@ -1626,7 +1626,7 @@
                         "c":"Apex Legends",
                         "d":"Warzone",
                     "ans":"b"
-                    }, "cant": "25"               
+                    }              
                 },
 "Animales": {"1":{"qst":"¿Cuál es el mamífero más grande del mundo? ",
                         "a":"Elefante",
@@ -1826,6 +1826,6 @@
                         "c":"Ave",
                         "d":"Reptil",
                     "ans":"c"
-                    }, "cant": "25"               
+                    }                
            }
         }
