@@ -3,12 +3,12 @@ import random
 from difflib import SequenceMatcher
 import modulo_funciones.core as c
 
-with open("PROGRAMACION-1-PROYECTO/Preguntas.json", "r", encoding="utf-8") as contenido:
+with open("Preguntas.json", "r", encoding="utf-8") as contenido:
     trivia = contenido.read()
 arch = json.loads(trivia)
 
 
-puntajes = open("PROGRAMACION-1-PROYECTO/puntajes.txt","a")
+puntajes = open("puntajes.txt","a")
 
 
 
@@ -31,7 +31,7 @@ def SeleccionarPreguntas(tema):  # pregunta cuantas preguntas responder y crea u
 
     return(listarandpreguntas)
 
-def crearpreguntas():  #esto anda por las dudas no usar todavia
+def crearpreguntas():  
     seleccion = int(input("De que tema quiere agregar una pregunta: 0Csnat , 1Literatura, 2Fromula, 3DeporteGral, 4Autos, 5cine, 6futbol, 7culturagral, 8videojuegos, 9animales, 10 PARA RANDOM: "))
     listtema=list(arch.keys())
     tema = listtema[seleccion]
@@ -95,7 +95,7 @@ def maingame():
     continuar = True
     puntaje = 0
 
-    dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))  #falta agregar media y dificil
+    dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))  
     if dificultad == 1:
         multi = 1
     elif dificultad==2:
