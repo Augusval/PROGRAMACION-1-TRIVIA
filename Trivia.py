@@ -1,11 +1,14 @@
 import json
 import random
-with open("Preguntas.json", "r", encoding="utf-8") as contenido:
+from difflib import SequenceMatcher
+import modulo_funciones.core as c
+
+with open("PROGRAMACION-1-PROYECTO/Preguntas.json", "r", encoding="utf-8") as contenido:
     trivia = contenido.read()
 arch = json.loads(trivia)
 
 
-puntajes = open("puntajes.txt","a")
+puntajes = open("PROGRAMACION-1-PROYECTO/puntajes.txt","a")
 
 
 
@@ -86,18 +89,18 @@ def agregarpuntaje(puntajejuego):
 
 def maingame():
 
+    
+
     randomMode = False
     continuar = True
     puntaje = 0
 
-
-    dificultad = int(input("ingrese dificultad 1 Facil / 2 Medio / 3 Dificil: "))  #falta agregar media y dificil
+    dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))  #falta agregar media y dificil
     if dificultad == 1:
         multi = 1
-    elif dificultad==2:  
+    elif dificultad==2:
         multi = 2
-    elif dificultad==3:
-        multi = 4
+        dificil = True
 
 
     while continuar:
@@ -107,7 +110,6 @@ def maingame():
 
         if tema ==10:
             randomMode = True
-            cantidadpreguntas = 25
             select=listtema[random.randint(0,9)]
             
         else:
@@ -125,18 +127,30 @@ def maingame():
                 select=listtema[random.randint(0,9)] 
                 qst=str(random.randint(1,24)) 
                 print(select)
+            
 
-            #guarda la respuesta
-            ans = arch[select][qst]["ans"]
+            #en dificil busca la respuesta y la guarda como texto
+            if dificil: 
+                answer = arch[select][qst]["ans"] 
+                ans = arch[select][qst][answer]
 
+            else: #guarda la respuesta
+                ans = arch[select][qst]["ans"]
+            
             
             print(arch[select][qst]["qst"])
-            print("A)", arch[select][qst]["a"])
-            print("B)", arch[select][qst]["b"])
-            print("C)", arch[select][qst]["c"])
-            print("D)", arch[select][qst]["d"])
+            if dificil == False:   #en dificl no imprime
+                print("A)", arch[select][qst]["a"])
+                print("B)", arch[select][qst]["b"])
+                print("C)", arch[select][qst]["c"])
+                print("D)", arch[select][qst]["d"])
             pans=input("ingrese respuesta: ")
-            if pans == ans:
+
+            if dificil: #esto es para probar
+                print(SequenceMatcher(None, ans, pans).ratio()) 
+                
+            
+            if pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60):
                 print("correcto")
                 puntaje = puntaje + 100*multi
                 print("tu puntaje es", puntaje)           
@@ -153,9 +167,9 @@ def maingame():
             continuar = False
         
 
- 
+
 maingame()
-crearpreguntas()
+#crearpreguntas()
 
 
     

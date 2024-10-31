@@ -106,7 +106,6 @@ def menu():
             elif opcion_menu == 3:
                 print("Funcion de puntajes.")
                 input('Presione enter para continuar...')
-                #puntajes()
                 os.system("cls")
             elif opcion_menu == 5:
                 equipos()
@@ -137,7 +136,7 @@ def modo():
     elif opcion_modo == 2:
         print("Función de selección de temas aún no implementada.")
         input("Presione Enter para continuar...")
-        #versus()
+ 
 
     elif opcion_modo ==3:
         input("Enter para volver al menu...")
@@ -164,7 +163,6 @@ def crear_preguntas():
     if opcion_crear == 1:
         print("Función de selección de temas aún no implementada.")
         input("Presione Enter para continuar...")
-        #crearpregunta()
     elif opcion_crear == 2:
        input("Enter para volver al menu...")
     else:
@@ -189,7 +187,7 @@ def crear_preguntas():
     if opcion_crear == 1:
         print("Función de selección de temas aún no implementada.")
         input("Presione Enter para continuar...")
-        #crearpregunta()
+        
     elif opcion_crear == 2:
        input("Enter para volver al menu...")
     else:
