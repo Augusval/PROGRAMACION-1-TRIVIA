@@ -1,5 +1,6 @@
 import json
 import random
+import os
 from difflib import SequenceMatcher
 import modulo_funciones.core as imprimir
 
@@ -101,6 +102,10 @@ def maingame():
     continuar = True
     puntaje = 0
 
+    
+
+    imprimir.selectdificultad()
+
     dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))  
     if dificultad == 1:
         multi = 1
@@ -112,7 +117,10 @@ def maingame():
 
 
     while continuar:
-        tema=int(input("0Csnat , 1Literatura, 2Fromula, 3DeporteGral, 4Autos, 5cine, 6futbol, 7culturagral, 8videojuegos, 9animales, 10 PARA RANDOM: "))
+
+        imprimir.trivias()
+
+        tema=int(input("seleccione el tema que desea: "))
         listtema=list(arch.keys())
         
 
@@ -180,8 +188,35 @@ def maingame():
             continuar = False
         
 
+imprimir.menu()
+try:
+        opcion_menu = int(input("Ingrese opción_menu: "))
+        if opcion_menu == 1:
+            imprimir.modo()
+            opcion_menumodo = int(input("Ingrese opción_menu: "))
+            if opcion_menumodo == 1:
+                maingame()
+            elif opcion_menumodo ==2:
+                pass
+        elif opcion_menu == 2:
+            crearpreguntas()
+        elif opcion_menu == 4:
+            imprimir.juegoinfo()
+        elif opcion_menu == 3:
+            print("Funcion de puntajes.")
+            input('Presione enter para continuar...')
+            os.system("cls")
+        elif opcion_menu == 5:
+            imprimir.equipos()
+        elif opcion_menu == 6:
+            print("Cerrando...")
+            #time.sleep(2)
+except:
+    print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
+    #return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
+    
 
-maingame()
+#maingame()
 #crearpreguntas()
 
 

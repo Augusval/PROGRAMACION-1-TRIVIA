@@ -1,7 +1,7 @@
 #-----------------------------------------------------------------------------------Librerias----------------------------------------------------------------------------------------------------------------
 import os
 import os
-import time 
+import time
 #-----------------------------------------------------------------------------------funciones----------------------------------------------------------------------------------------------------------------
 def asci():
   print("\033[33;1;10m    /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$         /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$   \033[0m")
@@ -71,30 +71,31 @@ def juegoinfo():
 #-----------------------------------------------------------------------------------MENU----------------------------------------------------------------------------------------------------------------
 def menu():
     salir = False
-    while not salir:
-        os.system("cls")
-        logo()
-        h=[
-        "  /$$      /$$                              ",
-        " | $$$    /$$$                              ",
-        " | $$$$  /$$$$  /$$$$$$  /$$$$$$$  /$$   /$$",
-        " | $$ $$/$$ $$ /$$__  $$| $$__  $$| $$  | $$",
-        " | $$  $$$| $$| $$$$$$$$| $$\\ \\ $$| $$  | $$",
-        " | $$\\  $ | $$| $$_____/| $$  | $$| $$  | $$",
-        " | $$ \\/  | $$|  $$$$$$$| $$  | $$|  $$$$$$/",
-        " |__/     |__/ \\_______/|__/  |__/ \\______/",
-        ]
-        for i in h:
-            print(f"\033[32;1;22m{" "*48}{i}\033[0m")
-            time.sleep(0.1)
-        borde2()
+    #while not salir:
+    os.system("cls")
+    logo()
+    h=[
+    "  /$$      /$$                              ",
+    " | $$$    /$$$                              ",
+    " | $$$$  /$$$$  /$$$$$$  /$$$$$$$  /$$   /$$",
+    " | $$ $$/$$ $$ /$$__  $$| $$__  $$| $$  | $$",
+    " | $$  $$$| $$| $$$$$$$$| $$\\ \\ $$| $$  | $$",
+    " | $$\\  $ | $$| $$_____/| $$  | $$| $$  | $$",
+    " | $$ \\/  | $$|  $$$$$$$| $$  | $$|  $$$$$$/",
+    " |__/     |__/ \\_______/|__/  |__/ \\______/",
+    ]
+    for i in h:
+        print(f"\033[32;1;22m{" "*48}{i}\033[0m")
         time.sleep(0.1)
-        print(f"\033[97;1;22m{" "*45}{"¡Bienvenido al menú elija alguna de las opciones!"}{" "*60}\033[0m")
-        borde()
-        modos=("1.Juego Trivia","2.Crear preguntas ","3.Puntajes","4.¿Como se juega?","5.Equipo","6.Salir")
-        for i in modos:
-            print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
-        borde2()
+    borde2()
+    time.sleep(0.1)
+    print(f"\033[97;1;22m{" "*45}{"¡Bienvenido al menú elija alguna de las opciones!"}{" "*60}\033[0m")
+    borde()
+    modos=("1.Juego Trivia","2.Crear preguntas ","3.Puntajes","4.¿Como se juega?","5.Equipo","6.Salir")
+    for i in modos:
+        print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
+    borde2()
+    '''
         try:
             opcion_menu = int(input("Ingrese opción_menu: "))
             if opcion_menu == 1:
@@ -116,34 +117,22 @@ def menu():
         except:
             print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
             return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
+        '''
 
 def modo():
     os.system("cls")
     logo()
     print(f"\033[97;1;22m{" "*70}{"¡Seleccione el modo de juego!"}{" "*70}\033[0m")
     borde()
-    modosjuego=("1.Un jugador","2.Versus","3.Volver")
+    modosjuego=["1.Un jugador","2.Versus","3.Volver"]
     for i in modosjuego:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
     print(f"\033[97;1;22m{"="}{" "*83}{"Menu"}{" "*83}{"="}\033[0m")
     borde()
+    
 
-    opcion_modo = int(input("Ingrese opción_modo: "))
-    if opcion_modo == 1:
-        selectdificultad()
 
-    elif opcion_modo == 2:
-        print("Función de selección de temas aún no implementada.")
-        input("Presione Enter para continuar...")
- 
-
-    elif opcion_modo ==3:
-        input("Enter para volver al menu...")
-
-    else:
-        print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
-        return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
 
 def crear_preguntas():
     os.system("cls")
@@ -169,30 +158,6 @@ def crear_preguntas():
         print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
         return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
 
-def crear_preguntas():
-    os.system("cls")
-    logo()
-    borde()
-    print(f"\033[97;1;22m{" "*57}{"¡Seleccione el tema para el que desea crear preguntas!"}{" "*58}\033[0m")
-    borde()
-    temas=["1.  Seleccionar tema","2.  Volver"]
-    for i in temas:
-        print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
-        time.sleep(0.1)
-    borde()
-    print(f"\033[97;1;22m{" "*82}{"MENU"}{" "*83}\033[0m")
-    borde()
-    
-    opcion_crear = int(input("Ingrese opción_crear: "))
-    if opcion_crear == 1:
-        print("Función de selección de temas aún no implementada.")
-        input("Presione Enter para continuar...")
-        
-    elif opcion_crear == 2:
-       input("Enter para volver al menu...")
-    else:
-        print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
-        return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
 
 def selectdificultad():
     os.system("cls")
@@ -200,28 +165,14 @@ def selectdificultad():
     borde()
     print(f"\033[97;1;22m{" "*71}{"¡Seleccione la dificultad"}{" "*72}\033[0m")
     borde()
-    dificultad=("1.  Facil","2.  Medio","3.  Dificil","4.  Volver")
+    dificultad=("1.  Nromal","2.  Dificil","3.  Volver")
     for i in dificultad:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
     print(f"\033[97;1;22m{" "*82}{"MENU"}{" "*83}\033[0m")
     borde()
 
-    opcion_dificultad = int(input("Ingrese opción_dificultad: "))
-    if opcion_dificultad == 1:
-        #variable dificultad facil
-        trivias()
-    elif opcion_dificultad == 2:
-        #variable dificultad medio
-        trivias()
-    elif opcion_dificultad == 3:
-        #variable dificultad dificl
-        trivias()
-    elif opcion_dificultad == 4:
-        input("Enter para volver al menu...")
-    else:
-        print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
-        return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
+    
 
 def trivias():
     os.system("cls")
@@ -246,13 +197,13 @@ def trivias():
     print(f"\033[97;1;22m{" "*79}{"¡Bienvenido!"}{" "*78}\033[0m")
     borde()
 
-    d=["1. Trivia Formula 1","2. Trivia Cine","3. Trivia Futbol","4. Trivia Deporte General","5. Trivia Video Juegos","6. Trivia Autos","7. Trivia Ciencias Naturales","8. Trivia Cultura General","9.Trivia Animales","8. Trivia Literatura"]
+    d=["0.Ciencias natturales ", "1.Literatura", "2.Fromula", "3.DeporteGral", "4.Autos", "5.cine", "6.futbol", "7.culturagral", "8.videojuegos", "9.animales", "10.PARA RANDOM" ]
     for i in d:
         print(f"\033[97;1;22m{"-"*4}{">."}{i}\033[0m")
     borde()
     print(f"\033[97;1;22m{" "*79}{"JUEGO"}{" "*78}\033[0m")
     borde()
-    trivia = int(input("Ingrese opcion de trivia o enter para volver al menu: "))
+'''
 #-----------------------------------------------------------------------------------CODIGO PRINCIPAL DEL JUEGO----------------------------------------------------------------------------------------------------------------  
     if trivia == 1:
         os.system("cls")
@@ -512,4 +463,4 @@ def trivias():
 #    main()
 
 
-
+'''
