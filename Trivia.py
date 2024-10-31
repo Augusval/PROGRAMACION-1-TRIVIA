@@ -1,7 +1,7 @@
 import json
 import random
 from difflib import SequenceMatcher
-import modulo_funciones.core as c
+import modulo_funciones.core as imprimir
 
 with open("Preguntas.json", "r", encoding="utf-8") as contenido:
     trivia = contenido.read()
@@ -12,10 +12,11 @@ puntajes = open("puntajes.txt","a")
 
 
 
-def SeleccionarPreguntas(tema):  # pregunta cuantas preguntas responder y crea una lista de preguntas que no se repiten
+def SeleccionarPreguntas(tema, esRandom):  # pregunta cuantas preguntas responder y crea una lista de preguntas que no se repiten
     cantqst = 0
     choice = int(input("1 para 5 preguntas , 2 para 10 preguntas, 3 para 20 preguntas: "))
     listarandpreguntas = []
+    
     if  choice == 1:
         cantqst = 5  
     elif choice ==2:
@@ -23,9 +24,16 @@ def SeleccionarPreguntas(tema):  # pregunta cuantas preguntas responder y crea u
     elif choice ==3:
         cantqst=20
     
-    listapreguntasentema = list(arch[tema].keys())
-    random.shuffle(listapreguntasentema)
-    listarandpreguntas = listapreguntasentema[:cantqst] 
+    if esRandom == True:
+        for i in range(cantqst):
+            listarandpreguntas.append(" ")
+
+    else:
+        listapreguntasentema = list(arch[tema].keys())
+        random.shuffle(listapreguntasentema)
+        listarandpreguntas = listapreguntasentema[:cantqst] 
+    
+    
     
     print(listarandpreguntas)
 
@@ -89,8 +97,6 @@ def agregarpuntaje(puntajejuego):
 
 def maingame():
 
-    
-
     randomMode = False
     continuar = True
     puntaje = 0
@@ -112,13 +118,16 @@ def maingame():
 
         if tema !=10:
             select=listtema[tema]
-            listapreguntas=SeleccionarPreguntas(select)
+            rand = False
+            listapreguntas=SeleccionarPreguntas(select,rand)
             
             
         elif tema==10:
             randomMode = True
-            select = "Autos" #le doy un valor para que no de error (corregir)
-            listapreguntas=SeleccionarPreguntas(select)
+            rand = True
+            select = " "
+            listapreguntas=SeleccionarPreguntas(select,rand)
+            
                  
 
         for i in listapreguntas:
@@ -151,7 +160,7 @@ def maingame():
             pans=input("ingrese respuesta: ")
 
             if dificil: #esto es para probar
-                print(SequenceMatcher(None, ans, pans).ratio()) 
+                print(SequenceMatcher(None, ans, pans).ratio())
                 
             
             if pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60):
@@ -164,7 +173,7 @@ def maingame():
 
         agregarpuntaje(puntaje)
             
-        play = int(input("1 seguir 2 terminar: "))
+        play = int(input("1 volver a jugar / 2volver al menu: "))
         if play==1:
             continuar = True
         elif play==2:
