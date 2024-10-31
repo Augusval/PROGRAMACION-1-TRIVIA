@@ -98,9 +98,11 @@ def maingame():
     dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))  
     if dificultad == 1:
         multi = 1
+        dificil=False
     elif dificultad==2:
         multi = 2
         dificil = True
+    
 
 
     while continuar:
@@ -108,29 +110,31 @@ def maingame():
         listtema=list(arch.keys())
         
 
-        if tema ==10:
-            randomMode = True
-            select=listtema[random.randint(0,9)]
-            
-        else:
+        if tema !=10:
             select=listtema[tema]
+            listapreguntas=SeleccionarPreguntas(select)
             
             
-        listapreguntas=SeleccionarPreguntas(select)
+        elif tema==10:
+            randomMode = True
+            select = "Autos" #le doy un valor para que no de error (corregir)
+            listapreguntas=SeleccionarPreguntas(select)
                  
 
         for i in listapreguntas:
             qst = str(i)
             
-            if randomMode == True: #modorandom
+            if randomMode == True: #modorandom cada iteracion elige tema random y pregunta random
                 listtema=list(arch.keys()) 
-                select=listtema[random.randint(0,9)] 
-                qst=str(random.randint(1,24)) 
+                select=listtema[random.randint(0,9)]
+                tema=select
+                listapreguntasentema = list(arch[tema].keys())
+                qst=str(random.choice(listapreguntasentema)) 
                 print(select)
             
 
             #en dificil busca la respuesta y la guarda como texto
-            if dificil: 
+            if dificil ==True: 
                 answer = arch[select][qst]["ans"] 
                 ans = arch[select][qst][answer]
 
@@ -139,7 +143,7 @@ def maingame():
             
             
             print(arch[select][qst]["qst"])
-            if dificil == False:   #en dificl no imprime
+            if dificil != True:   #en dificl no imprime
                 print("A)", arch[select][qst]["a"])
                 print("B)", arch[select][qst]["b"])
                 print("C)", arch[select][qst]["c"])
