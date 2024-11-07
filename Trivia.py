@@ -47,13 +47,13 @@ def seleccionarCantidadPreguntas():
         choice= int(input("seleccione numero de preguntas 1 para6 , 2 para10 , 3 para20"))
 
     if  choice == 1:
-        cantqst = 6  
+        cantpreguntas = 6  
     elif choice ==2:
-        cantqst=10
+        cantpreguntas=10
     elif choice ==3:
-        cantqst=20
+        cantpreguntas=20
     
-    return cantqst
+    return cantpreguntas
 
 
 def crearpreguntas():  
@@ -118,6 +118,8 @@ def maingame(versus):
         puntaje = 0
         puntajeJugador1=0
         puntajeJugador2=0
+        if versus ==False:
+            turno=0
         randomMode = False
 
         imprimir.selectdificultad()
@@ -145,7 +147,7 @@ def maingame(versus):
             listapreguntas=shufflePreguntas(select,cantidadseleccionada)
             
                  
-
+        contador=1
         for i in listapreguntas:
             qst = str(i)
             
@@ -165,10 +167,13 @@ def maingame(versus):
             else: #guarda la respuesta
                 ans = arch[select][qst]["ans"]
             
-            if versus==True and (i+1)%2==0:
+            lugarenlista = contador
+            print(lugarenlista)
+            
+            if versus==True and lugarenlista%2==0:
                 print("Pregunta del jugador 2")
                 turno = 2
-            elif versus==True and (i+1)%2!=0:
+            elif versus==True and lugarenlista%2!=0:
                 print("Pregunta del jugador 1")
                 turno = 1
 
@@ -184,30 +189,38 @@ def maingame(versus):
                 print(SequenceMatcher(None, ans, pans).ratio())
                 
             #esto es para modo normal
-            if pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60) and versus ==False:
+            if (pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60)) and versus ==False:
                 print("correcto")
                 puntaje = puntaje + 100*multi
                 print("tu puntaje es", puntaje)           
-            else:
+            elif versus==False:
                 print("incorrecto")
                 print("tu puntaje es", puntaje)
             
             #esto es para modo versus
-            if pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60) and versus ==True:
+            if (pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60)) and versus ==True:
                 if turno == 1:
                     print("correcto jugador 1")
                     puntajeJugador1 = puntajeJugador1 + 100*multi
                     print("tu puntaje es", puntajeJugador1)
                 elif turno ==2:
-                    print("correcto")
+                    print("correcto jugador 2")
                     puntajeJugador2 = puntajeJugador2 + 100*multi
                     print("tu puntaje es", puntajeJugador2)
-            else:
+            elif versus==True:
                 print("incorrecto")
                 print("tu puntaje es: ",puntajeJugador1 if turno == 1 else puntajeJugador2) #no probado
+            contador = contador+1
 
         if versus == False:    
             agregarpuntaje(puntaje)
+        elif versus == True:
+            if puntajeJugador1>puntajeJugador2:
+                print("Ganador jugador 1")
+            elif puntajeJugador1<puntajeJugador2:
+                print("Ganador jugador 2")
+            elif puntajeJugador1==puntajeJugador2:
+                print("empate")
             
         play = int(input("1 volver a jugar / 2volver al menu: "))
         if play==1:
@@ -219,6 +232,7 @@ def maingame(versus):
 '''
 MAIN
 '''
+
 imprimir.menu()
 try:
         opcion_menu = int(input("Ingrese opción_menu: "))
@@ -247,10 +261,11 @@ try:
 except:
     print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
     #return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
-
-
-#maingame()
+'''
+mode = True
+maingame(mode)
 #crearpreguntas()
+'''
 
 
     
