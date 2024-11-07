@@ -111,11 +111,13 @@ def agregarpuntaje(puntajejuego):
     else:
         pass
 
-def maingame():
+def maingame(versus):
     continuar = True
     while continuar:
 
         puntaje = 0
+        puntajeJugador1=0
+        puntajeJugador2=0
         randomMode = False
 
         imprimir.selectdificultad()
@@ -163,7 +165,13 @@ def maingame():
             else: #guarda la respuesta
                 ans = arch[select][qst]["ans"]
             
-            
+            if versus==True and (i+1)%2==0:
+                print("Pregunta del jugador 2")
+                turno = 2
+            elif versus==True and (i+1)%2!=0:
+                print("Pregunta del jugador 1")
+                turno = 1
+
             print(arch[select][qst]["qst"])
             if dificil != True:   #en dificl no imprime
                 print("A)", arch[select][qst]["a"])
@@ -175,16 +183,31 @@ def maingame():
             if dificil: #esto es para probar
                 print(SequenceMatcher(None, ans, pans).ratio())
                 
-            
-            if pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60):
+            #esto es para modo normal
+            if pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60) and versus ==False:
                 print("correcto")
                 puntaje = puntaje + 100*multi
                 print("tu puntaje es", puntaje)           
             else:
                 print("incorrecto")
                 print("tu puntaje es", puntaje)
+            
+            #esto es para modo versus
+            if pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60) and versus ==True:
+                if turno == 1:
+                    print("correcto jugador 1")
+                    puntajeJugador1 = puntajeJugador1 + 100*multi
+                    print("tu puntaje es", puntajeJugador1)
+                elif turno ==2:
+                    print("correcto")
+                    puntajeJugador2 = puntajeJugador2 + 100*multi
+                    print("tu puntaje es", puntajeJugador2)
+            else:
+                print("incorrecto")
+                print("tu puntaje es: ",puntajeJugador1 if turno == 1 else puntajeJugador2) #no probado
 
-        agregarpuntaje(puntaje)
+        if versus == False:    
+            agregarpuntaje(puntaje)
             
         play = int(input("1 volver a jugar / 2volver al menu: "))
         if play==1:
@@ -203,9 +226,11 @@ try:
             imprimir.modo()
             opcion_menumodo = int(input("Ingrese opción_menu: "))
             if opcion_menumodo == 1:
-                maingame()
+                versus=False
+                maingame(versus)
             elif opcion_menumodo ==2:
-                pass
+                versus=True
+                maingame(versus)
         elif opcion_menu == 2:
             crearpreguntas()
         elif opcion_menu == 4:
