@@ -41,10 +41,10 @@ def seleccionarDificultad():
 
 def seleccionarCantidadPreguntas():
     
-    choice= int(input("seleccione numero de preguntas 1para6 , 2para10 , 3para20"))
+    choice= int(input("seleccione numero de preguntas 1-->para 6  , 2-->para 10 , 3-->para 20: "))
     while choice<1 or choice>3:
         print("seleccione una opcion valida")
-        choice= int(input("seleccione numero de preguntas 1 para6 , 2 para10 , 3 para20"))
+        choice= int(input("seleccione numero de preguntas 1-->para 6  , 2-->para 10 , 3-->para 20: "))
 
     if  choice == 1:
         cantpreguntas = 6  
@@ -129,7 +129,7 @@ def maingame(versus):
 
         tema=int(input("seleccione el tema que desea o -1 para volver: "))
         if tema == -1:
-            imprimir.menu()
+            mainmenu()
         while tema < 0 or tema >10:
             tema = int(input("Ingrese un valor valido: "))
         
@@ -147,7 +147,7 @@ def maingame(versus):
             listapreguntas=shufflePreguntas(select,cantidadseleccionada)
             
                  
-        contador=1
+        turno=1
         for i in listapreguntas:
             qst = str(i)
             
@@ -167,18 +167,16 @@ def maingame(versus):
             else: #guarda la respuesta
                 ans = arch[select][qst]["ans"]
             
-            lugarenlista = contador
-            print(lugarenlista)
             
-            if versus==True and lugarenlista%2==0:
+            if versus==True and turno%2==0:
                 print("Pregunta del jugador 2")
-                turno = 2
-            elif versus==True and lugarenlista%2!=0:
+                
+            elif versus==True and turno%2!=0:
                 print("Pregunta del jugador 1")
-                turno = 1
+                
 
             print(arch[select][qst]["qst"])
-            if dificil != True:   #en dificl no imprime
+            if dificil == False:   #en dificl no imprime
                 print("A)", arch[select][qst]["a"])
                 print("B)", arch[select][qst]["b"])
                 print("C)", arch[select][qst]["c"])
@@ -199,19 +197,21 @@ def maingame(versus):
             
             #esto es para modo versus
             if (pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60)) and versus ==True:
-                if turno == 1:
+                if turno%2!=0:
                     print("correcto jugador 1")
                     puntajeJugador1 = puntajeJugador1 + 100*multi
                     print("tu puntaje es", puntajeJugador1)
-                elif turno ==2:
+                elif turno%2==0:
                     print("correcto jugador 2")
                     puntajeJugador2 = puntajeJugador2 + 100*multi
                     print("tu puntaje es", puntajeJugador2)
             elif versus==True:
                 print("incorrecto")
-                print("tu puntaje es: ",puntajeJugador1 if turno == 1 else puntajeJugador2) #no probado
-            contador = contador+1
+                print("tu puntaje es: ",puntajeJugador1 if turno%2!=0 else puntajeJugador2) #no probado
+            turno = turno+1
+            print("\n")
 
+        #en normal pregunta si quiere guardar, en versus dice quien gana
         if versus == False:    
             agregarpuntaje(puntaje)
         elif versus == True:
@@ -227,14 +227,12 @@ def maingame(versus):
             continuar = True
         elif play==2:
             continuar = False
-    imprimir.menu()
+    mainmenu()
         
-'''
-MAIN
-'''
 
-imprimir.menu()
-try:
+def mainmenu():
+    imprimir.menu()
+    try:
         opcion_menu = int(input("Ingrese opción_menu: "))
         if opcion_menu == 1:
             imprimir.modo()
@@ -245,6 +243,8 @@ try:
             elif opcion_menumodo ==2:
                 versus=True
                 maingame(versus)
+            elif opcion_menumodo ==3:
+                mainmenu()
         elif opcion_menu == 2:
             crearpreguntas()
         elif opcion_menu == 4:
@@ -258,14 +258,13 @@ try:
         elif opcion_menu == 6:
             print("Cerrando...")
             #time.sleep(2)
-except:
-    print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
-    #return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
-'''
-mode = True
-maingame(mode)
-#crearpreguntas()
-'''
+    except:
+        print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
+        #return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
+
+#main
+mainmenu()
+
 
 
     
