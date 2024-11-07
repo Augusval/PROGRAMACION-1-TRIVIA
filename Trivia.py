@@ -8,37 +8,53 @@ with open("Preguntas.json", "r", encoding="utf-8") as contenido:
     trivia = contenido.read()
 arch = json.loads(trivia)
 
-
 puntajes = open("puntajes.txt","a")
 
 
 
-def SeleccionarPreguntas(tema, esRandom):  # pregunta cuantas preguntas responder y crea una lista de preguntas que no se repiten
-    cantqst = 0
-    choice = int(input("1 para 5 preguntas , 2 para 10 preguntas, 3 para 20 preguntas: "))
+def shufflePreguntas(tema,cantidadpreguntas):  #crea una lista de preguntas que no se repiten
+
     listarandpreguntas = []
     
+    listapreguntasentema = list(arch[tema].keys())
+    random.shuffle(listapreguntasentema)
+    listarandpreguntas = listapreguntasentema[:cantidadpreguntas] 
+    
+    print(listarandpreguntas) #borrar despues
+
+    return(listarandpreguntas)
+
+def seleccionarDificultad():
+    dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))
+    while dificultad  <1 or dificultad >2:
+        print("ingrese una opcion valida")
+        dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))  
+        
+    if dificultad == 1:
+        multi = 1
+        dificil=False
+    elif dificultad==2:
+        multi = 2
+        dificil = True
+    return dificil, multi
+
+
+def seleccionarCantidadPreguntas():
+    
+    choice= int(input("seleccione numero de preguntas 1para6 , 2para10 , 3para20"))
+    while choice<1 or choice>3:
+        print("seleccione una opcion valida")
+        choice= int(input("seleccione numero de preguntas 1 para6 , 2 para10 , 3 para20"))
+
     if  choice == 1:
-        cantqst = 5  
+        cantqst = 6  
     elif choice ==2:
         cantqst=10
     elif choice ==3:
         cantqst=20
     
-    if esRandom == True:
-        for i in range(cantqst):
-            listarandpreguntas.append(" ")
+    return cantqst
 
-    else:
-        listapreguntasentema = list(arch[tema].keys())
-        random.shuffle(listapreguntasentema)
-        listarandpreguntas = listapreguntasentema[:cantqst] 
-    
-    
-    
-    print(listarandpreguntas)
-
-    return(listarandpreguntas)
 
 def crearpreguntas():  
     seleccion = int(input("De que tema quiere agregar una pregunta: 0Csnat , 1Literatura, 2Fromula, 3DeporteGral, 4Autos, 5cine, 6futbol, 7culturagral, 8videojuegos, 9animales, 10 PARA RANDOM: "))
@@ -78,7 +94,6 @@ def crearpreguntas():
         pass
     
 
-
 def agregarpuntaje(puntajejuego): 
     print("su puntaje es: ",puntajejuego)
 
@@ -87,7 +102,7 @@ def agregarpuntaje(puntajejuego):
         puntajejuego = str(puntajejuego)
         name = input("Ingrese su nombre en 4 letras: ")
         namelen = list(name)
-        while len(namelen) !=4:
+        while len(namelen) >4:
             print("nombre invalido")
             name = input("Ingrese su nombre en 4 letras")
             namelen = list(name)
@@ -97,44 +112,35 @@ def agregarpuntaje(puntajejuego):
         pass
 
 def maingame():
-
-    randomMode = False
     continuar = True
-    puntaje = 0
-
-    
-
-    imprimir.selectdificultad()
-
-    dificultad = int(input("ingrese dificultad 1 Normal /  2 Dificil(sin opciones): "))  
-    if dificultad == 1:
-        multi = 1
-        dificil=False
-    elif dificultad==2:
-        multi = 2
-        dificil = True
-    
-
-
     while continuar:
 
+        puntaje = 0
+        randomMode = False
+
+        imprimir.selectdificultad()
+        dificil , multi = seleccionarDificultad()
+    
         imprimir.trivias()
 
-        tema=int(input("seleccione el tema que desea: "))
-        listtema=list(arch.keys())
+        tema=int(input("seleccione el tema que desea o -1 para volver: "))
+        if tema == -1:
+            imprimir.menu()
+        while tema < 0 or tema >10:
+            tema = int(input("Ingrese un valor valido: "))
         
+        listtema=list(arch.keys())
 
-        if tema !=10:
-            select=listtema[tema]
-            rand = False
-            listapreguntas=SeleccionarPreguntas(select,rand)
-            
-            
-        elif tema==10:
+        cantidadseleccionada = seleccionarCantidadPreguntas()
+  
+        if tema==10:
             randomMode = True
-            rand = True
-            select = " "
-            listapreguntas=SeleccionarPreguntas(select,rand)
+            listapreguntas=[]
+            for i in range(cantidadseleccionada):
+                listapreguntas.append(" ")    
+        else:
+            select=listtema[tema]
+            listapreguntas=shufflePreguntas(select,cantidadseleccionada)
             
                  
 
@@ -142,7 +148,6 @@ def maingame():
             qst = str(i)
             
             if randomMode == True: #modorandom cada iteracion elige tema random y pregunta random
-                listtema=list(arch.keys()) 
                 select=listtema[random.randint(0,9)]
                 tema=select
                 listapreguntasentema = list(arch[tema].keys())
@@ -186,8 +191,11 @@ def maingame():
             continuar = True
         elif play==2:
             continuar = False
+    imprimir.menu()
         
-
+'''
+MAIN
+'''
 imprimir.menu()
 try:
         opcion_menu = int(input("Ingrese opción_menu: "))
@@ -214,7 +222,7 @@ try:
 except:
     print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
     #return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
-    
+
 
 #maingame()
 #crearpreguntas()
