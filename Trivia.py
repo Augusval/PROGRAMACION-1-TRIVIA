@@ -1,4 +1,5 @@
 import json
+import time
 import random
 import os
 from difflib import SequenceMatcher
@@ -252,7 +253,6 @@ def maingame(versus):
         elif play==2:
             continuar = False
     mainmenu()
-        
 
 def mainmenu():
     imprimir.menu()
@@ -280,15 +280,18 @@ def mainmenu():
         elif opcion_menu == 5:
             imprimir.equipos()
         elif opcion_menu == 6:
+            os.system("cls")
             print("Cerrando...")
-            #time.sleep(2)
+            time.sleep(2)
     except:
         print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
         #return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
+        input("Enter para continuar...")
+        mainmenu()
 
 #main
 mainmenu()
-
+print("Cerrado.")
 
 
     
