@@ -72,6 +72,7 @@ def juegoinfo():
     input("Enter para continuar...")
 
 def temasascii(select):
+    logo()
     with open("temas.json", "r") as archivo:
         datos = json.load(archivo)
     
@@ -134,7 +135,7 @@ def modo():
     logo()
     print(f"\033[97;1;22m{" "*70}{"¡Seleccione el modo de juego!"}{" "*70}\033[0m")
     borde()
-    modosjuego=["1.Un jugador","2.Versus","3.Volver"]
+    modosjuego=["1.Un jugador","2.Versus"]
     for i in modosjuego:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
@@ -193,12 +194,12 @@ def cant_menu():
     borde()
 
 def versus(i):
-    os.system("cls")
+    #os.system("cls")
     logo()
     borde()
-    print(f"\033[97;1;22m{" "*54}{"¡i!"}{" "*73}\033[0m")
+    print(f"\033[97;1;22m{" "*54}¡{i}!{" "*73}\033[0m")
     borde()
-    opciones_versus=("1.Volver a jugar","2. Volver al menu")
+    opciones_versus=("1.Volver a jugar","2.Volver al menu")
     for i in opciones_versus:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
