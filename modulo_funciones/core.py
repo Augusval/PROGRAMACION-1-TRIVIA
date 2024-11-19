@@ -1,23 +1,23 @@
 #-----------------------------------------------------------------------------------Librerias----------------------------------------------------------------------------------------------------------------
 import os
 import time
+import json
 #-----------------------------------------------------------------------------------funciones----------------------------------------------------------------------------------------------------------------
 def asci():
-  print("\033[33;1;10m    /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$         /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$   \033[0m")
-  time.sleep(0.1)
-  print("\033[33;1;10m   /$$__  $$| $$__  $$|_  $$_/ $$   | $$|_  $$_/| $$$ | $$ /$$__  $$       /$$__  $$| $$__  $$|_  $$_/ $$   | $$|_  $$_/| $$$ | $$ /$$__  $$| $$__  $$ /$$__  $$| $$__  $$\033[0m")
-  time.sleep(0.1)
-  print("\033[31;1;10m  | $$  \\ $$| $$  \\ $$  | $$ | $$   | $$  | $$  | $$$$| $$| $$  \\ $$      | $$  \\ $$| $$  \\ $$  | $$ | $$   | $$  | $$  | $$$$| $$| $$  \\ $$| $$  \\ $$| $$  \\ $$| $$  \\ $$\033[0m")
-  time.sleep(0.1)
-  print("\033[31;1;10m  | $$$$$$$$| $$  | $$  | $$ |  $$ / $$/  | $$  | $$ $$ $$| $$$$$$$$      | $$$$$$$$| $$  | $$  | $$ |  $$ / $$/  | $$  | $$ $$ $$| $$$$$$$$| $$  | $$| $$  | $$| $$$$$$$/ \033[0m")
-  time.sleep(0.1)
-  print("\033[36;1;10m  | $$__  $$| $$  | $$  | $$  \\  $$ $$/   | $$  | $$  $$$$| $$__  $$      | $$__  $$| $$  | $$  | $$  \\  $$ $$/   | $$  | $$  $$$$| $$__  $$| $$  | $$| $$  | $$| $$__  $$\033[0m")
-  time.sleep(0.1)
-  print("\033[36;1;10m  | $$  | $$| $$  | $$  | $$   \\  $$$/    | $$  | $$\\  $$$| $$  | $$      | $$  | $$| $$  | $$  | $$   \\  $$$/    | $$  | $$\\  $$$| $$  | $$| $$  | $$| $$  | $$| $$  \\ $$ \033[0m")
-  time.sleep(0.1)
-  print("\033[37;1;10m  | $$  | $$| $$$$$$$/ /$$$$$$  \\  $/    /$$$$$$| $$ \\  $$| $$  | $$      | $$  | $$| $$$$$$$/ /$$$$$$  \\  $/    /$$$$$$| $$ \\  $$| $$  | $$| $$$$$$$/|  $$$$$$/| $$  | $$ \033[0m")
-  time.sleep(0.1)
-  print("\033[37;1;10m  |__/  |__/|_______/ |______/   \\_/    |______/|__/  \\__/|__/  |__/      |__/  |__/|_______/ |______/   \\_/    |______/|__/  \\__/|__/  |__/|_______/  \\______/ |__/  |__/ \033[0m")
+    hola=[
+        "\033[33;1;10m    /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$         /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$   \033[0m",
+        "\033[33;1;10m   /$$__  $$| $$__  $$|_  $$_/ $$   | $$|_  $$_/| $$$ | $$ /$$__  $$       /$$__  $$| $$__  $$|_  $$_/ $$   | $$|_  $$_/| $$$ | $$ /$$__  $$| $$__  $$ /$$__  $$| $$__  $$\033[0m",
+        "\033[31;1;10m  | $$  \\ $$| $$  \\ $$  | $$ | $$   | $$  | $$  | $$$$| $$| $$  \\ $$      | $$  \\ $$| $$  \\ $$  | $$ | $$   | $$  | $$  | $$$$| $$| $$  \\ $$| $$  \\ $$| $$  \\ $$| $$  \\ $$\033[0m",
+        "\033[31;1;10m  | $$$$$$$$| $$  | $$  | $$ |  $$ / $$/  | $$  | $$ $$ $$| $$$$$$$$      | $$$$$$$$| $$  | $$  | $$ |  $$ / $$/  | $$  | $$ $$ $$| $$$$$$$$| $$  | $$| $$  | $$| $$$$$$$/ \033[0m",
+        "\033[36;1;10m  | $$__  $$| $$  | $$  | $$  \\  $$ $$/   | $$  | $$  $$$$| $$__  $$      | $$__  $$| $$  | $$  | $$  \\  $$ $$/   | $$  | $$  $$$$| $$__  $$| $$  | $$| $$  | $$| $$__  $$\033[0m",
+        "\033[36;1;10m  | $$  | $$| $$  | $$  | $$   \\  $$$/    | $$  | $$\\  $$$| $$  | $$      | $$  | $$| $$  | $$  | $$   \\  $$$/    | $$  | $$\\  $$$| $$  | $$| $$  | $$| $$  | $$| $$  \\ $$ \033[0m",
+        "\033[37;1;10m  | $$  | $$| $$$$$$$/ /$$$$$$  \\  $/    /$$$$$$| $$ \\  $$| $$  | $$      | $$  | $$| $$$$$$$/ /$$$$$$  \\  $/    /$$$$$$| $$ \\  $$| $$  | $$| $$$$$$$/|  $$$$$$/| $$  | $$ \033[0m",
+        "\033[37;1;10m  |__/  |__/|_______/ |______/   \\_/    |______/|__/  \\__/|__/  |__/      |__/  |__/|_______/ |______/   \\_/    |______/|__/  \\__/|__/  |__/|_______/  \\______/ |__/  |__/ \033[0m"
+    ]
+    
+    for i in hola:
+        print(i)
+        time.sleep(0.1)
 
 def borde():
     print(f"\033[30;1;10m{"="*172}\033[0m")
@@ -30,6 +30,7 @@ def borde2():
     borde()
 
 def logo():
+    os.system("cls")
     borde2()
     asci()
     borde2()
@@ -53,11 +54,13 @@ def equipos():
         time.sleep(0.1)
     borde2()
 
-    integrantes=["Valentini Augusto","Centurion Gonzalo","Leomagno Ernesto","Oksana Bernkhart","Luis Agustin Chen","Jesus Quijada"]
-    for i in integrantes:
-        print(f"\033[97;1;22m{i}\033[0m")
+    with open("equipo.txt", "r") as archivo:
+        lista = list(archivo.read().splitlines())
+
+    for elemento in lista:
+        print(elemento)
     borde2()
-    input("Enter para continuar...")
+    
 
 
 def juegoinfo():
@@ -67,10 +70,41 @@ def juegoinfo():
     print('La forma de jugar: \n 1)Si queremos jugar a alguna trivia, primero debemos seleccionar la opción "1.Juego Trivia" en el primer menu.\n Luego debemos seleccionar el modo de juego. Tendremos que decidir entre "1.Un jugador","2.Versus","3.Volver". El "1.Un \njugador" te hara preguntas sobre el tema que elegiras en el siguiente menu. El "2.Versus"... Ahora lo unico que nos \nqueda por hacer es elegir la trivia a la que querramos jugar. Ahora a divertirse!')
     borde()
     input("Enter para continuar...")
+
+def temasascii(select):
+    with open("temas.json", "r") as archivo:
+        datos = json.load(archivo)
+    
+    lista_especifica = list(datos[str(select)]["1"])
+
+    for elemento in lista_especifica:
+        print(f"\033[36;1;22m{" "*8}{elemento}\033[0m")
+        time.sleep(0.1)
+
+def cierre():
+    logo()
+    time.sleep(2)
+    os.system("cls")
+    borde2()
+    cierre=[
+        "\033[33;1;10m  /$$$$$$                               /$$                                                                  /$$$$$                                        \033[0m",
+        "\033[33;1;10m /$$__  $$                             |__/                                                                 |__  $$                                        \033[0m",
+        "\033[33;1;10m| $$  \__/  /$$$$$$  /$$$$$$   /$$$$$$$ /$$  /$$$$$$   /$$$$$$$        /$$$$$$   /$$$$$$   /$$$$$$             | $$ /$$   /$$  /$$$$$$   /$$$$$$   /$$$$$$ \033[0m",
+        "\033[31;1;10m| $$ /$$$$ /$$__  $$|____  $$ /$$_____/| $$ |____  $$ /$$_____/       /$$__  $$ /$$__  $$ /$$__  $$            | $$| $$  | $$ /$$__  $$ |____  $$ /$$__  $$\033[0m",
+        "\033[31;1;10m| $$|_  $$| $$  \__/ /$$$$$$$| $$      | $$  /$$$$$$$|  $$$$$$       | $$  \ $$| $$  \ $$| $$  \__/       /$$  | $$| $$  | $$| $$  \ $$  /$$$$$$$| $$  \__/\033[0m",
+        "\033[31;1;10m| $$  \ $$| $$      /$$__  $$| $$      | $$ /$$__  $$ \____  $$      | $$  | $$| $$  | $$| $$            | $$  | $$| $$  | $$| $$  | $$ /$$__  $$| $$      \033[0m",
+        "\033[36;1;10m|  $$$$$$/| $$     |  $$$$$$$|  $$$$$$$| $$|  $$$$$$$ /$$$$$$$/      | $$$$$$$/|  $$$$$$/| $$            |  $$$$$$/|  $$$$$$/|  $$$$$$$|  $$$$$$$| $$      \033[0m",
+        "\033[36;1;10m \______/ |__/      \_______/ \_______/|__/ \_______/|_______/       | $$____/  \______/ |__/             \______/  \______/  \____  $$ \_______/|__/      \033[0m",
+        "\033[36;1;10m                                                                     | $$                                                     /$$  \ $$                    \033[0m",
+        "\033[37;1;10m                                                                     |__/                                                     \______/                     \033[0m",
+    ]
+    
+    for i in cierre:
+        print(f"{" "*13}{i}")
+        time.sleep(0.1)
+    borde2()
 #-----------------------------------------------------------------------------------MENU----------------------------------------------------------------------------------------------------------------
 def menu():
-    salir = False
-    #while not salir:
     os.system("cls")
     logo()
     h=[
@@ -94,30 +128,7 @@ def menu():
     for i in modos:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde2()
-    '''
-        try:
-            opcion_menu = int(input("Ingrese opción_menu: "))
-            if opcion_menu == 1:
-                modo()
-            elif opcion_menu == 2:
-                crear_preguntas()
-            elif opcion_menu == 4:
-                juegoinfo()
-            elif opcion_menu == 3:
-                print("Funcion de puntajes.")
-                input('Presione enter para continuar...')
-                os.system("cls")
-            elif opcion_menu == 5:
-                equipos()
-            elif opcion_menu == 6:
-                print("Cerrando...")
-                time.sleep(2)
-                salir = True
-        except:
-            print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
-            return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
-        '''
-
+    
 def modo():
     os.system("cls")
     logo()
@@ -130,7 +141,6 @@ def modo():
     print(f"\033[97;1;22m{"="}{" "*83}{"Menu"}{" "*83}{"="}\033[0m")
     borde()
     
-
 def crear_preguntas():
     os.system("cls")
     logo()
@@ -162,7 +172,7 @@ def selectdificultad():
     borde()
     print(f"\033[97;1;22m{" "*71}{"¡Seleccione la dificultad"}{" "*72}\033[0m")
     borde()
-    dificultad=("1.  Nromal","2.  Dificil","3.  Volver")
+    dificultad=("1.  Normal","2.  Dificil","3.  Volver")
     for i in dificultad:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
@@ -177,6 +187,19 @@ def cant_menu():
     borde()
     cant_preguntas=("1. 5 preguntas","2. 10 preguntas","3. 20 preguntas")
     for i in cant_preguntas:
+        print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
+    borde()
+    print(f"\033[97;1;22m{" "*72}{"MENU"}{" "*97}\033[0m")
+    borde()
+
+def versus(i):
+    os.system("cls")
+    logo()
+    borde()
+    print(f"\033[97;1;22m{" "*54}{"¡i!"}{" "*73}\033[0m")
+    borde()
+    opciones_versus=("1.Volver a jugar","2. Volver al menu")
+    for i in opciones_versus:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
     print(f"\033[97;1;22m{" "*72}{"MENU"}{" "*97}\033[0m")
@@ -202,15 +225,16 @@ def trivias():
         time.sleep(0.1)
 
     borde()
-    print(f"\033[97;1;22m{" "*79}{"¡Bienvenido!"}{" "*78}\033[0m")
+    print(f"\033[97;1;22m{" "*79}{"¡Ingrese su opcion!"}{" "*78}\033[0m")
     borde()
 
-    d=["0.Ciencias natturales ", "1.Literatura", "2.Fromula", "3.DeporteGral", "4.Autos", "5.cine", "6.futbol", "7.culturagral", "8.videojuegos", "9.animales", "10.PARA RANDOM" ]
+    d=["0.Ciencias naturales ", "1.Literatura", "2.Formula", "3.Deporte General", "4.Autos", "5.Cine", "6.Futbol", "7.Cultura General", "8.Videojuegos", "9.Animales", "10.RANDOM" ]
     for i in d:
         print(f"\033[97;1;22m{"-"*4}{">."}{i}\033[0m")
     borde()
     print(f"\033[97;1;22m{" "*79}{"JUEGO"}{" "*78}\033[0m")
     borde()
+
 '''
 #-----------------------------------------------------------------------------------CODIGO PRINCIPAL DEL JUEGO----------------------------------------------------------------------------------------------------------------  
     if trivia == 1:

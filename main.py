@@ -1,9 +1,7 @@
 import os
 from modulo_funciones.core import logo
-from modulo_funciones.core import menu
-os.system("cls")
+from Trivia import mainmenu
 logo()
-input("Enter para ingresar al menu-> ")
-menu()
-os.system("cls")
-print("Cerrado.")
+input(f"\033[96;1;22m{"Presinone enter para continuar->"}\033[0m")
+mainmenu()
+ 
