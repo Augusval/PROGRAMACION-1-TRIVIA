@@ -128,6 +128,12 @@ def ordenar_puntajes():
 
     print("Puntajes ordenados y guardados en 'puntajes.txt'.")
 
+def listapuntajes():
+    with open("puntajes.txt", "r") as archivo:
+        print("Puntajes:")
+        for linea in archivo:
+            print(linea.strip())
+        
 
 def maingame(versus):
     continuar = True
@@ -264,8 +270,8 @@ def mainmenu():
             elif opcion_menu == 4:
                 imprimir.juegoinfo()
             elif opcion_menu == 3:
-                ordenar_puntajes()
-                input('Presione enter para continuar...')
+                listapuntajes()
+                input('...')
                 os.system("cls")
             elif opcion_menu == 5:
                 imprimir.equipos()
