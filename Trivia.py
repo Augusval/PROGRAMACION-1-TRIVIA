@@ -143,42 +143,41 @@ def maingame(versus):
     
         imprimir.trivias()
 
-        tema=int(input(f"\033[96;1;22m{"Seleccione el tema que desea o -1 para volver: -> "}\033[0m"))
-        if tema == -1:
+        temaelegido=int(input(f"\033[96;1;22m{"Seleccione el tema que desea o -1 para volver: -> "}\033[0m"))
+        if temaelegido == -1:
             mainmenu()
-        while tema < 0 or tema >10:
-            tema = int(input(f"\033[91;1;22m{"Ingrese un valor valido: "}\033[0m"))
+        while temaelegido < 0 or temaelegido >10:
+            temaelegido = int(input(f"\033[91;1;22m{"Ingrese un valor valido: "}\033[0m"))
         
         listtema=list(arch.keys())
 
         cantidadseleccionada = seleccionarCantidadPreguntas()
-        if tema==10:
+        if temaelegido==10:
             randomMode = True
             listapreguntas=[]
             for i in range(cantidadseleccionada):
                 listapreguntas.append(" ")    
         else:
-            select=listtema[tema]
-            listapreguntas=shufflePreguntas(select,cantidadseleccionada)
+            tema=listtema[temaelegido]
+            listapreguntas=shufflePreguntas(tema,cantidadseleccionada)
                
         turno=1
         for i in listapreguntas:
             qst = str(i)
             
             if randomMode == True: 
-                select=listtema[random.randint(0,9)]
-                tema=select
+                tema=listtema[random.randint(0,9)]
                 listapreguntasentema = list(arch[tema].keys())
                 qst=str(random.choice(listapreguntasentema)) 
-                print(f"\033[91;1;22m{"select"}\033[0m")
+                print(f"\033[91;1;22m{"tema"}\033[0m")
             
             #en dificil busca la respuesta y la guarda como texto
             if dificil ==True: 
-                answer = arch[select][qst]["ans"] 
-                ans = arch[select][qst][answer]
+                answer = arch[tema][qst]["ans"] 
+                ans = arch[tema][qst][answer]
 
             else: #guarda la respuesta
-                ans = arch[select][qst]["ans"]
+                ans = arch[tema][qst]["ans"]
             
             
             if versus==True and turno%2==0:
@@ -188,12 +187,12 @@ def maingame(versus):
                 print("Pregunta del jugador 1")
                 
         
-            print(arch[select][qst]["qst"])
+            print(arch[tema][qst]["qst"])
             if dificil == False:  
-                print("A)", arch[select][qst]["a"])
-                print("B)", arch[select][qst]["b"])
-                print("C)", arch[select][qst]["c"])
-                print("D)", arch[select][qst]["d"])
+                print("A)", arch[tema][qst]["a"])
+                print("B)", arch[tema][qst]["b"])
+                print("C)", arch[tema][qst]["c"])
+                print("D)", arch[tema][qst]["d"])
             pans=input("ingrese respuesta: ")
 
             if dificil: 
