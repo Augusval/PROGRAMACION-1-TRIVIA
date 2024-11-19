@@ -128,8 +128,8 @@ def ordenar_puntajes():
     print("Puntajes ordenados y guardados en 'puntajes.txt'.")
 
 def listapuntajes():
+    imprimir.puntajes()
     with open("puntajes.txt", "r") as archivo:
-        print(f"\033[96;1;22m{"Ingrese su opción-> "}\033[0m")
         for linea in archivo:
             print(linea.strip())
 
