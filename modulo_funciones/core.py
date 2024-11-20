@@ -191,7 +191,7 @@ def selectdificultad():
     borde()
     print(f"\033[97;1;22m{" "*71}{"¡Seleccione la dificultad"}{" "*72}\033[0m")
     borde()
-    dificultad=("1.  Normal","2.  Dificil","3.  Volver")
+    dificultad=("1.  Normal","2.  Dificil")
     for i in dificultad:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
