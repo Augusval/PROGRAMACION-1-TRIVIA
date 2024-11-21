@@ -1,5 +1,7 @@
 andi 900
 jose 900
+Maru 500
 agus 400
 chen 400
+pate 400
 jesu 100

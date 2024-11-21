@@ -10,7 +10,8 @@ with open("Preguntas.json", "r", encoding="utf-8") as contenido:
 arch = json.loads(trivia)
 puntajes = open("puntajes.txt","a")
 
-def shufflePreguntas(tema,cantidadpreguntas):  #crea una lista de preguntas que no se repiten
+'''crea una lista de preguntas que no se repiten'''
+def shufflePreguntas(tema,cantidadpreguntas):  
     listarandpreguntas = []
     listapreguntasentema = list(arch[tema].keys())
     random.shuffle(listapreguntasentema)
@@ -100,27 +101,27 @@ def agregarpuntaje(puntajejuego):
             name = input("Ingrese su nombre en 4 letras")
             namelen = list(name)
         
-        # Agrega el nuevo puntaje al archivo
+        '''Agrega el nuevo puntaje al archivo'''
         with open("puntajes.txt", "a") as puntajes:
             puntajes.write(name + " " + puntajejuego + "\n")
         
-        # Ordenar los puntajes después de agregar el nuevo puntaje
+        '''Ordenar los puntajes después de agregar el nuevo puntaje'''
         ordenar_puntajes()
     else:
         pass
 
 def ordenar_puntajes():
-    # Leer todos los puntajes del archivo
+    '''Leer todos los puntajes del archivo'''
     with open("puntajes.txt", "r") as archivo:
         puntajes = []
         for linea in archivo:
             nombre, puntaje = linea.split()
             puntajes.append((nombre, int(puntaje)))
 
-    # Ordenar la lista de puntajes de mayor a menor
+    '''Ordenar la lista de puntajes de mayor a menor'''
     puntajes_ordenados = sorted(puntajes, key=lambda x: x[1], reverse=True)
 
-    # Sobrescribir el archivo con los puntajes ordenados
+    '''Sobrescribir el archivo con los puntajes ordenados'''
     with open("puntajes.txt", "w") as archivo:
         for nombre, puntaje in puntajes_ordenados:
             archivo.write(f"{nombre} {puntaje}\n")
@@ -176,7 +177,7 @@ def maingame(versus):
                 qst=str(random.choice(listapreguntasentema)) 
                 print(f"\033[91;1;22m{tema}\033[0m")
             
-            #en dificil busca la respuesta y la guarda como texto
+            '''en dificil busca la respuesta y la guarda como texto'''
             if dificil ==True: 
                 answer = arch[tema][qst]["ans"] 
                 ans = arch[tema][qst][answer]
@@ -203,7 +204,7 @@ def maingame(versus):
             if dificil: 
                 print(SequenceMatcher(None, ans, pans).ratio())
                 
-            #esto es para modo normal
+            '''esto es para modo normal'''
             if (pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60)) and versus ==False:
                 print(f"\033[92;1;22m{"Correcto"}\033[0m")
                 puntaje = puntaje + 100*multi
@@ -212,7 +213,7 @@ def maingame(versus):
                 print(f"\033[91;1;22m{"Incorrecto"}\033[0m")
                 print("tu puntaje es", puntaje)
             
-            #esto es para modo versus
+            '''esto es para modo versus'''
             if (pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60)) and versus ==True:
                 if turno%2!=0:
                     print(f"\033[92;1;22m{"correcto jugador 1"}\033[0m")
@@ -228,7 +229,7 @@ def maingame(versus):
             turno = turno+1
             print("\n")
 
-        #en normal pregunta si quiere guardar, en versus dice quien gana
+        '''en normal pregunta si quiere guardar, en versus dice quien gana'''
         if versus == False:    
             agregarpuntaje(puntaje)
         elif versus == True:
