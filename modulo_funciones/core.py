@@ -1,8 +1,8 @@
-#-----------------------------------------------------------------------------------Librerias----------------------------------------------------------------------------------------------------------------
+'''-----------------------------------------------------------------------------------Librerias----------------------------------------------------------------------------------------------------------------'''
 import os
 import time
 import json
-#-----------------------------------------------------------------------------------funciones----------------------------------------------------------------------------------------------------------------
+'''-----------------------------------------------------------------------------------funciones----------------------------------------------------------------------------------------------------------------'''
 def asci():
     hola=[
         "\033[33;1;10m    /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$         /$$$$$$  /$$$$$$$  /$$$$$$/$$    /$$ /$$$$$$ /$$   /$$  /$$$$$$  /$$$$$$$   /$$$$$$  /$$$$$$$   \033[0m",
@@ -61,8 +61,6 @@ def equipos():
         print(elemento)
     borde2()
     
-
-
 def juegoinfo():
     os.system("cls")
     logo()
@@ -122,7 +120,8 @@ def puntajes():
         print(f"\033[33;1;10m{" "*7}{i}\033[0m")
         time.sleep(0.1)
     borde2()
-#-----------------------------------------------------------------------------------MENU----------------------------------------------------------------------------------------------------------------
+
+'''-----------------------------------------------------------------------------------MENU----------------------------------------------------------------------------------------------------------------'''
 def menu():
     os.system("cls")
     logo()
@@ -151,51 +150,26 @@ def menu():
 def modo():
     os.system("cls")
     logo()
-    print(f"\033[97;1;22m{" "*70}{"¡Seleccione el modo de juego!"}{" "*70}\033[0m")
+    print(f"\033[97;1;22m{" "*59}{"¡Seleccione el modo de juego!"}{" "*70}\033[0m")
     borde()
     modosjuego=["1.Un jugador","2.Versus"]
     for i in modosjuego:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
-    print(f"\033[97;1;22m{"="}{" "*83}{"Menu"}{" "*83}{"="}\033[0m")
+    print(f"\033[97;1;22m{"="}{" "*69}{"Menu"}{" "*97}{"="}\033[0m")
     borde()
     
-def crear_preguntas():
-    os.system("cls")
-    logo()
-    borde()
-    print(f"\033[97;1;22m{" "*57}{"¡Seleccione el tema para el que desea crear preguntas!"}{" "*58}\033[0m")
-    borde()
-    temas=["1.  Seleccionar tema","2.  Volver"]
-    for i in temas:
-        print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
-        time.sleep(0.1)
-    borde()
-    print(f"\033[97;1;22m{" "*82}{"MENU"}{" "*83}\033[0m")
-    borde()
-    
-    opcion_crear = int(input("Ingrese opción_crear: "))
-    if opcion_crear == 1:
-        print("Función de selección de temas aún no implementada.")
-        input("Presione Enter para continuar...")
-    elif opcion_crear == 2:
-       input("Enter para volver al menu...")
-    else:
-        print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
-        return print(f"\033[96;1;22m{input("Enter para continuar...") }\033[0m")
-
-
 def selectdificultad():
     os.system("cls")
     logo()
     borde()
-    print(f"\033[97;1;22m{" "*71}{"¡Seleccione la dificultad"}{" "*72}\033[0m")
+    print(f"\033[97;1;22m{" "*59}{"¡Seleccione la dificultad"}{" "*72}\033[0m")
     borde()
     dificultad=("1.  Normal","2.  Dificil")
     for i in dificultad:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
-    print(f"\033[97;1;22m{" "*82}{"MENU"}{" "*83}\033[0m")
+    print(f"\033[97;1;22m{" "*69}{"MENU"}{" "*97}\033[0m")
     borde()
 
 def cant_menu():
@@ -208,20 +182,32 @@ def cant_menu():
     for i in cant_preguntas:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
-    print(f"\033[97;1;22m{" "*72}{"MENU"}{" "*97}\033[0m")
+    print(f"\033[97;1;22m{" "*69}{"MENU"}{" "*97}\033[0m")
     borde()
 
 def versus(i):
-    #os.system("cls")
     logo()
     borde()
-    print(f"\033[97;1;22m{" "*54}¡{i}!{" "*73}\033[0m")
+    print(f"\033[97;1;22m{" "*67}¡{i}!{" "*73}\033[0m")
     borde()
     opciones_versus=("1.Volver a jugar","2.Volver al menu")
     for i in opciones_versus:
         print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
     borde()
-    print(f"\033[97;1;22m{" "*72}{"MENU"}{" "*97}\033[0m")
+    print(f"\033[97;1;22m{" "*69}{"MENU"}{" "*97}\033[0m")
+    borde()
+
+def individual(i):
+    logo()
+    borde()
+    print(f"\033[97;1;22m{" "*54}¡Usted a obtenido {int(i)} pts!{" "*73}\033[0m")
+    borde()
+    print("Usted desea guardar su puntuacion ?")
+    opciones_individual=("1.Si","2.No")
+    for i in opciones_individual:
+        print(f"\033[97;1;22m{"-"*2}{">"}{i}\033[0m")
+    borde()
+    print(f"\033[97;1;22m{" "*69}{"MENU"}{" "*97}\033[0m")
     borde()
     
 def trivias():
@@ -244,18 +230,18 @@ def trivias():
         time.sleep(0.1)
 
     borde()
-    print(f"\033[97;1;22m{" "*79}{"¡Ingrese su opcion!"}{" "*78}\033[0m")
+    print(f"\033[97;1;22m{" "*67}{"¡Ingrese su opcion!"}{" "*78}\033[0m")
     borde()
 
     d=["0.Ciencias naturales ", "1.Literatura", "2.Formula", "3.Deporte General", "4.Autos", "5.Cine", "6.Futbol", "7.Cultura General", "8.Videojuegos", "9.Animales", "10.RANDOM" ]
     for i in d:
         print(f"\033[97;1;22m{"-"*4}{">."}{i}\033[0m")
     borde()
-    print(f"\033[97;1;22m{" "*79}{"JUEGO"}{" "*78}\033[0m")
+    print(f"\033[97;1;22m{" "*69}{"JUEGO"}{" "*97}\033[0m")
     borde()
 
 '''
-#-----------------------------------------------------------------------------------CODIGO PRINCIPAL DEL JUEGO----------------------------------------------------------------------------------------------------------------  
+-----------------------------------------------------------------------------------CODIGO PRINCIPAL DEL JUEGO----------------------------------------------------------------------------------------------------------------  
     if trivia == 1:
         os.system("cls")
         logo()
