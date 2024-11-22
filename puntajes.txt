@@ -4,4 +4,6 @@ Maru 500
 agus 400
 chen 400
 pate 400
+jesu 200
+jesu 100
 jesu 100

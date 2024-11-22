@@ -19,10 +19,11 @@ def shufflePreguntas(tema,cantidadpreguntas):
     return(listarandpreguntas)
 
 def seleccionarDificultad():
-    dificultad = int(input("Ingrese la dificultad->"))
+    dificultad = int(input("\033[94;1;22m Ingrese la dificultad->\033[0m"))
     while dificultad  <1 or dificultad >2:
-        print(f"\033[91;1;22m{"Opcion invalida"}\033[0m")
-        dificultad = int(input("Ingrese nuevamente la dificultad: "))  
+        print("\033[91;1;22mOpcion invalida\033[0m")
+        
+        dificultad = int(input("\033[96;1;22m Ingrese nuevamente la dificultad:\033[0m"))  
     if dificultad == 1:
         multi = 1
         dificil=False
@@ -34,7 +35,7 @@ def seleccionarDificultad():
 
 def seleccionarCantidadPreguntas():
     imprimir.cant_menu()
-    choice= int(input("Ingrese su opcion->"))
+    choice= int(input("\033[96;1;22m Ingrese su opcion->\033[0m"))
     while choice<1 or choice>3:
         print(f"\033[91;1;22m{"Seleccione una opcion valida"}\033[0m")
         choice= int(input("Ingrese su opcion->"))
@@ -52,18 +53,18 @@ def seleccionarCantidadPreguntas():
 
 def crearpreguntas():
     imprimir.trivias()
-    seleccion = int(input("Ingrese que tema quiere agregar una pregunta->"))
+    seleccion = int(input("\033[96;1;22m Ingrese que tema quiere agregar una pregunta->\033[0m"))
     listtema=list(arch.keys())
     tema = listtema[seleccion]
     cantpreguntas =  len(list(arch["Literatura"].keys()))
     nuevonumero = cantpreguntas + 1 
     nuevonumero= str(nuevonumero)
-    pregunta = input("Ingrese Pregunta: ")
+    pregunta = input("\033[96;1;22m Ingrese Pregunta->\033[0m")
     opA = input("Ingrese Opcion A: ")
     opB = input("Ingrese Opcion B: ")
     opC = input("Ingrese Opcion C: ")
     opD = input("Ingrese Opcion D: ")
-    respuesta = input("Ingrese Opcion Correcta: ")
+    respuesta = input("\033[92;1;22m Ingrese Opcion Correcta->\033[0m")
 
     print("tu pregunta seria: ","\n" 
             "pregunt: ",pregunta,"\n"
@@ -72,8 +73,8 @@ def crearpreguntas():
             "C)",opC,"\n"
             "D)",opD,"\n"
             "Respuesta", respuesta)
-    
-    opcion = int(input("Desea continuar si: 1 / no: 2"))
+
+    opcion = int(input("\033[91;1;22m Desea continuar si: 1 / no: 2->\033[0m"))
     if opcion == 1:
         newpregunta ={nuevonumero:{"qst":pregunta,
                                      "a":opA,
@@ -91,10 +92,11 @@ def crearpreguntas():
 
 def agregarpuntaje(puntajejuego): 
     print("Su puntaje es:", puntajejuego)
-    save = int(input("¿Desea guardar su puntaje? 1 - Sí / 2 - No: "))
+    imprimir.individual(puntajejuego)
+    save = int(input("Ingrese su opción->"))
     if save == 1:
         puntajejuego = str(puntajejuego)
-        name = input("Ingrese su nombre en 4 letras: ")
+        name = input("\033[94;1;22m Ingrese su nombre en 4 letras->\033[0m")
         namelen = list(name)
         while len(namelen) > 4:
             print(f"\033[91;1;22m{"Nombre inválido..."}\033[0m")
@@ -127,6 +129,7 @@ def ordenar_puntajes():
             archivo.write(f"{nombre} {puntaje}\n")
 
     print("Puntajes ordenados y guardados en 'puntajes.txt'.")
+    input("Precione enter para continuar")
 
 def listapuntajes():
     imprimir.puntajes()
@@ -147,11 +150,12 @@ def maingame(versus):
         dificil , multi = seleccionarDificultad()
         imprimir.trivias()
 
-        temaelegido=int(input(f"\033[96;1;22m{"Seleccione el tema que desea o -1 para volver: -> "}\033[0m"))
+        temaelegido=int(input("\033[96;1;22m Seleccione el tema que desea o -1 para volver: ->\033[0m"))
         if temaelegido == -1:
             mainmenu()
+            continuar= False
         while temaelegido < 0 or temaelegido >10:
-            temaelegido = int(input(f"\033[91;1;22m{"Ingrese un valor valido: "}\033[0m"))
+            temaelegido = int(input("\033[91;1;22m Ingrese un valor valido->\033[0m"))
         
         listtema=list(arch.keys())
 
@@ -182,7 +186,7 @@ def maingame(versus):
                 answer = arch[tema][qst]["ans"] 
                 ans = arch[tema][qst][answer]
 
-            else: #guarda la respuesta
+            else: 
                 ans = arch[tema][qst]["ans"]
             
             
@@ -202,36 +206,37 @@ def maingame(versus):
             pans=input("ingrese respuesta: ")
 
             if dificil: 
-                print(SequenceMatcher(None, ans, pans).ratio())
+                print("su respuesta es: ", 100*(SequenceMatcher(None, ans, pans).ratio()),"% correcta")
                 
             '''esto es para modo normal'''
             if (pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60)) and versus ==False:
-                print(f"\033[92;1;22m{"Correcto"}\033[0m")
+                print("\033[92;1;22m Correcto\033[0m")
                 puntaje = puntaje + 100*multi
                 print("tu puntaje es", puntaje)           
             elif versus==False:
-                print(f"\033[91;1;22m{"Incorrecto"}\033[0m")
+                print("\033[91;1;22m Incorrecto\033[0m")
                 print("tu puntaje es", puntaje)
             
             '''esto es para modo versus'''
             if (pans == ans or (dificil and SequenceMatcher(None, ans, pans).ratio() >= 0.60)) and versus ==True:
                 if turno%2!=0:
-                    print(f"\033[92;1;22m{"correcto jugador 1"}\033[0m")
+                    print("\033[92;1;22m correcto jugador 1\033[0m")
                     puntajeJugador1 = puntajeJugador1 + 100*multi
                     print("tu puntaje es", puntajeJugador1)
                 elif turno%2==0:
-                    print((f"\033[92;1;22m{"correcto jugador 2"}\033[0m"))
+                    print(("\033[92;1;22mcorrecto jugador 2\033[0m"))
                     puntajeJugador2 = puntajeJugador2 + 100*multi
                     print("tu puntaje es", puntajeJugador2)
             elif versus==True:
-                print(f"\033[91;1;22m{"Incorrecto"}\033[0m")
-                print("tu puntaje es: ",puntajeJugador1 if turno%2!=0 else puntajeJugador2) #no probado
+                print("\033[91;1;22mIncorrecto\033[0m")
+                print("tu puntaje es: ",puntajeJugador1 if turno%2!=0 else puntajeJugador2) 
             turno = turno+1
             print("\n")
 
         '''en normal pregunta si quiere guardar, en versus dice quien gana'''
         if versus == False:    
             agregarpuntaje(puntaje)
+            g="Seleccione su opción"
         elif versus == True:
             if puntajeJugador1>puntajeJugador2:
                 g=("Ganador jugador 1")
@@ -241,22 +246,24 @@ def maingame(versus):
                 g=("Empate")
 
             imprimir.versus(g)
+        imprimir.versus(g)
             
         play = int(input("Ingrese su opción->"))
         if play==1:
             continuar = True
         elif play==2:
-            mainmenu()
+            continuar=False
+            pass
 
 def mainmenu():
-    entra = True
+    entra= True
     while entra:
         imprimir.menu()
         try:
-            opcion_menu = int(input(f"\033[96;1;22m{"Ingrese su opción-> "}\033[0m"))
+            opcion_menu = int(input("\033[96;1;22mIngrese su opción->\033[0m"))
             if opcion_menu == 1:
                 imprimir.modo()
-                opcion_menumodo = int(input(f"\033[96;1;22m{"Ingrese su opción-> "}\033[0m"))
+                opcion_menumodo = int(input("\033[96;1;22mIngrese su opción->\033[0m"))
                 if opcion_menumodo == 1:
                     versus=False
                     maingame(versus)
@@ -271,7 +278,6 @@ def mainmenu():
             elif opcion_menu == 4:
                 imprimir.juegoinfo()
             elif opcion_menu == 3:
-                ordenar_puntajes()
                 listapuntajes()
                 input('Presione enter para continuar...')
                 os.system("cls")
@@ -285,7 +291,7 @@ def mainmenu():
                 entra= False
                 imprimir.cierre()
         except:
-            print(f"\033[91;1;22m{"Formato ingresado no aceptado..."}\033[0m")
+            print("\033[91;1;22m Formato ingresado no aceptado...\033[0m")
             input("Enter para continuar...")
 
     
