@@ -91,9 +91,9 @@ def crearpreguntas():
     
 
 def agregarpuntaje(puntajejuego): 
-    print("Su puntaje es:", puntajejuego)
+    #print("Su puntaje es:", puntajejuego)
     imprimir.individual(puntajejuego)
-    save = int(input("Ingrese su opción->"))
+    save = int(input("Ingrese su opción:"))
     if save == 1:
         puntajejuego = str(puntajejuego)
         name = input("\033[94;1;22m Ingrese su nombre en 4 letras->\033[0m")
@@ -110,7 +110,7 @@ def agregarpuntaje(puntajejuego):
         '''Ordenar los puntajes después de agregar el nuevo puntaje'''
         ordenar_puntajes()
     else:
-        pass
+        mainmenu()
 
 def ordenar_puntajes():
     '''Leer todos los puntajes del archivo'''
@@ -246,8 +246,7 @@ def maingame(versus):
                 g=("Empate")
 
             imprimir.versus(g)
-        imprimir.versus(g)
-            
+    
         play = int(input("Ingrese su opción->"))
         if play==1:
             continuar = True
